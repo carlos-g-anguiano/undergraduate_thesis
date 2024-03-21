@@ -1,0 +1,51 @@
+\section{Estados número}
+
+% Here I should add the analogy of the QHO with the number states of light, explaining why:
+% - n energy value = n number of photons
+% - anihilation and creation operators can be used in this states
+% - why is the state of number of photons equivalent to the  energy eigenstate
+
+Los valores esperados de los observables, que son representados por operadores Hermitianos en MC, representan las cantidades medibles de un sistema. El campo electromagnético puede ser representado por un espacio de estados, cuantizando un sistema de bosones de masa finita, llamada espacio de Fock. Los estados Fock o número $\ket{n}$ tienen una cantidad definida de número de fotones. El observable que opera sobre los estados Fock es el operador número $\hat{n}_{k\lambda}$, el cual se conforma de los operadores de un solo modo $\hat{a}_{k\lambda}$ y $\hat{a}^{\dagger}_{k\lambda}$. De este punto en adelante, se tratarán a estos operadores para un solo modo, por lo que el subíndice de polarización y modo se omiten y $\hat{n}$, $\hat{a}$ y $\hat{a}^{\dagger}$ corresponderán al operador número, aniquilación y creación de un solo modo de luz.
+
+%Answer the question: What is a mode?: A mode refers to an eigenvector of a linear equation. Consider the coupled springs problem 
+
+Un modo se refiere a un eigenvector de una ecuación de eigenvalores dada. En este caso, si un estado $\ket{\psi}$ es un observable y bajo cierto operador $\mathbf{O}$ genera el mismo estado multiplicado por un eigenvalor $\alpha$, es decir $\mathbf{O}\ket{\psi} = \alpha \ket{\psi}$ decimos que $\ket{\psi}$ es un modo normal (o estado estacionario) del sistema.
+Se define al operador número $n$ a partir de los operadores escalera $\hat{n} = \hat{a}^{\dagger}\hat{a}$ y es un operador Hermitiano. Cumple con la ecuación de eigenvalores % Sakurai
+\begin{equation*}
+  \hat{n}\ket{n} = n \ket{n}
+\end{equation*}
+
+Un modo es una onda plana con una polarización dada \cite{Agarwal_2012} (Agarwal). Es un grado de libertad del campo electromagnético. (Leonhardt) donde $n$ es en este caso particular, el número de fotones. Los operadores de aniquilación y creación siguen la relación de comutación bosónica
+
+\begin{equation*}
+[\hat{a}, \hat{a}^{\dagger}] = 1
+\end{equation*}
+
+y al igual que en el caso del oscilador armónico, se tiene un nivel mínimo de energía, en este caso corresponde al estado vacío $\ket{0}$, es decir, sin \textit{quantum} en el campo de radiación. La definición de los operadores escalera difiere de aquella dada en el oscilador armónico simple, puesto que ahora no se está tratando con partículas con masa. En términos de los operadores posición $\hat{q}$ y momento $\hat{p}$ se definen los operadores de aniquilación y creación como
+\begin{equation}\label{eq:crea-anni-def}
+\hat{a} = (2\hbar)^{-1/2}(\hat{q} + i\hat{p}) \quad \hat{a}^{\dagger} = (2\hbar)^{-1/2}(\hat{q} - i\hat{p})
+\end{equation} % Perelomov
+Cumple con la propiedad $\hat{a} \ket{0} = 0$. La energía en este caso difiere del resultado clásico, ya que $\langle 0\vert\hat{H}\vert 0\rangle = \hbar\omega/2$ con $\omega$ la frecuencia angular correspondiente a ese modo, y esto corresonde a la energía del vacío o energía de punto cero. (Walls) El estado de un fotón se obtiene a partir de este y resulta ser $\ket{1} = \hat{a}^{\dagger} \ket{0}$, y siguiendo este proceso de forma iterativa $n$ veces se obtiene el estado $\ket{n}$ que resulta ser
+\begin{equation*}
+\ket{n} = \frac{\hat{a}^{\dagger}}{\sqrt{n!}}\ket{0}
+\end{equation*}
+
+Los estados número son ortogonales y completos
+\begin{equation*}
+  \braket{n_k}{m_k} = \delta_{mn} \quad \sum_{n_k = 0}^{\infty} \ket{n_k} \bra{n_k} = 1
+\end{equation*}
+
+La mayoría de los campos ópticos son una superposición de estados número (ensemble puro) o una mezcla de ellos (estado mixto).
+
+% Difference of mixed and pure states: https://physics.stackexchange.com/questions/80434/how-is-a-quantum-superposition-different-from-a-mixed-state
+
+% Mixed state: The ensemble has different types of kets
+% Pure state: Superposition of the same type of kets, described by a single ket
+
+\iffalse
+donde se considera la aportación de la energía del vacío. Usando la relación de conmutación de $\hat{a}$ y $\hat{a}^{\dagger}$ sobre el estado vacío $(\hat{a}\hat{a}^{\dagger}-\hat{a}^{\dagger}\hat{a})\ket{0} = \hat{a}\hat{a}^{\dagger}\ket{0} = \ket{0}$ implica que $\hat{a}^{\dagger}\hat{a}(\hat{a}^{\dagger}\ket{0}) = \hat{a}^{\dagger}\ket{0}$, por lo que $\hat{a}^{\dagger}\ket{0}$ es un eigenestado de $\hat{a}^{\dagger}\hat{a}$ con valor propio 1, a este estado se le denomina estado de un fotón y se denota como $\ket{1} = \hat{a}^{\dagger}\ket{0}$. De forma análoga, se puede obtener el n-ésimo estado de $n$ fotones $\ket{n}$ de forma inductiva, lo que resulta en
+\begin{equation*}
+\ket{n} = \frac{\hat{a}^{\dagger\,n}}{\sqrt{n!}}\ket{0}
+\end{equation*}
+\fi
+

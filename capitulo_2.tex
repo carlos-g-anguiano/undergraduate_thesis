@@ -1,0 +1,218 @@
+\chapter{Cuantizaci\'on del campo electromagn\'etico}
+
+\section{Ecuaciones de Maxwell}
+
+Las variables de campo eléctrico $\mathbf{E}$, y magnético $\mathbf{H}$, así como el de desplazamiento $\mathbf{D}$ el de inducción magnética $\mathbf{B}$ se pueden tratar como observables, cuyos valores esperados son el promedio de un ensemble cuántico de campos, es decir, se pueden representar por operadores Hermitianos $\mathbf{E}$, $\mathbf{H}$, $\mathbf{D}$ y $\mathbf{B}$ respectivamente. La linealidad de las ecuaciones de Maxwell permiten que obedezcan la interpretación estadística de Max Born, viendo que el promedio de cada una de las leyes se reduce a las leyes de Maxwell aplicadas a los promedios. Por el mismo argumento de linealidad, las ecuaciones constitutivas son válidas para estos mismos operadores, y se tiene $\mathbf{D} = \epsilon_0 \epsilon \mathbf{E}$ y $\mathbf{B} = \mu_0 \mu \mathbf{H}$ con $\epsilon_0 \mu_0 = c^{-2}$.
+
+Las ecuaciones de Maxwell rigen el comportamiento de los campos electromagnéticos clásicos y cuánticos.
+\begin{align}
+\nabla \cdot \mathbf{B}  & = 0 \,,                                              \label{EM.1} \\
+\nabla \times \mathbf{E} & = - \frac{1}{c} \frac{\partial \mathbf{B}}{\partial t}\,,      \label{EM.2} \\
+\nabla \cdot \mathbf{D}  & = 0 \,,                                        \label{EM.3}  \\
+\nabla \times \mathbf{B} & = \frac{1}{c}
+\frac{\partial \mathbf{E}}{\partial t}\,, \label{EM.4}
+\end{align}
+donde todos los campos son dependientes de la posición $\mathbf{r}$ y del tiempo $t$\footnote{Se utilizan unidades de CGS a lo largo de este desarrollo.}
+
+%\iffalse
+
+%\fi
+
+Se define el campo vectorial $\mathbf{A}$ de manera que cumpla
+
+\begin{align}
+\mathbf{E} &= -\frac{1}{c}\frac{\partial \mathbf{A}}{\partial t}, \label{EM.5} \\
+\mathbf{B} &= \nabla \times \mathbf{A}\,.\label{EM.6}
+\end{align}
+
+% Justificación de la elección del Gauge de Coulomb
+Se elige entonces el gauge de Coulomb, haciendo el potencial escalar cero y el potencial vectorial $\mathbf{A}$ tal que satisfaga $\nabla \cdot \mathbf{A} = 0$ (condición de transversalidad)\footnote{El presente desarrollo se realiza en el dominio no relativista \cite{Agarwal_2012}.}, haciendo que la primera ecuación de Maxwell (\ref{EM.4}) se cumpla de manera directa. Sustituyendo las ecuaciones (\ref{EM.5}) y (\ref{EM.6}) 
+en la ecuaci\'on de Ampere-Maxwell (\ref{EM.4}) 
+\begin{align}
+\label{EM.7}
+\nabla \times \mathbf{B} = \nabla \times \left(\nabla\times\mathbf{A}\right) 
+=\frac{1}{c}\frac{\partial \mathbf{E}}{\partial t} = \frac{1}{c}\frac{\partial}{\partial t} \left(-\frac{1}{c}\frac{\partial\mathbf{A}}{\partial t}\right) = -\frac{1}{c^{2}}\frac{\partial^{2}\mathbf{A}}{\partial t^{2}} \,,
+\end{align}
+obteniendo la ecuación de onda electromagnética
+\begin{equation}
+\label{EM.8}
+\nabla^2 \mathbf{A} = \frac{1}{c^2} \frac{\partial^2 \mathbf{A}}{\partial t^2}\,,
+\end{equation}
+% Demostrar que los operadores de campo electromagnético son Hermitianos
+
+la conocida solución particular de la onda plana se puede obtener por el método de separación de variables y se reduce al resultado de la onda plana
+\begin{equation}
+\label{EM.9}
+\mathbf{A}_k = c_k \mathbf{\hat{e}}^{(\lambda)}\exp{(i\mathbf{k}\cdot \mathbf{r})}\exp{(-i\omega_k t)} = c_{k\lambda}\mathbf{u}_{k\lambda}(\mathbf{r}) \exp{(-i\omega_k t)} \,,
+\end{equation}
+
+con $\mathbf{k} = (k_x, k_y, k_z)$ el vector de número de onda, cuya magnitud está dada por $k = 2\pi/\lambda$ \cite{Riley}, y $\mathbf{u}_{k\lambda}(\mathbf{r}) = \mathbf{e}^{(\lambda)} \exp{(i\mathbf{k}\cdot \mathbf{r})}$ con $\mathbf{e}^{(\lambda)}$ el vector de polarización, donde $\lambda=1,2$ es el índice de polarización \cite{Walls}.
+
+De la teoría de Sturm-Liouville, al definir condiciones de frontera para nuestras coordenadas espaciales, se define un espacio de Hilbert cuyos elementos $\mathbf{u}(\mathbf{r})$ son funciones diferenciables y que satisfacen anularse en las fronteras dadas. La ecuación de eigenvalores se escribe como \cite{Arfken}:
+\begin{equation}
+\label{EM.10}
+\mathcal{L} \mathbf{A} = \left( \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2} \right) \mathbf{A} = (k_x^2 + k_y^2 + k_z^2) \mathbf{A} \,,
+\end{equation}
+con
+\begin{equation}
+\label{EM.11}
+\mathcal{L} = \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2} \,.
+\end{equation}
+La solución general se puede obtener a partir de una superposición de las $k$-ésimas soluciones particulares. A su vez, esta superposición de soluciones se puede separar en dos sumandos de acuerdo a la magnitud de las frecuencias angulares \cite{Riley}. El campo electromagn\'etico se describe entonces restringido a un volumen cúbico en el espacio y el potencial vectorial se expande en términos del conjunto discreto las funciones de modo ortogonales del espacio de Hilbert definido por el \textit{ansatz} (\ref{EM.9}). Separando los términos en las amplitudes incidentes (amplitudes que varían de acuerdo a $e^{-i\omega_k t}$ con $\omega>0$) y reflejadas (amplitudes que varían como $e^{i\omega_k t }$ y $\mathbf{A}^{(-)} = (\mathbf{A}^{(+)})^*$) \cite{Griffiths}
+\begin{equation}
+\label{EM.12}
+\mathbf{A} = \mathbf{A}^{(+)} + \mathbf{A}^{(-)} = \sum_{k,\lambda} \left( c_{k\lambda} \mathbf{u}_{k\lambda} (\mathbf{r})e^{-i\omega_k t} +  c_{k\lambda}^* \mathbf{u}_{k\lambda}^* (\mathbf{r})e^{i\omega_{k} t} \right) \,,
+\end{equation}
+
+nos enfocaremos solo en los términos de amplitudes incidentes, las cuales deben de cumplir, además de ser solución a la ecuación de onda, con la condición de transversalidad
+\begin{equation}
+\label{EM.13}	
+\nabla \cdot \mathbf{u}(\mathbf{r}) = 0 \,,
+\end{equation}
+lo cual se cumple al momento de asignarle un vector de polarización $\mathbf{\hat{e}}^{(\lambda)}$ perpendicular a $\mathbf{k}$. A su vez las funciones forman un conjunto ortogonal bajo el producto interno del espacio de Hilbert. Se establecen condiciones de frontera periódicas que corresponden a modos de vibración que llevan a ondas estacionarias en un volúmen cúbico de paredes reflejantes de lados de longitud $L$. De esta condición de ortogonalidad
+\begin{equation*}
+\int_V \exp{(i\mathbf{k}\cdot\mathbf{r})} \exp{(-i\mathbf{k}\cdot\mathbf{r})} d\mathbf{r}
+=  \int_V d\mathbf{r}
+=  L^3 = V \,,
+\end{equation*}
+\begin{equation}
+\label{EM.14}
+\int_V \mathbf{u}^{*}_k(\mathbf{r}) \mathbf{u}_{k'}(\mathbf{r}) d\mathbf{r} = L^3\delta_{kk'} \,.
+\end{equation}
+
+Así, las funciones de onda se escriben como
+\begin{equation}
+\label{EM.15}
+\mathbf{u}_{k\lambda}(\mathbf{r}) = \mathbf{\hat{e}}_{k\lambda} \exp\left({i\mathbf{k}\cdot \mathbf{r}}\right) \,.
+\end{equation}
+El vector de propagación $\mathbf{k}$ en coordenadas cartesianas toma los valores por entrada
+\begin{equation}
+\label{EM.16}
+k_i = \frac{2\pi n_i}{L}, \quad \text{con } i=x,y,z , \quad n_i = 0, \pm1, \pm 2, \dots
+\end{equation}
+La densidad de energía del campo electromagnético está dada por $u = \mathbf{E} \cdot \mathbf{D} + \mathbf{B} \cdot \mathbf{E}$ en SI. Considerando el vacío como medio y ningúna fuente, se puede reescribir como $u = \mathbf{E}^2 + \mathbf{B}^2$ (SI). Transformando a unidades CGS, se tiene $\mathbf{E} \to \mathbf{E}/\sqrt{4\pi \varepsilon_0}$ y $\mathbf{B} \to \sqrt{\frac{\mu_0}{4\pi}}\mathbf{B}$, y como $\mu_0=1$ y $\epsilon_0 = 1$ en CGS, la energía electromagnética dentro de un volumen es
+\begin{equation}
+\label{EM.17}
+U = \frac{1}{8\pi}\int_V \left[ \mathbf{E}^2(\mathbf{r}, t) + \mathbf{B}^2(\mathbf{r}, t) \right] d\mathbf{r} \,.
+\end{equation}
+El campo magnético y la inducción magnética se calculan en términos del conjunto de funciones ortonormales $\mathbf{u}_k(\mathbf{r})$ a partir del campo vectorial $\mathbf{A}(\mathbf{r}, t)$
+\begin{align*}
+\mathbf{E} & = -\frac{1}{c} \frac{\partial \mathbf{A}}{\partial t} \\
+& =-\frac{1}{c}\left[ \frac{\partial \mathbf{A}^{(+)}}{\partial t} + \frac{\partial \mathbf{A}^{(-)}}{\partial t} \right] \\
+& = -\frac{1}{c} \sum_{k,\lambda} \left[ -i\omega_{k}c_{k\lambda} \mathbf{u}_{k\lambda} (\mathbf{r})e^{-i\omega_k t} +  i\omega_{k}c_{k\lambda}^* \mathbf{u}_{k\lambda}^* (\mathbf{r})e^{i\omega_{k} t} \right] \,, \\
+c^2 \vert\mathbf{E}\vert^2 & = c^2 \mathbf{E} \cdot \mathbf{E} \\
+&= \sum_{k,\lambda}\sum_{k',\lambda'}\left(-i\omega_{k}c_{k\lambda}\mathbf{u}_{k\lambda} (\mathbf{r})e^{-i\omega_{k}t} + i \omega_{k} c^{*}_{k\lambda}\mathbf{u}^{*}_{k\lambda}(\mathbf{r})e^{i\omega_{k}t} \right)\cdot \\
+&\cdot \left(-i\omega_{k'}c_{k'\lambda'}\mathbf{u}_{k'\lambda} (\mathbf{r})e^{-i\omega_{k'}t} + i \omega_{k'} c^{*}_{k'\lambda'}\mathbf{u}^{*}_{k'\lambda'}(\mathbf{r})e^{i\omega_{k'}t} \right)\\
+& = \sum_{k,\lambda} \Big[ \left(-i\omega_{k}c_{k\lambda} \mathbf{u}_{k\lambda} (\mathbf{r})e^{-i\omega_k t}\right)\cdot \left( i\omega_{k}c_{k\lambda}^* \mathbf{u}_{k\lambda}^* (\mathbf{r})e^{i\omega_{k} t} \right) \\
+& +  \left(i\omega_{k}c_{k\lambda}^* \mathbf{u}_{k\lambda} (\mathbf{r})e^{i\omega_{k} t}\right)\cdot \left(-i\omega_{k}c_{k\lambda} \mathbf{u}_{k\lambda}^* (\mathbf{r})e^{-i\omega_k t}\right) \Big]\,,                   \\
+\end{align*}
+entonces
+\begin{equation}
+\label{EM.18}
+\vert\mathbf{E}\vert^2 = \frac{2}{c^2}\sum_{k,\lambda} \omega_{k}^2  |\mathbf{u}(\mathbf{r})|^2 \left( c_{k\lambda} c_{k\lambda}^* + c_{k\lambda}^* c_{k\lambda} \right) \,.
+\end{equation}
+Para el campo magnético, se selecciona la dirección de polarización del campo eléctrico 
+$\mathbf{e}^{\lambda}= \mathbf{\hat{\textnormal{\bfseries\i}}}$, entonces
+\begin{equation*}
+\mathbf{B} = \mathbf{\hat{\textnormal{\bfseries\j}}} \left( \frac{\partial}{\partial z} A_x - \frac{\partial}{\partial x} A_z \right)
+\end{equation*}
+pero como la dirección de polarización es en $\mathbf{\hat{\textnormal{\bfseries\i}}}$, solo la componente de $A_x$ es distinta de cero y
+\begin{equation*}
+\mathbf{B} = \mathbf{\hat{\textnormal{\bfseries\j}}} \frac{\partial}{\partial z} A_x
+\end{equation*}
+como 
+\begin{equation*}
+\frac{\partial \mathbf{u}_{k\lambda}(\mathbf{r})}{\partial z} = i k_z \mathbf{u}_{k\lambda}(\mathbf{r})
+\end{equation*} 
+y 
+\begin{equation*}
+\frac{\partial \mathbf{u}^{*}_{k\lambda}(\mathbf{r})}{\partial z} = -i k_z \mathbf{u}^{*}_{k\lambda}(\mathbf{r}).
+\end{equation*}
+\begin{equation*}
+\mathbf{B} = \mathbf{\hat{\textnormal{\bfseries\j}}} \sum_{k,\lambda} \left( i k_z c_{k\lambda} \mathbf{u}_{k\lambda}(\mathbf{r})e^{-i\omega_{k} t} - i k_z c_{k\lambda}^* \mathbf{u}_{k\lambda}^*(\mathbf{r})e^{i\omega_{k} t}  \right)
+\end{equation*}
+Calculando su norma al cuadrado usando el producto punto para complejos
+\begin{align*}
+|\mathbf{B}|^2 & = \sum_{k,\lambda} \Big[ \left(ik_z c_{k\lambda} \mathbf{u}_{k\lambda}(\mathbf{r})e^{-i\omega_{k} t}\right)\left(-ik_z c_{k\lambda}^{*} \mathbf{u}_{k\lambda}^*(\mathbf{r})e^{i\omega_{k} t} \right) \\
+& + \left(-ik_z c_{k\lambda}^{*} \mathbf{u}_{k\lambda}^*(\mathbf{r})e^{i\omega_{k} t} \right)  \left(ik_z c_{k\lambda} \mathbf{u}_{k\lambda}(\mathbf{r})e^{-i\omega_{k} t}\right) \Big]                \\
+& = 2 \sum_{k,\lambda} k_z^2 |\mathbf{u}(\mathbf{r})|^2 \left( c_{k\lambda} c_{k\lambda}^* + c_{k\lambda}^* c_{k\lambda} \right) \,.
+\end{align*}
+En nuestro eje coordenado, la propagación de la onda electromagnética se de en la dirección $\mathbf{\hat{\textnormal{\bfseries k}}}$, por lo que $|\mathbf{k}| = k = k_z$. Además $\omega_k = kc$ y se obtiene
+\begin{equation}
+\label{EM.19}
+|\mathbf{B}|^2 = 2 \sum_{k,\lambda} \frac{\omega_k^2}{c^2}  |\mathbf{u}(\mathbf{r})|^2 \left( c_{k\lambda} c_{k\lambda}^* + c_{k\lambda}^* c_{k\lambda} \right) \,,
+\end{equation}
+sustituyendo en la expresión de la energía
+\begin{align*}
+U & = \frac{1}{8\pi} \Bigg[ \int_V \left( 2\sum_{k,\lambda} \frac{\omega_{k\lambda}^2}{c^2}  |\mathbf{u}_{k\lambda}(\mathbf{r})|^2 \left( c_{k\lambda} c_{k\lambda}^* + c_{k\lambda}^* c_{k\lambda} \right) \right) d\mathbf{r} \\ &+ \int_V \left( 2 \sum_{k,\lambda} \frac{\omega_{k\lambda}^2}{c^2} |\mathbf{u}_{k\lambda}(\mathbf{r})|^2 \left( c_{k\lambda} c_{k\lambda}^* + c_{k\lambda}^* c_{k\lambda} \right) \right)d\mathbf{r} \Bigg] \\
+& = \frac{1}{2\pi c^2} \sum_{k,\lambda} \omega_{k\lambda}^2 \left( c_{k\lambda} c_{k\lambda}^* + c_{k\lambda}^* c_{k\lambda} \right) \int_V |\mathbf{u}_{k\lambda}^2(\mathbf{r})|^2 d\mathbf{r} \,,
+\end{align*}
+donde por la condición de ortogonalidad, la energía es
+\begin{equation}
+\label{EM.20}
+U = \frac{V}{2\pi c^2}\sum_{k,\lambda} \omega_{k\lambda}^2 \left( c_{k\lambda} c_{k\lambda}^* + c_{k\lambda}^* c_{k\lambda} \right) \,,
+\end{equation}
+ahora si consideramos
+\begin{equation}
+\label{EM.21}	
+c_{k\lambda} = \sqrt{\frac{\pi c^{2}\hbar}{\omega_{k}V}} a_{k}\,,
+\end{equation}
+la ecuaci\'on (\ref{EM.20}) se convierte en:
+\begin{align*}
+U &= \frac{V}{2\pi c^2}\sum_{k} \omega_{k}^2 \frac{\pi c^{2}\hbar}{\omega_{k}V}\left(a_{k}a^{*}_{k} + a_{k}^{*} a_{k} \right) = \frac{V}{2\pi c^2}\sum_{k} \omega_{k}^2 \frac{\pi c^{2}\hbar}{\omega_{k}V}\left(a_{k}a^{*}_{k} + a_{k}^{*} a_{k} \right)\\ 
+\end{align*}
+\begin{equation}
+\label{EM.22}
+U = \sum_{k} \frac{\hbar\omega_{k}}{2}\left(a_{k}a^{*}_{k} + a_{k}^{*} a_{k} \right)
+\end{equation}
+En orden de cuantizar el campo electromagnético, se escogen $a_{k}$ y $a^{*}_{k}$ como los operadores de aniquilaci\'on $\hat{a}_{k}$ y creaci\'on $\hat{a}^{\dagger}_{k}$ para cada modo del campo $k$. Como el objeto de estudio son fotones, el conmutador de bosones es el que se debe seguir
+\begin{equation*}
+	[\hat{a}_k, \hat{a}^{\dagger}_{k'}] = [\hat{a}^{\dagger}_k, \hat{a}_{k'}] = 0, \quad [\hat{a}^{\dagger}_k, \hat{a}_{k'}] = \delta_{kk'} \,.
+\end{equation*}
+
+\begin{comment}
+%\iffalse
+%  ----------------
+
+  Los operadores de campo electromagnético $\mathbf{E}$, $\mathbf{B}$ y $\vec{A}$ son Hermitianos (demostrar, Agarwal), por lo que se pueden descomponer al campo $\mathbf{A}$ en la suma del campo $\mathbf{A}^{(+)}$ que contiene todas las frecuencias positivas  y su complejo conjugado $\mathbf{A}^{(-)}$. (Walls)
+
+  Considere primero una onda electromagnética, descompuesta en dos términos de esta forma
+  \begin{equation*}
+    \mathbf{E}^{(+)} = \hat{\varepsilon} E_0 \exp{\left(i\vec{k}\cdot \vec{r} - i\omega_k t\right)}, \omega > 0
+  \end{equation*}
+  Donde $k = |\vec{k}| = \omega_k/c$y $\hat{\varepsilon}$ es el vector de polarización del campo electromagnético, el cual es ortogonal a la dirección de propagación y es perpendicular a la dirección de propagación $\vec{k}$. Hay dos direcciones de polarización, y se denota por el índice $s$ con valores $1$, $2$. De esta forma se tiene que el vector de polarización depende de dos índices y $\vec{\varepsilon} = \vec{\varepsilon}_{\vec{k},s}$ En términos del operador campo vectorial $\mathbf{A}$ del gauge de Coulomb
+  \begin{align*}
+    \mathbf{A}^{(+)} & = -\frac{1}{c}\frac{\partial \mathbf{A}}{dt} \mathbf{E}^{(+)}                                                           \\
+                     & = -\frac{(-i\omega_k)}{c}\hat{\varepsilon} E_0 \exp{\left(i\vec{k}\cdot \vec{r} - i\omega_k t\right)}, \quad \omega > 0 \\
+                     & = \hat{\varepsilon} A_0 \exp{\left(i\vec{k}\cdot \vec{r} - i\omega_k t\right)}, \quad \omega > 0
+  \end{align*}
+  Donde $A_0=\frac{(i\omega_k)}{c}E_0$. Esto nos permite construir la solución de onda plana de la ecuación de onda del campo vectorial $\mathbf{A}$. (Agarwal) Al término $\hat{\varepsilon} \exp{\left(i\vec{k}\cdot \vec{r}\right)}$ se le denomina función de modo y se le denotará por $\hat{u} = \hat{u}(\vec{r})$, satisfacen la ecuación de onda y de transversalidad al igual que $\mathbf{A}$. (Walls).
+
+  Se establecen ahora condiciones de frontera, considerando un volumen cúbico de lados de longitud $L$ y periodicidad. Estas condiciones corresponden a modos de ondas viajeras que en paredes reflejantes se pueden describir como ondas estacionarias. Las funciones de modo forman un conjunto ortonormal completo con estas condiciones, es decir
+  \begin{equation*}
+    \int_V \hat{u}_k^{*}(\vec{r}) u_{k'} \vec{r} d^3 r = \delta_{kk'}
+  \end{equation*}
+  En coordenadas cartesianas, de las condiciones de frontera establecen los valores de $k_\alpha$ con $\alpha = x,y,z$.
+  \begin{equation*}
+    k_i = \frac{2\pi n_i}{L}, \quad n_i = 0, \pm1, \pm2, \dots
+  \end{equation*}
+  La suma en las direcciones de propagación $\vec{k}$ todos los modos y las dos direcciones de polarización $s$, denotando $V = L^3$, se tiene
+  \begin{align*}
+    \mathbf{A}^{(+)} & = \sum_{\vec{k}, s} \frac{A_{\vec{k}s}}{\sqrt{V}} \hat{\varepsilon}_{\vec{k}s} \exp{ \left( i\vec{k}\cdot\vec{r} - i \omega_k t \right) } \\
+                     & = \sum_{\vec{k},s} \frac{A_{\vec{k}s}}{\sqrt{V}} \hat{u} \exp{\left( - i \omega_k t \right)}
+  \end{align*}
+Así, el potencial vectorial es
+\begin{equation*}    
+\mathbf{A}(\vec{r}, t) = \sum_{\vec{k}, s} \left( \frac{\hbar}{2\omega_k \epsilon_0} \right)^{1/2} \left( \hat{a}^{\dagger} \hat{u}_k(\vec{r}) e^{-i\omega_k} t + \hat{a} \hat{u}_k(\vec{r})^{*} e^{i\omega_k} t \right)
+\end{equation*}
+y el campo eléctrico es entonces
+\begin{equation*}
+\mathbf{E}(\vec{r}, t) = i\sum_{\vec{k}, s} \left( \frac{\hbar\omega_k}{2\epsilon_0} \right)^{1/2} \left( \hat{a}^{\dagger} \hat{u}_k(\vec{r}) e^{-i\omega_k} t - \hat{a} \hat{u}_k(\vec{r})^{*} e^{i\omega_k} t \right)
+\end{equation*}
+Esto iría en otro capítulo?
+Los coeficientes adminesionales de Fourier son números complejos. En orden de cuantizar el campo electromagnético, se escogen $\hat{a}^{\dagger}$ y $\hat{a}$ para ser adjunto uno al otro. Como el objeto de estudio son fotones, el conmutador de bosones es el que se debe seguir
+\begin{equation*}
+[\hat{a}_k, \hat{a}^{\dagger}_{k'}] = [\hat{a}^{\dagger}_k, \hat{a}_{k'}] = 0, \quad [\hat{a}^{\dagger}_k, \hat{a}_{k'}] = \delta_{kk'}
+\end{equation*}
+%\fi
+\end{comment}

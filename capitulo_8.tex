@@ -1,0 +1,378 @@
+\chapter{Operador desplazamiento}
+\section{Operador desplazamiento}
+
+A continuación se enlistan y demuestran las siguientes propiedades de los operadores desplazamiento dadas por Agarwal.
+
+\begin{align}
+\hat{D}(\alpha)                                                 & = e^{-\frac{1}{2}|\alpha|^2} e^{\alpha \hat{a}^\dagger} e^{-\alpha^* \hat{a}}  = e^{\frac{1}{2}|\alpha|^2} e^{-\alpha^* \hat{a}} e^{\alpha \hat{a}^\dagger} \\
+\hat{D}^{-1}(\alpha)                                            & = \hat{D}^\dagger (\alpha) = \hat{D}(-\alpha)                                                                                                               \\
+\hat{D}^\dagger(\alpha) G(\hat{a}, \hat{a}^\dagger) \hat{D}(\alpha) & = \hat{G}(\hat{a} + \alpha, \hat{a}^\dagger + \alpha^*), \quad \hat{D}^\dagger(\alpha)\hat{a}\hat{D}(\alpha) = \hat{a}+\alpha                               \\
+\hat{D}(\alpha)\hat{D}(\beta)                                   & = \hat{D}(\alpha + \beta) \exp{\left[ \frac{1}{2}(\alpha\beta^* - \alpha^*\beta) \right]}, \quad [\hat{D}(\alpha), \hat{D}(\beta)]\neq 0                    \\
+\mathrm{Tr}\hat{D}(\alpha)                                      & = \pi \delta^{(2)}(\alpha) = \pi\delta(Re\{\alpha\})\delta(Im\{\alpha\})                     \\
+\mathrm{Tr}[\hat{D}(\alpha)\hat{D}^\dagger(\beta)]              & = \pi \delta^{(2)}(\alpha-\beta)                                                                                                                            \\
+\hat{D}(\alpha)\ket{\beta}                                      & = \ket{\alpha + \beta} \exp{[\frac{1}{2}(\alpha\beta^* - \alpha^*\beta)]}                                                \\
+\langle \alpha \vert \hat{D}(\gamma) \vert \beta\rangle                       & = \braket{\alpha}{\beta}\exp{(\gamma\alpha^* - \gamma^*\beta - \frac{1}{2}|\gamma|^2)}                                         \\
+\langle \alpha \vert \hat{D}(\gamma) \vert \beta\rangle & = \sqrt{\frac{m!}{n!}}e^{-|\alpha|^2/2}(\alpha)^{n-m}L_m^{(n-m)}(|\alpha|^2),\quad n\geq m.                                                                 \\
+& = \sqrt{\frac{m!}{n!}}e^{-|\alpha|^2/2}(\alpha^*)^{m-n}L_m^{(m-n)}(|\alpha|^2), \quad n\leq m.
+\end{align}
+Donde $L_n^{(k)}(x)$ son los polinomios asociados de Laguerre
+\begin{equation*}
+  L_n^{(k)}(x) = \sum_{m=0}^{n} (-1)^m\binom{n+k}{m+k}\frac{x^m}{m!}.
+\end{equation*}
+
+\section*{Soluciones}
+\setcounter{equation}{0}
+
+\begin{enumerate}
+\item Expresamos a los operadores de creación $\hat{a}^\dagger$ y aniquilación $\hat{a}$ en función de los operadores de posición y momento
+
+\begin{equation*}
+\hat{a} = \sqrt{\frac{m\omega}{2\hbar}}\left( \hat{x} + \frac{i}{m\omega}\hat{p} \right); \quad \hat{a}^\dagger = \sqrt{\frac{m\omega}{2\hbar}}\left( \hat{x} - \frac{i}{m\omega}\hat{p} \right)
+\end{equation*}
+el conmutador es entonces
+\begin{align*}
+[\hat{a}, \hat{a}^\dagger] & = \frac{m\omega}{2\hbar} \Bigg[ \left( \hat{x}^2 + \frac{1}{m^2\omega^2}\hat{p^2} - \frac{i}{m\omega}\hat{x}\hat{p} + \frac{i}{m\omega}\hat{p}\hat{x} \right) \\ &- \left( \hat{x}^2 + \frac{1}{m^2\omega^2}\hat{p^2} + \frac{i}{m\omega}\hat{x}\hat{p} - \frac{i}{m\omega}\hat{p}\hat{x} \right) \Bigg] \\
+& = \frac{i}{\hbar}\left(-\hat{x}\hat{p} + \hat{p}\hat{x}\right)                                                                                                \\
+& = -\frac{i}{\hbar}[\hat{x}, \hat{p}]                                                                                                                          \\
+& = \frac{1}{i\hbar}[\hat{x}, \hat{p}]                                                                                                                          \\
+& = \frac{[\hat{x}, \hat{p}]}{[\hat{x}, \hat{p}]}                                                                                                               \\
+[\hat{a}, \hat{a}^\dagger] & = 1
+\end{align*}
+Es decir, el conmutador es constante, se tiene entonces
+\begin{equation*}
+[\hat{A}, [\hat{a}, \hat{a}^{\dagger}]] = 0
+\end{equation*}
+
+Aplicando la fórmula de Baker-Campbell-Hausdorff (BCH) sobre el operador desplazamiento
+\begin{align*}
+\displaystyle{\alpha} = & \exp{(\alpha \hat{a}^{\dagger})}\exp{(-\alpha^* \hat{a})}                                                                                                         \\
+& \exp \Bigg\{ \alpha \hat{a}^{\dagger} - \alpha^* \hat{a} + \frac{1}{2}[\alpha\hat{a}^{\dagger}, - \alpha^* \hat{a}]                                                             \\
+& \qquad +\frac{1}{12}[\alpha\hat{a}^{\dagger},[\alpha\hat{a}^{\dagger}, - \alpha^*\hat{a}]] +\frac{1}{12}[\alpha^*\hat{a},[\alpha\hat{a}^{\dagger}, - \alpha^* \hat{a}]] + 0 + \cdots \Bigg\} \\     
+=& \exp \Bigg\{ \alpha \hat{a}^{\dagger} - \alpha^* \hat{a} - \frac{1}{2}|\alpha|^2[\hat{a}^{\dagger},\hat{a}]                                                                     \\
+& \qquad +\frac{1}{12}\alpha |\alpha|^2[\hat{a}^{\dagger},[\hat{a}^{\dagger},-\hat{a}]] +\frac{1}{12}\alpha^*|\alpha|^2[\hat{a}[\hat{a}^{\dagger},-\hat{a}]] + 0 + \cdots \Bigg\}\\
+= & \exp \left\{ \alpha \hat{a}^{\dagger} - \alpha^{*}\hat{a} - \frac{1}{2}|\alpha|^2[\hat{a}^{\dagger},\hat{a}] \right\} \\
+= & \exp(\alpha\hat{a}^{\dagger})\exp(-\alpha^{*} \hat{a})\exp(-|\alpha^2|/2) \\
+= & \exp(-|\alpha^2|/2)\exp(\alpha\hat{a}^{\dagger})\exp(-\alpha^{*} \hat{a})
+\end{align*}
+El álgebra de Lie es un espacio vectorial equipada con la operación del corchete de Lie \cite{schwichtenberg2015physics}. Por la conmutatividad del espacio vectorial se tiene:
+
+\begin{align*}
+\displaystyle{\alpha} = & \exp \left\{ \alpha \hat{a}^{\dagger} - \alpha^{*} \hat{a} - \frac{1}{2}|\alpha|^2[\hat{a}^{\dagger},\hat{a}] \right\}\\
+= & \exp \left\{ - \alpha^{*} \hat{a} + \alpha \hat{a}^{\dagger}  + \frac{1}{2}|\alpha|^2[\hat{a},\hat{a}^{\dagger}] \right\} \\
+= & \exp(|\alpha^2|/2)\exp(-\alpha^{*} \hat{a})\exp(\alpha\hat{a}^{\dagger})
+\end{align*}
+Se tiene entonces
+\begin{equation*}
+\hat{D}(\alpha)=e^{-\frac{1}{2}|\alpha|^2} e^{\alpha \hat{a}^\dagger} e^{-\alpha^* \hat{a}}  = e^{\frac{1}{2}|\alpha|^2} e^{-\alpha^* \hat{a}} e^{\alpha \hat{a}^\dagger}
+\end{equation*}
+\item El operador inverso de $\hat{D}(\alpha)$ es el desplazamiento del vacío al estado $\ket{-\alpha}$. El inverso debe satisfacer la condición
+\begin{equation*}
+\hat{D}(\alpha)\hat{D}^{-1}(\alpha) = e^{\alpha \hat{a}^{\dagger} - \alpha^{*}\hat{a}} \hat{D}^{-1}(\alpha) = 1
+\end{equation*}
+El operador $\hat{D}(-\alpha)$ cumple esta característica
+\begin{align*}
+\hat{D}(\alpha) \hat{D}(-\alpha) & = e^{\alpha \hat{a}^{\dagger} - \alpha^{*} \hat{a}} e^{-\alpha \hat{a}^{\dagger} + \alpha^{*} \hat{a}} \\
+& = \exp{\left\{ \alpha \hat{a}^{\dagger} - \alpha^{*} \hat{a} -\alpha \hat{a}^{\dagger} + \alpha^{*} \hat{a} + \frac{1}{2}[ \alpha \hat{a}^{\dagger} - \alpha^{*} \hat{a}, -\alpha \hat{a}^{\dagger} + \alpha^{*} \hat{a} ] \right\}}                   \\
+& = \exp{\left\{ \frac{1}{2}\left( [-\alpha \hat{a}^{\dagger}, \alpha\hat{a}^{\dagger}] + [-\alpha \hat{a}^{\dagger}, -\alpha^{*} \hat{a}] + [\alpha^{*} \hat{a}, \alpha\hat{a}^{\dagger}] + [-\alpha^{*} \hat{a}, -\alpha^{*}\hat{a}] \right) \right\}} \\
+& = \exp{(\frac{1}{2}-|\alpha|^2 + |\alpha|^2)}                                                                                                                                      \\
+& = e^{0}                                                                                                                                                                        \\
+\hat{D}(\alpha) \hat{D}(-\alpha) & = I                                                                                                                                                                                    \\
+\end{align*}
+
+
+y se cumple de manera análoga para $\hat{D}(-\alpha)\hat{D}(\alpha)$
+Por otro lado, para el adjunto tenemos que el adjunto de un operador exponencial cumple $\left(e^{\hat{A}}\right)^{\dagger} = e^{-\hat{A}}$. Así
+\begin{equation*}
+\hat{D}(\alpha) = e^{-(\alpha \hat{a}^{\dagger} - \alpha^{*}\hat{a})} = e^{(-\alpha) \hat{a}^{\dagger} - (-\alpha)^{*}\hat{a})} = \hat{D}(-\alpha)
+\end{equation*}
+\begin{equation*}
+\hat{D}^{-1}(\alpha) = \hat{D}(\alpha) = \hat{D}(-\alpha)
+\end{equation*}
+\item Por demostrar primero que $\hat{D}(\alpha)\hat{a}\hat{D}(\alpha) = \hat{a} + \alpha$. Del lema de BCH \cite{Sakurai}
+\begin{equation*}
+e^{i\hat{G}\lambda}\hat{A}e^{-i\hat{G}\lambda} = \sum_{n=0}^{\infty} \left( \frac{i^n \lambda^n}{n!} \right)[\hat{G},[\dots, [\hat{G},\hat{A}]\dots]]
+\end{equation*}
+entonces
+\begin{align*}
+\hat{D}^{\dagger}(\alpha) \hat{a} \hat{D}(\alpha) & = \exp{\left\{ \alpha^{*}\hat{a} - \alpha \hat{a}^{\dagger} \right\}} \hat{a} \exp{\left\{ \alpha\hat{a}^{\dagger} - \alpha^{*}\hat{a} \right\}}      \\
+& = \sum_{n=0}^{\infty} \frac{1}{n!}[\alpha^{*}\hat{a} -\alpha \hat{a}^{\dagger}, [\dots,[\alpha^{*}\hat{a} - \alpha \hat{a}^{\dagger}, \hat{a}]\dots]]
+\end{align*}
+Recordando que los conmutadores $[\hat{a}, \hat{a}^{\dagger}] = 1$ y $[\hat{a}^{\dagger}, \hat{a}] = -1$ son escalares
+por la bilinearidad del álgebra de Lie
+\begin{equation*}
+[\alpha^{*}\hat{a} - \alpha\hat{a}^{\dagger},\hat{a}] = \alpha^{*}[\hat{a}, \hat{a}] - \alpha[\hat{a}^{\dagger}, \hat{a}] = \alpha
+\end{equation*}
+y conmutaciones posteriores de este escalar son cero, así para $n\geq 2$ los términos de la suma se anulan y
+
+\begin{align*}
+\hat{D}^{\dagger}(\alpha) \hat{a} \hat{D}(\alpha) = \hat{a} + \frac{1}{1!}[\alpha^{*}\hat{a} - \alpha\hat{a}^{\dagger},\hat{a}] = \hat{a} + \alpha
+\end{align*}
+Ahora, por demostrar que $\hat{D}^{\dagger}(\alpha) \hat{G}(\hat{a}, \hat{a}^{\dagger}) \hat{D}(\alpha) = \hat{G}(\hat{a} + \alpha, \hat{a}^{\dagger} + \alpha^{*}) $. Se asume que nuestro operador $\hat{G}$ es de la forma
+\begin{equation*}
+\hat{G}(\hat{a}, \hat{a}^{\dagger}) = \sum_{n=0}^{\infty} c_n (\hat{a})^n + \sum_{m=0}^{\infty} d_m (\hat{a}^{\dagger})^{m}
+\end{equation*}
+\begin{equation}
+\hat{D}^{\dagger}(\alpha)\hat{G}(\hat{a}, \hat{a}^{\dagger})\hat{D}(\alpha) = \sum_{n=0}^{\infty} c_n \hat{D}^{\dagger}(\alpha) (\hat{a})^{n} \hat{D}(\alpha) + \sum_{m=0}^{\infty} d_m \hat{D}^{\dagger}(\alpha) (\hat{a}^{\dagger})^{m} \hat{D}(\alpha) \label{eq:prob3-1}
+\end{equation}
+Del primer sumando, usando el operador identidad y aplicando entre cada factor $\hat{a}$
+\begin{align}
+\sum_{n=0}^{\infty} c_n \hat{D}^{\dagger}(\alpha) (\hat{a})^{n} \hat{D}(\alpha) & = \sum_{n=0}^{\infty} c_n \hat{D}^{\dagger}(\alpha)\hat{a} \left( \hat{a}^{\dagger}(\alpha)\hat{D}(\alpha)\right)\hat{a} \cdots \left( \hat{D}(\alpha)\hat{D}^{\dagger}(\alpha) \right)\hat{a} \hat{D}(\alpha) \nonumber \\                                                                
+& = \sum_{n=0}^{\infty} c_n (\hat{a} + \alpha)^n \label{eq:res3-1}
+\end{align}
+
+y del segundo sumando, obtenemos el adjunto de $\hat{D}^{\dagger}(\alpha)\hat{a} \hat{D}(\alpha)$
+\begin{equation}
+\left\{ \hat{D}^{\dagger}(\alpha) \hat{a} \hat{D}(\alpha) \right\}^\dagger = \hat{D}^{\dagger}(\alpha) \hat{a}^{\dagger} \hat{D}(\alpha)
+\end{equation}
+y conjugando (\ref{eq:res3-1})
+\begin{equation*}
+\left\{ \hat{D}^{\dagger}(\alpha)\hat{a} \hat{D}(\alpha) \right\}^\dagger = [\hat{a} + \alpha]^\dagger = \hat{a}^{\dagger}+\alpha^{*}
+\end{equation*}
+se obtiene entonces
+\begin{equation*}
+\hat{D}^{\dagger}(\alpha) \hat{a}^{\dagger} \hat{D}(\alpha) = \hat{a}^{\dagger} + \alpha^{*}
+\end{equation*}
+usando el anterior resultado en la segunda suma de (\ref{eq:prob3-1}), y procediendo de manera análoga al primer sumando
+
+\begin{equation}
+\sum_{m=0}^{\infty} d_m \hat{D}(\alpha) (\hat{a}^{\dagger})^{m} \hat{D}(\alpha) = \sum_{m=0}^{\infty} d_m \left( \hat{a}^{\dagger} + \alpha^{*} \right)^{m}\label{eq:res3-2}
+\end{equation}
+Así, sustituyendo (\ref{eq:res3-1}) y (\ref{eq:res3-2}) en (\ref{eq:prob3-1})
+\begin{align*}
+\hat{D}(\alpha)\hat{G}(\hat{a}, \hat{a}^{\dagger})\hat{D}(\alpha) & = \sum_{n=0}^{\infty} c_n (\hat{a} + \alpha)^{n} + \sum_{m=0}^{\infty} d_m \left( \hat{a}^{\dagger} + \alpha^{*} \right)^{m} \\
+& = \hat{G}(\hat{a}+\alpha, \hat{a}^{\dagger} + \alpha^{*})
+\end{align*}
+\item Dado que el conmutador no es cero, se hace uso del lema de BCH
+\begin{align*}
+\hat{D}(\alpha)\hat{D}(\beta) & = e^{\alpha\hat{a}^{\dagger} - \alpha^{*}\hat{a}}e^{\beta \hat{a}^{\dagger} - \beta^{*}\hat{a}}                                                                                                  \\
+& = \exp{\left\{ \alpha\hat{a}^{\dagger} -\alpha^{*}\hat{a} + \beta\hat{a}^{\dagger} - \beta^{*}\hat{a} + \frac{1}{2}[\alpha\hat{a}^{\dagger} -\alpha^{*}\hat{a},\beta\hat{a}^{\dagger} - \beta^{*}\hat{a}] + \cdots \right\}}
+\end{align*}
+Así
+\begin{align*}
+\hat{D}(\alpha)\hat{D}(\beta) & = \exp{\left\{ (\alpha+\beta)\hat{a}^{\dagger} - (\alpha+\beta)^{*}\hat{a} \right\}}\exp{\left\{ \frac{1}{2}[\alpha\hat{a}^{\dagger} -\alpha^{*}\hat{a},\beta\hat{a}^{\dagger} - \beta^{*}\hat{a}] \right\}} \\
+& = \hat{D}(\alpha + \beta)\exp{\left\{ \frac{1}{2}[\alpha\hat{a}^{\dagger} -\alpha^{*}\hat{a},\beta\hat{a}^{\dagger} - \beta^{*}\hat{a}] \right\}}
+\end{align*}
+simplificando el conmutador del segundo factor, usando las propiedades de bilinearidad
+\begin{align*}
+[\alpha\hat{a}^{\dagger} -\alpha^{*}\hat{a},\beta\hat{a}^{\dagger} - \beta^{*}\hat{a}] & = \beta^{*}\alpha[\hat{a}, \hat{a}^{\dagger}] - \beta^{*}\alpha^{*}[\hat{a}, \hat{a}^{\dagger}] - \beta\alpha[\hat{a}^{\dagger}, \hat{a}], \beta\alpha^*[\hat{a}^{\dagger},\hat{a}] \\
+& =\beta^{*}\alpha - \beta\alpha^{*}
+\end{align*}
+entonces
+\begin{equation*}
+\hat{D}(\alpha)\hat{D}(\beta) = \hat{D}(\alpha + \beta) \exp{\left[ \frac{1}{2}(\alpha\beta^* - \alpha^*\beta) \right]}, \quad [\hat{D}(\alpha), \hat{D}(\beta)]\neq 0
+\end{equation*}
+
+%\item La traza está definida por la integral sobre todos los estados coherentes
+\begin{equation*}
+\mathrm{Tr}\left\{\hat{D}(\alpha) \right\} = \int \frac{d^2\beta}{\pi}\langle \beta \vert \hat{D}(\alpha) \vert \beta \rangle
+\end{equation*}
+usando la propiedad (8)
+\begin{align*}
+\mathrm{Tr}\left\{ \hat{D}(\alpha) \right\} & = \frac{1}{\pi}\int d^2\beta \braket{\beta}{\beta}\exp{\left( \alpha\beta^* - \alpha^*\beta - \frac{1}{2}|\alpha|^2 \right)} \\
+& = \frac{1}{\pi}e^{-\frac{1}{2}|\alpha|^2} \int d^2\beta \exp(\alpha\beta^* - \alpha^*\beta)
+\end{align*}
+escribimos a $\alpha,\beta \in \mathbb{C} $ como
+\begin{equation*}
+\alpha = \alpha_1 + i\alpha_2;\qquad \beta = \beta_1 + i\beta_2
+\end{equation*}
+y el diferencial de $\beta$ se escribe como $d^2\beta = d\beta_1 d\beta_2$ con $\alpha_i, \beta_i \in \mathbb{R}$. Simplificando el integrando
+
+\begin{align*}
+\exp(\alpha\beta^* - \alpha^*\beta) & = \exp\left\{ (\alpha_1 + i\alpha_2)(\beta_1 - i\beta_2) - (\alpha_1 - i\alpha_2)(\beta_1 + i\beta_2) \right\}\\
+& = \exp\left\{\alpha_1\beta_1 + \alpha_2\beta_2 + (\alpha_2\beta_1 - \alpha_1\beta_2) - \alpha_1\beta_1 - \alpha_2\beta_2 - i(\alpha_1\beta_2 - \alpha_2\beta_1)\right\} \\
+& = \exp\{ 2i(\alpha_2\beta_1 - \alpha_1\beta_2) \}   \\
+& = \exp\left\{ -2i(\alpha_{2}\beta_{1} - \alpha_{1}\beta_{2}) \right\} \\
+& = \exp\{[-2i\alpha_2\beta_1]\}\exp\{[i2\alpha_1\beta_2]\}
+\end{align*}
+
+
+
+Usando la definición de la delta de Dirac en términos de la transformada de Fourier
+\begin{equation*}
+\delta(x-a) = \frac{1}{2\pi} \int_{-\infty}^{\infty}e^{ip(x-a)}dp
+\end{equation*}
+\begin{align*}
+\mathrm{Tr}\{\hat{D}(\alpha)\} & = \frac{1}{\pi}e^{-|\alpha|^2/2}\int_{-\infty}^{\infty}d\beta_2 \exp{\{-i2\alpha_1\beta_2\}}\int_{-\infty}^{\infty}d\beta_1 \exp{\{i2\alpha_2\beta_1\}} \\
+& = \frac{1}{\pi} e^{-|\alpha|^2/2}(2\pi)\delta(2\alpha_2)(2\pi)\delta(-2\alpha_1)       \\
+& = 4\pi e^{-|\alpha|^2/2} \delta(-2\alpha_1)\delta(2\alpha_2)
+\end{align*}
+
+
+notemos que por propiedad de la delta
+\begin{equation*}
+\delta(bt) = \frac{1}{|b|}\delta(t)
+\end{equation*}
+se puede reescribir como
+\begin{equation*}
+\mathrm{Tr}{\hat{D}(\alpha)} = 4\pi e^{-|\alpha|^2/2} \frac{\delta(\alpha_1)}{|-2|}\frac{\delta(\alpha_2)}{|2|} = \pi e^{-|\alpha|^2/2}\delta(Re\{\alpha\})\delta(Im\{\alpha\})
+\end{equation*}
+
+por las deltas de Dirac, la traza solo tomará valor cuando $\alpha_1 = \alpha_2 = 0$ y el factor exponencial sería en este caso
+\begin{equation*}
+\exp\{ -\frac{1}{2}(0^2 + 0^2) \} = e^0 = 1
+\end{equation*}
+
+
+Se reduce entonces a lo que se buscaba demostrar
+\begin{equation*}
+\mathrm{Tr}\left\{\hat{D}(\alpha)\right\} = \pi \delta^{(2)}(\alpha) = \pi\delta(Re\{\alpha\})\delta(Im\{\alpha\})
+\end{equation*}
+\item De la definición de traza
+
+
+%% Revisar
+\begin{align}
+\mathrm{Tr}\{ \hat{D}(\alpha)\hat{D}^{\dagger}(\beta) \} & = \frac{1}{\pi} \int d^2 \gamma \langle  \gamma \vert \hat{D}(\alpha) \hat{D}^{\dagger}(\beta) \vert \gamma \rangle \nonumber \\	
+& = \frac{1}{\pi} \int d^2 \gamma \langle \gamma \vert \hat{D}(\alpha) \hat{D}(-\beta) \vert \gamma\rangle \quad (\text{Propiedad 2})\nonumber \\
+& = \frac{1}{\pi} \int d^2 \gamma \langle \gamma \vert \hat{D}(\alpha + (-\beta))e^{\frac{1}{2}(-\alpha \beta^{*} + \alpha^{*} \beta)} \vert \gamma \rangle \quad (\text{Propiedad 4})\nonumber                                             \\
+& = \frac{1}{\pi} \int d^2 \gamma e^{-\frac{1}{2}(\alpha \beta^* - \alpha^* \beta)} \langle \gamma \vert \hat{D}(\alpha-\beta)\vert \gamma\rangle  \nonumber                                                                          \\
+& = \frac{1}{\pi} \int d^2 \gamma e^{-\frac{1}{2}(\alpha \beta^* - \alpha^* \beta)} \braket{\gamma}{\gamma} e^{(\alpha-\beta)\gamma^* - (\alpha-\beta)^* \gamma -\frac{1}{2}|\alpha-\beta|^2}\quad\text{(Prop. 8)}\nonumber \\
+& = \frac{1}{\pi} \int d^2 \gamma e^{ -\frac{1}{2}(\alpha \beta^* - \alpha^* \beta) + (\alpha-\beta)\gamma^* - (\alpha-\beta)^* \gamma -\frac{1}{2}|\alpha-\beta|^2} \nonumber \\
+& = \frac{1}{\pi} e^{-\frac{1}{2}(\alpha\beta^* - \alpha^*\beta + |\alpha-\beta|^2)} \int d^2 \gamma e^{ (\alpha-\beta)\gamma^* - (\alpha-\beta)^* \gamma } \label{eq:6-1}
+\end{align}
+
+Expresando $\gamma=\gamma_1 + i \gamma_2$, el exponente del integrando en (\ref{eq:6-1}) es entonces
+\begin{equation*}
+(\alpha-\beta)(\gamma_1 - i\gamma_2) - (\alpha-\beta)^*(\gamma_1 - i\gamma_2) = (\alpha_1-\beta_1 + i(\alpha_2 + \beta_2))(\gamma_1 - i\gamma_2) - (\alpha_1-\beta_1 - i(\alpha_2-\beta_2))(\gamma_1+i\gamma_2)
+\end{equation*}
+
+Sea $\xi_1 = \alpha_1 - \beta_1$,$\xi_2 = \alpha_2 - \beta_2$, simplificando
+\begin{align*}
+(\alpha-\beta)(\gamma_1 - i\gamma_2) - (\alpha-\beta)^*(\gamma_1 - i\gamma_2) & = (\xi_1 - \xi_2)(\gamma_1 - i\gamma_2) - (\xi_1 - i\xi_2)(\gamma_1 + \gamma_2) \\
+& = (\xi_1 \gamma_1 + \xi_2 \gamma_2 + i(\gamma_1\xi_2 - \gamma_2 \xi_1)) - (\xi_1 \gamma_1 + \xi_2 \gamma_2 + i(\gamma_2\xi_1 - \gamma_1\xi_2)) \\
+& = 2i(\gamma_1\xi_2 - \gamma_2\xi_1) \\
+& = 2i(\gamma_1(\alpha_2 - \beta_2) - \gamma_2(\alpha_1 - \beta_1))
+\end{align*}
+sustituyendo lo anterior en (\ref{eq:6-1})
+
+\begin{align*}
+\mathrm{Tr}\{ \hat{D}(\alpha) \hat{D}^{\dagger}(\beta) \} & = \frac{1}{\pi} e^{-\frac{1}{2}(\alpha\beta^* - \alpha^*\beta - |\alpha-\beta|^2)} \int d\gamma_1 d\gamma_2 e^{2i(\gamma_1(\alpha_2 - \beta_2) - \gamma_2(\alpha_1-\beta_1))} \\
+& = \frac{1}{\pi} e^{-\frac{1}{2}(\alpha\beta^* - \alpha^*\beta - |\alpha-\beta|^2)} \int d\gamma_1 e^{2i\gamma_1(\alpha_2 - \beta_2)}  \int d\gamma_2 e^{-2i \gamma_2(\alpha_1-\beta_1))} \\
+& = \frac{1}{\pi} e^{-\frac{1}{2}(\alpha\beta^* - \alpha^*\beta - |\alpha-\beta|^2)} [2\pi \delta(2(\alpha_2-\beta_2))] [2\pi \delta(2(\alpha_1-\beta_1))]  \\
+& = 4\pi e^{-\frac{1}{2}(\alpha\beta^* - \alpha^*\beta - |\alpha-\beta|^2)} \frac{\delta(\alpha_2-\beta_2)}{|2|} \frac{\delta(\alpha_1-\beta_1)}{|-2|} \\
+& = \pi e^{-\frac{1}{2}(\alpha\beta^* - \alpha^*\beta - |\alpha-\beta|^2)}\delta(\alpha_2-\beta_2)\delta(\alpha_1-\beta_1) \\
+& = \pi e^{-\frac{1}{2}(\alpha\beta^* - \alpha^*\beta - |\alpha-\beta|^2)}\delta^{(2)}(\alpha-\beta)
+\end{align*}
+
+usando el mismo argumento que en la propiedad 5, la traza solo toma valor cuando $\alpha = \beta$ y la potencia de la exponencial se reduce align
+
+\begin{equation*}
+ -\frac{1}{2}(\alpha\beta^* - \alpha^* \beta -|\alpha - \beta|^2) = -\frac{1}{2}(\alpha\alpha^* - \alpha^*\alpha -|\alpha - \alpha|^2) = 0
+\end{equation*}
+
+por lo tanto
+\begin{equation*}
+\mathrm{Tr}[\hat{D}(\alpha)\hat{D}^\dagger(\beta)] = \pi \delta^{(2)}(\alpha-\beta)
+\end{equation*}
+\item Usando la propiedad (4)
+	
+\begin{align*}
+\hat{D}(\alpha)\ket{\beta} & = \ket{\alpha + \beta} e^{\frac{1}{2}(\alpha\beta^* - \alpha^*\beta)}\ket{0} \\
+& = \ket{\alpha + \beta} e^{\frac{1}{2}(\alpha\beta^* - \alpha^*\beta)}
+\end{align*}
+\item Usamos la propiedad (7)
+\begin{align*}
+\langle \alpha \vert \hat{D}(\gamma)\vert \beta\rangle & = \braket{\alpha}{\gamma + \beta} e^{\frac{1}{2}(\gamma\beta^{*}-\gamma^{*}\beta)}                                                           \\
+& = e^{\alpha^*(\gamma + \beta) - \frac{1}{2}|\alpha|^2 - \frac{1}{2}|\gamma + \beta|^2}e^{\frac{1}{2}(\gamma\beta^* - \gamma^*\beta)} \\
+& = \exp{\{ \alpha^*(\gamma + \beta) - \frac{1}{2}|\alpha|^2 -\frac{1}{2}|\gamma + \beta|^2 \}} \exp{\{ \frac{1}{2}(\gamma\beta^* - \gamma^*\beta)\exp{\{\frac{1}{2}(\gamma\beta^* - \gamma^*\beta)\}} \}} \\
+& = \exp{\{ \alpha^*\gamma + \alpha^*\beta - \frac{1}{2}(|\alpha|^2 + |\beta|^2 + |\gamma|^2) - \gamma^*\beta \}} \\
+& = \exp{\{ \alpha^*\beta - \frac{1}{2}|\alpha|^2 - \frac{1}{2}|\alpha|^2 - \frac{1}{2}|\beta|^2 \}} \exp{\{ \alpha^* \gamma - \gamma^*\beta -\frac{1}{2}|\gamma|^2 \}}                                    \\
+& = \braket{\alpha}{\beta}\exp(\alpha^*\gamma - \gamma^*\beta - \frac{1}{2}|\gamma|^2)
+\end{align*}
+
+\item Primero demostraremos el siguiente resultado auxiliar. Notemos que la acción del operador $\hat{a}^{\dagger}$ sobre un estado número es:
+\begin{equation*}
+\hat{a}^{\dagger}\ket{n} = \sqrt{n+1}\ket{n+1}
+\end{equation*}
+\begin{equation*}
+\ket{n+1} = \frac{1}{\sqrt{n+1}}\hat{a}^{\dagger}\ket{n}
+\end{equation*}
+aplicando esta definición de manera recursiva
+\begin{align}
+\ket{n} & = \frac{1}{\sqrt{n}}\hat{a}^{\dagger}\ket{n-1} = \left( \frac{1}{\sqrt{n-1}} \right)\hat{a}^{\dagger}\left( \frac{1}{\sqrt{n-1}} \hat{a}^{\dagger} \ket{n-2} \right) \nonumber \\
+\ket{n} & = \frac{(\hat{a})^{\dagger\,2}}{\sqrt{n(n-1)}}\ket{n-2} \nonumber                                                                                       \\
+& \vdots \nonumber                                                                                                                           \\
+\ket{n} & = \frac{(\hat{a}^{\dagger\,n}}{\sqrt{n!}}\ket{0} \label{eq:9-1}
+\end{align}
+
+El adjunto de \ref{eq:9-1} es
+\begin{equation}
+\left( \ket{n} \right)^{\dagger} = \langle n | = \left( \frac{(\hat{a})^{\dagger\,n}}{\sqrt{n}}\ket{0} \right)^\dagger = \langle 0 | \frac{\hat{a}^n}{\sqrt{n!}}\label{eq:9-2}
+\end{equation}
+
+Expresamos de esta forma
+\begin{equation}
+\langle n \vert \hat{D}(\gamma) \vert m \rangle = \frac{1}{\sqrt{n!m!}} \langle 0 \vert  \hat{a}^{n} \hat{D}(\alpha)\hat{a}^{\dagger\,m}\vert 0 \rangle \label{eq:9-4}
+\end{equation}
+
+usamos la notación $\langle 0 \vert \hat{A} \vert 0 \rangle = \langle \hat{A} \rangle$ para el valor esperado en el vacío
+\begin{equation*}
+\langle 0 \vert \hat{a}^{n} \hat{D}(\alpha) \hat{a}^{\dagger\,m} \vert 0\rangle := \langle \hat{a}^{n} \hat{D}(\alpha) \hat{a}^{\dagger\,m} \rangle
+\end{equation*}
+\begin{align*}
+\langle \hat{a}^{n} \hat{D}(\alpha) \hat{a}^{\dagger\,m} \rangle & = \langle \hat{a}^{n}  e^{-|\alpha|^2/2} e^{\alpha \hat{a}^{\dagger}}e^{-\alpha^{*}\hat{a}} \hat{a}^{\dagger\,m} \rangle                                                              \\
+& = e^{-|\alpha|^2/2}\sum_{i=0}^{m} \frac{(-\alpha^*)^{i}}{i!}\langle \hat{a}^{n} e^{\alpha \hat{a}^{\dagger}} \hat{a}^{i} \hat{a}^{\dagger\,m} \rangle                             \\
+& = e^{-|\alpha|^2/2}\sum_{i=0}^{m} \sum_{j=0}^{\infty} \frac{(-\alpha^*)^{i} \alpha^{j}}{i!j!}\langle \hat{a}^{n} \hat{a}^{\dagger\,j} \hat{a}^{i} \hat{a}^{\dagger\,m} \rangle
+\end{align*}
+
+El valor esperado se anula cuando $n+i\neq j + m$. Los términos distitos de cero cumplen $n+i = j+m$. La restricción en $j$ es $j=n+i-m\geq0$, lo que a su vez implica $i\geq m-n$, donde $i$ cumple necesariamente $i\geq0$. Los posibles valores de $i$ son
+\begin{equation*}
+\max(0, m-n)\leq i \leq m
+\end{equation*}
+lo que implica
+\begin{equation*}
+\langle \hat{a}^{n} e^{\alpha\hat{a}^{\dagger}} e^{-\alpha \hat{a}} \hat{a}^{\dagger\,m} \rangle = \sum_{i=\max(0, m-n)}^{m}\frac{(-\alpha^{*})^{i}\alpha^{n+i-m}}{i! (n+i-m)!} \langle \hat{a}^{n} \hat{a}^{\dagger\,(n+i-m) \hat{a}^{i} \hat{a}^{\dagger\,m}} \rangle
+\end{equation*}
+Usando las identidades
+
+
+\begin{equation}
+\hat{a}^{\dagger\,j} \ket{l} = \sqrt{\frac{(l+j)!}{l!}} \ket{l+j}; \quad \hat{a}^{j}\ket{l}=\sqrt{\frac{l!}{(l-j)!}}\ket{l-j} \label{eq:9-3}
+\end{equation}
+se obtiene
+\begin{align*}
+\langle \hat{a}^{n} \hat{a}^{\dagger\,(n+i-m)} \hat{a}^{i} \hat{a}^{\dagger\,m} \rangle & = \langle 0 \vert \hat{a}^{n} \hat{a}^{\dagger\,(n+i-m)} \hat{a}^{i} \sqrt{m}{m} \\
+& = \sqrt{m!} \langle 0 \vert \hat{a}^{n} \hat{a}^{\dagger\,(n+i-m)} \sqrt{\frac{m!}{(m-i)!}} \vert m-i \rangle                             \\
+& = \sqrt{m!\frac{m!}{(m-i)!}} \langle 0 \vert \hat{a}^{n} \sqrt{\frac{((n+i-m) + (m-i))!}{(m-i)!}} \vert (m-i) + (n+i-m)\rangle \\
+& = \sqrt{m! \frac{m!}{(m-i)!} \frac{n!}{(m-i)!}} \langle 0 \vert \hat{a}^{n} \vert n\rangle                                      \\
+& = \sqrt{m! \frac{m!}{(m-i)!} \frac{n!}{(m-i)!} n!} \braket{0}{0}                                                    \\
+& = \sqrt{\frac{(m!)^2 (n!)^2}{((m-i)!)^2}}                                                                           \\
+& = \frac{m!n!}{(m-i)!}
+\end{align*}
+
+Sustituyendo en (\ref{eq:9-3})
+\begin{align*}
+\langle \hat{a}^{n} e^{\alpha\hat{a}^{\dagger}} e^{-\alpha \hat{a}} \hat{a}^{\dagger\,m} \rangle & = \sum_{i=\max(0,m-n)}^{m} \frac{(-\alpha^*)^{i} \alpha^{n-i+m}}{i! (n+i-m)!} \frac{m!n!}{(m-i)!}   \\
+& = \sum_{i=\max(0,m-n)}^{m} (-1)^{i} \frac{(\alpha^*\alpha)^{i} \alpha^{n-m} m!n!}{i!(n+i-m)!(m-i)!} \\
+& = \sum_{i=\max(0,m-n)}^{m} (-1)^{i} \frac{(|\alpha|^2)^{i} \alpha^{n-m} m!n!}{i!(n+i-m)!(m-i)!}
+\end{align*}
+ahora, usando
+\begin{equation*}
+\frac{n!}{(m-i)!(n-(m-i))!} = \binom{n }{m-i}
+\end{equation*}
+\begin{equation*}
+\langle \hat{a}^{n} e^{\alpha\hat{a}^{\dagger}} e^{-\alpha \hat{a}} \hat{a}^{\dagger\,m} \rangle = \sum_{i=\max(0,m-n)}^{m} (-1)^{i} \frac{(|\alpha|^2)^{i} \alpha^{n-m} m!}{i!} \binom{n }{m-i}
+\end{equation*}
+sustituyendo en (\ref{eq:9-4})
+\begin{align*}
+\langle n \vert \hat{D}(\alpha) \vert m \rangle & = \frac{e^{-|\alpha|^2/2}}{\sqrt{n!m!}} \sum_{i=\max(0, m-n)}^{m} (-1)^{i} (|\alpha|^2)^{i}\alpha^{n-m} \binom{n }{m-i}\frac{m!}{i!}    \\
+& = \sqrt{\frac{m!}{n!}} e^{-|\alpha|^2/2} \alpha^{n-m} \sum_{i=0}^{m}(-1)^{i} \frac{|\alpha^2|^{i}}{m!} \binom{n}{m-i} ; \quad (n\geq m)
+\end{align*}
+
+Donde
+\begin{equation*}
+L_m^{(n-m)}(|\alpha|^2) = \sum_{i=0}^{m}(-1)^{i} \frac{|\alpha^2|^{i}}{m!} \binom{n}{m-i}
+\end{equation*}
+finalmente, se obtiene el caso para $(n\geq m)$
+\begin{equation*}
+\langle \alpha \vert \hat{D}(\gamma) \vert \beta\rangle = \sqrt{\frac{m!}{n!}}e^{-|\alpha|^2/2}(\alpha)^{n-m}L_m^{(n-m)}(|\alpha|^2),\quad n\geq m.                                                                \\
+\end{equation*}
+
+\item Finalmente, ocupando la identidad $\hat{D}^\dagger{\alpha} = \hat{D}(-\alpha)$, cuando $n<m$ podemos considerar del amterior resultado
+\begin{align*}
+\langle n \vert \hat{D}(\alpha)\vert m\rangle & = \left( \langle n \vert \hat{D}(\alpha) \vert m\rangle = \right)^{*}                        \\
+& = \left( \langle n \vert \hat{D}(-\alpha) \vert m\rangle \right)^{*}                          \\
+& = \sqrt{\frac{n!}{m!}}(-\alpha^*)^{m-n} e^{-|\alpha^2/2|}L_n^{m-n} (|-\alpha|^2) \\
+& = \sqrt{\frac{n!}{m!}}(-\alpha^*)^{m-n} e^{-|\alpha^2/2|}L_n^{m-n} (|\alpha|^2)
+\end{align*}
+\end{enumerate}

@@ -1,0 +1,38 @@
+\chapter{Cuantizaci\'on del campo electromagn\'etico}
+\section{Cuantización del campo electromagnético}
+
+La cuantización del campo electromagnético se da cuando se asocia a cada modo de luz $\mathbf{k},\lambda$ de la construcción realizada en la sección 2 a un oscilador armónico. Los modos de luz siguen las mismas relaciones de los operadores de creación $\hat{a}^{\dagger}$ y destrucción $\hat{a}$, que ahora corresponden a la creación o aniquilación de un fotón de energía $\hbar\omega$ en el modo $\mathbf{k}\lambda$. (Loudon, alterar un poco, está muy textual). Bajo este contexto, a los estado $\ket{\hat{n}_{\mathbf{k}\lambda}}$ se les denomina estados número del fotón o estados Fock del campo electromagnético.
+
+Comparando las expresiones de energía del campo electromagnético y del Hamiltoniano del oscilador armónico, se obtiene la siguiente correspondencia entre los operadores de creación y aniquilación y los coeficientes complejos de la base ortogonal $\mathbf{u}_{k,\lambda}(\mathbf{r})$ (Loudon)
+
+\begin{equation*}
+\left( \frac{2\hbar \pi c^2}{V\omega_k} \right)^{1/2} \hat{a}_{k\lambda} \leftrightarrow c_{k\lambda}; \quad \left( \frac{2\hbar \pi c^2}{V\omega_k} \right)^{1/2} \hat{a}^{\dagger}_{k\lambda} \leftrightarrow c_{k\lambda}^*
+\end{equation*}
+
+La luz es un objeto cuántico con estado $\ket{\Psi}$. Usando la imagen de Heisenberg, donde los operadores evolucionan en el tiempo y el estado es estacionario, se considera a los campos clásicos como los valores esperados de los observables $\mathbf{E}$, $\mathbf{D}$, $\mathbf{B}$ y $\mathbf{H}$ que actúan sobre los estados de la luz. la linealidad de las ecuaciones de Maxwell  permite que estas sean válidas para estos operadores. (Leonhardt) De esta forma, se cuantiza la energía del campo electromagnético, remplazando $U$ por el operador Hamiltoniano
+
+\begin{align*}
+\hat{H} & =  \frac{V}{2\pi c^2}\sum_{k,\lambda} \left( \frac{2\hbar \pi c^2}{V\omega_k} \right) \omega_{k\lambda}^2 \left( \hat{a}_{k\lambda} \hat{a}^{\dagger}_{k\lambda} + \hat{a}^{\dagger}_{k\lambda} \hat{a}_{k\lambda} \right)
+& = \sum_{k,\lambda} \hbar \omega_{k\lambda} \left( \hat{a}_{k\lambda} \hat{a}^{\dagger}_{k\lambda} + \hat{a}^{\dagger}_{k\lambda} \hat{a}_{k\lambda} \right)
+\end{align*}
+
+De igual forma, los campos se cuantizan obteniendo
+
+\begin{equation*}
+\mathbf{A} =  \sum_{k,\lambda} \left( \frac{2\hbar \pi c^2}{V\omega_k} \right)^{1/2} \left[ \hat{a}_{k\lambda} \mathbf{u}_{k\lambda} (\mathbf{r})e^{-i\omega_k t} + \hat{a}^{\dagger}_{k\lambda} \mathbf{u}_{k\lambda}^* (\mathbf{r})e^{i\omega_{k} t} \right]
+\end{equation*}
+\begin{align*}
+\mathbf{E} & = \sum_{k,\lambda} \left( \frac{2\hbar \pi c^2}{V\omega_k} \right)^{1/2} \frac{i\omega_{k}}{c} \left[ \hat{a}_{k\lambda} \mathbf{u}_{k\lambda} (\mathbf{r})e^{-i\omega_k t} -  \hat{a}^{\dagger}_{k\lambda} \mathbf{u}_{k\lambda}^* (\mathbf{r})e^{i\omega_{k} t} \right] \\
+& = i \sum_{k,\lambda} \left( \frac{2\hbar \pi \omega_k}{V} \right)^{1/2} \left[ \hat{a}_{k\lambda} \mathbf{u}_{k\lambda} (\mathbf{r})e^{-i\omega_k t} -  \hat{a}^{\dagger}_{k\lambda} \mathbf{u}_{k\lambda}^* (\mathbf{r})e^{i\omega_{k} t} \right]
+\end{align*}
+\begin{equation*}
+\mathbf{B} = i \sum_{k,\lambda} \left( \frac{2\hbar \pi \omega_k}{V} \right)^{1/2} \left[ \mathbf{\hat{k}} \times \mathbf{u}_{k\lambda}(\mathbf{r}) \hat{a}_{k\lambda} e^{-i\omega_k t} - \mathbf{\hat{k}} \times \mathbf{u}_{k\lambda}^* (\mathbf{r}) \hat{a}^{\dagger}_{k\lambda} e^{i\omega_{k} t} \right]
+\end{equation*} (Agarwal)
+
+
+
+
+
+
+
+

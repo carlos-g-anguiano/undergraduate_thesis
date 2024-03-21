@@ -1,0 +1,189 @@
+\documentclass[twside,12pt]{report}
+\usepackage[centertags]{amsmath}
+\usepackage{sectsty}
+\usepackage{setspace}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+%\usepackage{physics}
+%\usepackage[latin9]{inputenc}
+%--------------------------------------------------------------------------------
+\usepackage{fancyhdr}
+\usepackage[pdftex]{graphicx}
+\DeclareGraphicsExtensions{.png,.pdf,.jpg}
+%----------------------------------------------------------------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage[active]{srcltx}
+\usepackage{amssymb}
+\usepackage{braket}
+\usepackage{amscd}
+\usepackage[top=3.5cm,left=3cm,right=3cm,bottom=3.5cm]{geometry}
+\usepackage{subfigure}
+\usepackage{verbatim}
+\usepackage[spanish]{babel}
+\addto{\captionsspanish}{\def\chaptername{}}
+\usepackage{mathrsfs}
+\usepackage{mathtools}
+\usepackage{calligra}
+\usepackage{pdfpages}
+\usepackage{esint}
+\usepackage[spanish]{babel}
+\usepackage{yfonts}
+\usepackage[linktocpage,pdfstartview=FitH,colorlinks,
+linkcolor=blue,anchorcolor=blue,
+citecolor=blue,filecolor=blue,menucolor=blue,urlcolor=blue]{hyperref}
+\def\eu{\mathfrak}
+\def\ma{\mathbb}
+%-----------------------------------------------------------------------------------
+\setlength{\oddsidemargin}{0.18in}
+\setlength{\evensidemargin}{0.18in}
+\setlength{\textwidth}{6.2in}
+\setlength{\textheight}{7.6in}
+\setlength{\topmargin}{0.4in}
+\setlength{\headheight}{0.09in} 
+%\setlength{\headsep}{0.25in}
+
+%--------------------------------------------------------------------
+\pagestyle{fancyplain}
+
+\renewcommand{\chaptermark}[1]{\markboth{\thechapter.\ \chaptername\ \textbf{#1}}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection.\ \textbf{#1}}}
+\lhead[\fancyplain{}{\thepage}]%
+{\fancyplain{}{\rightmark}}
+\rhead[\fancyplain{}{\leftmark}]%
+{\fancyplain{}{\thepage}}
+\cfoot{}
+
+%-----------------------------------------
+
+\fancypagestyle{plain}{%
+	\fancyhf{}%
+	\fancyhead[LE,RO]{\thepage}%
+	\renewcommand{\headrulewidth}{0pt}}
+
+
+%-------------------------------------------------------------------------------------------
+
+\font\first=msbm10 at 12pt
+\font\second=msbm7 %at 10pt
+\font\third=eusb10 at 12pt \font\roci=eufm10 at 12pt
+\font\fourth=eusm10 at 12pt
+\newcommand{\nor}{\lhd}
+
+\def\F{\hbox{\first F}}
+\def\fin{\hbox{\vrule height6pt width8pt depth0pt}}
+\def\z{\zeta_n}
+\def\zm{\zeta_m}
+\def\znm{\zeta_{nm}}
+\def\zn{\zeta^n}
+\def\zz{\zeta}
+\def\gal{\hbox{Gal}\,}
+\def\aut{{\rm Aut\,}}
+\parindent=0pt
+\newtheorem{prop}{Proposici\'on}
+\newtheorem{defin}{Definici\'on}
+\newtheorem{teo}{Teorema}
+\newtheorem{cor}{Corolario}
+\newtheorem{obs}{Observaci\'on}
+\newtheorem{lem}{Lema}
+\theoremstyle{plain}
+\def\proof{\paragraph{Demostración:\\}}
+\def\endproof{\\ $_\square$}
+
+%
+\theoremstyle{definition}
+\newtheorem{defn}{Definici\'on}[section]
+%
+\theoremstyle{remark}
+\newtheorem{no}{Nota}[section]
+
+
+\def\contentsname{Contenido}
+\def\chunche{$\ldotp$\mbox{ker}n-1pt\raise 2pt\hbox{$\cdotp$}\mbox{ker}n-1pt$\ldotp$}
+\def\contentsname{Contenido}
+\def\chaptername{Cap\'{\i}tulo}
+\def\bibname{Referencias}
+\addto\captionsspanish{
+	\def\tablename{Tabla}
+	\def\listtablename{\'Indice de tablas}
+}
+\usepackage{amssymb}
+\usepackage[top=3.5cm,left=3cm,right=3cm,bottom=3.5cm]{geometry}
+
+	\renewcommand{\figurename}{Figura}
+	\numberwithin{equation}{chapter}
+	%\renewcommand{\thechapter}{\Roman{chapter}}
+	\setlength{\parindent}{0.5cm}
+	\setlength{\unitlength}{1cm}
+	%\author{Zunigore}
+	%\title{Tesis doctoral}
+	%\date{}
+
+\providecommand{\abs}[1]{\lvert#1\rvert}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% This bit allows you to either specify only the files which you wish to
+%% process, or `all' to process all files which you \include.
+%% Krishna Sethuraman (1990).
+\DeclareMathOperator{\tr}{T_{r}}
+\newtheorem{theorem}{Teorema}[section]
+%\typein [\files]{chap1}
+%\def\all{all}
+%\ifx\files\all \typeout{Including all files.} \else \typeout{Including only \files.} \includeonly{\files} \fi
+\DeclareMathAlphabet{\mathcalligra}{T1}{calligra}{m}{n}
+\DeclareFontShape{T1}{calligra}{m}{n}{<->s*[1.2]callig15}{}
+\newcommand{\customfont}[1]{\mathcalligra{#1}\,}
+\newcommand{\boldcustomfont}[1]{\pmb{\mathcalligra{#1}}\,}
+
+%  Fonts type
+%&\customfont{abcdefghijklmnopqrstuvwxyz} \\
+%&\customfont{ABCDEFGHIJKLMNOPQRSTUVWXYZ} \\
+%&\boldcustomfont{abcdefghijklmnopqrstuvwxyz} \\
+%&\boldcustomfont{ABCDEFGHIJKLMNOPQRSTUVWXYZ} 
+%
+
+\spanishdecimal{.}
+\chapternumberfont{\LARGE} 
+\chaptertitlefont{\large}
+\sectionfont{\fontsize{12}{15}\selectfont}
+
+
+\begin{document}
+%\include{cover}
+\include{portada}
+% Some departments (e.g. 5) require an additional signature page.  See
+% signature.tex for more information and uncomment the following line if
+% applicable.
+% \include{signature}
+%\pagestyle{plain}
+
+\include{agradecimientos}
+%\includepdf[pages=-]{Ces-der-firmado.pdf}
+%\includepdf[pages=-]{2023-ESFM-SAC.T-399 José Carlos Prezas de la Rosa - Autorización de impresión.pdf}
+
+\include{contents}
+\include{introduccion_1}
+\include{capitulo_2}
+\include{capitulo_3}
+\include{capitulo_4}
+\include{capitulo_5}
+\include{capitulo_6}
+\include{capitulo_7}
+\include{capitulo_8}
+\include{capitulo_9}
+
+%\include{cap1}
+%\include{Cap2}
+%\include{cap3}
+%\include{cap3b}
+%\include{cap4}
+%\include{cap5}
+
+\include{bibliografia}
+
+
+\end{document}
+
