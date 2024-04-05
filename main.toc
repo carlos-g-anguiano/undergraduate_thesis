@@ -1,21 +1,20 @@
 \babel@toc {spanish}{}\relax 
 \contentsline {chapter}{\numberline {1}Introducci\'on}{4}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Cuantizaci\'on del campo electromagn\'etico}{6}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Ecuaciones de Maxwell}{6}{section.2.1}%
-\contentsline {chapter}{\numberline {3}Oscilador Arm\'onico Cu\'antico}{12}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Oscilador armónico cuántico}{12}{section.3.1}%
-\contentsline {chapter}{\numberline {4}Cuantizaci\'on del campo electromagn\'etico}{17}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Cuantización del campo electromagnético}{17}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Estados número}{19}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Grupos y \'Algebra de Lie, Grupo de Heisenberg-Weyl}{21}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Grupos y Álgebras de Lie, Grupo de Heisenberg-Weyl}{21}{section.5.1}%
-\contentsline {chapter}{\numberline {6}Estados Coherentes}{27}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Estados coherentes}{27}{section.6.1}%
-\contentsline {chapter}{\numberline {7}Operador desplazamiento}{32}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Operador desplazamiento}{32}{section.7.1}%
-\contentsline {chapter}{\numberline {8}Parametric Down convesion}{45}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Operador compresión}{45}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}Parametric down conversion}{45}{subsection.8.1.1}%
-\contentsline {subsection}{\numberline {8.1.2}Evoluci\'on del estado inicial}{49}{subsection.8.1.2}%
-\contentsline {subsection}{\numberline {8.1.3}Funci\'on de Wigner del campo}{51}{subsection.8.1.3}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{55}{subsection.8.1.3}%
+\contentsline {section}{\numberline {1.1}Oscilador armónico cuántico}{6}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Cuantizaci\'on del campo electromagn\'etico}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Ecuaciones de Maxwell}{11}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Cuantización del campo electromagnético}{16}{section.2.2}%
+\contentsline {chapter}{\numberline {3}Estados coherentes de la luz. Operadores de compresión y desplazamiento}{18}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Estados número}{18}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Estados coherentes}{19}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Operador desplazamiento}{23}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Grupos y Álgebras de Lie, Grupo de Heisenberg-Weyl}{23}{subsection.3.3.1}%
+\contentsline {section}{\numberline {3.4}Operador desplazamiento}{27}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Propiedades del operador desplazamiento}{29}{subsection.3.4.1}%
+\contentsline {section}{\numberline {3.5}Operador compresión}{41}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Función de Wigner}{46}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Parametric Down convesion}{49}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Parametric down conversion}{49}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Evolución del estado inicial}{53}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Funci\'on de Wigner del campo}{55}{subsection.5.1.2}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{59}{subsection.5.1.2}%

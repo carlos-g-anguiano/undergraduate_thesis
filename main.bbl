@@ -1,9 +1,14 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{Sakurai}
-J.~J. Sakurai.
+J.J. Sakurai and J.~Napolitano.
 \newblock {\em Modern Quantum Mechanics}.
-\newblock Addison-Wesley, 1994.
+\newblock Cambridge University Press, 2020.
+
+\bibitem{Loudon}
+R.~Loudon.
+\newblock {\em The Quantum Theory of Light}.
+\newblock Oxford University Press, 2000.
 
 \bibitem{Agarwal_2012}
 Girish~S. Agarwal.
@@ -25,15 +30,33 @@ Arfken G.B and Weber H.J.
 \newblock {\em Mathematical Methods for Physicists}.
 \newblock Elsevier Academic Press, 2008.
 
-\bibitem{Griffiths}
-D.J Griffiths.
-\newblock {\em Mathematical Methods for Physics and Engineering}.
-\newblock Prentice Hall, 1999.
+\bibitem{Mandel}
+L.~Mandel and E.~Wolf.
+\newblock {\em Optical Coherence and Quantum Optics}.
+\newblock EBL-Schweitzer. Cambridge University Press, 1995.
 
-\bibitem{Loudon}
-R.~Loudon.
-\newblock {\em The Quantum Theory of Light}.
-\newblock Oxford University Press, 2000.
+\bibitem{Leonhardt}
+U.~Leonhardt.
+\newblock {\em Essential Quantum Optics: From Quantum Measurements to Black
+  Holes}.
+\newblock Cambridge University Press, 2010.
+
+\bibitem{Glauber}
+Roy~J. Glauber.
+\newblock Photon correlations.
+\newblock {\em Phys. Rev. Lett.}, 10:84--86, Feb 1963.
+
+\bibitem{Schwichtenberg}
+J.~Schwichtenberg.
+\newblock {\em Physics from Symmetry}.
+\newblock Undergraduate Lecture Notes in Physics. Springer International
+  Publishing, 2017.
+
+\bibitem{Perelomov}
+A.~Perelomov.
+\newblock {\em Generalized Coherent States and Their Applications}.
+\newblock Theoretical and Mathematical Physics. Springer Berlin Heidelberg,
+  1986.
 
 \bibitem{Moya}
 Soto-Eguibar~F. Moya-Cessa, H.M.

@@ -26,9 +26,207 @@ Dos operadores se dicen compatibles si son tales que su conmutación es cero, es
   [\hat{x}, \hat{p}] = i\hbar \hat{I}\,.
 \end{equation}
 
-Dado un observable $\hat{A}$, se puede definir un operador $\Delta A \def \hat{A} - \langle \hat{A} \rangle$. El cuadrado del valor esperado de este operador se conoce como la dispersión $\langle (\Delta A)^2 \rangle = \langle \hat{A}^2\rangle  - \langle\hat{A}\rangle^2$. La dispersión se anula cuando el estado tratado es un eigenestado del observable $\hat{A}$. A partir de estas definiciones, para dos observables $\hat{A}$ y $\hat{B}$ y cualquier estado se debe satisfacer la relación de incertidumbre generalizada \cite{Sakurai} (Sakurai)
+Dado un observable $\hat{A}$, se puede definir un operador $\Delta A \def \hat{A} - \langle \hat{A} \rangle$. El cuadrado del valor esperado de este operador se conoce como la dispersión $\langle (\Delta A)^2 \rangle = \langle \hat{A}^2\rangle  - \langle\hat{A}\rangle^2$. La dispersión se anula cuando el estado tratado es un eigenestado del observable $\hat{A}$. A partir de estas definiciones, para dos observables $\hat{A}$ y $\hat{B}$ y cualquier estado se debe satisfacer la relación de incertidumbre generalizada \cite{Sakurai}
 
 \begin{equation}
   \label{1.4}
   \langle (\Delta A)^2 \rangle \langle (\Delta B)^2 \rangle \geq \frac{1}{4} \left| \left\langle \left[ \hat{A}, \hat{B} \right] \right\rangle  \right|^2 \,.
 \end{equation}
+% Oscilador armónico simple
+\section{Oscilador armónico cuántico}
+
+El oscilador armónico cuántico (OAC) es uno de los pocos modelos que tiene soluciones analíticas en la mecánica cuántica. La cinemática de varios sistemas periódicos y de tipo ondulatorio se puede describir utilizando el modelo del OAC.
+Varios potenciales independientes del tiempo $V(x)$ se pueden describir alrededor de un mínimo con una expansión en serie de Taylor
+\begin{align*}
+  V(x) & = \sum_{n=0}^{\infty} \frac{V^{(n)}}{n!} (x)|_{x_0} (x-x_0)^n \\ &= V(x_0) + \frac{dV}{dx}\Big|_{x_0} (x-x_0) + \frac{1}{2}\frac{d^2V}{dx^2}\Big|_{x_0} (x-x_0)^2 + \dots \,,
+\end{align*}
+el segundo término se anula por definición de mínimo local. Por formalismo, se puede recorrer el potencial $x = x' + x_0$ para que el potencial en $x_0$ sea $V(x_0) = 0$, eliminando el primer término. Finalmente, el término dominante en la expansión es la segunda derivada
+\begin{equation}
+  \label{OA.1}
+  V(x) = \frac{1}{2}\frac{d^2V(x)}{dx^2}\Big|_{x_0}x^2 \,,
+\end{equation}
+
+lo anterior se puede aplicar para un potencial que depende de más dimensiones $V(\mathbf{x})$. Asumiendo que todos los potenciales se han recorrido de manera análoga $x_i \to x_i + x_{oi}$
+
+\begin{equation*}
+  V(x_1, \dots, x_N) = \frac{1}{2}\sum_{i=1}^N \sum_{j=1}^N \frac{\partial^2 V}{\partial x_i \partial x_j}\Big|_{0} x_i x_j \,,
+\end{equation*}
+
+para hamiltonianos con potenciales cuadráticos, es siempre posible hacer un cambio de coordenadas de la forma
+
+\begin{equation*}
+  (x_{1}, \dots, x_N) \to (u_1, \dots, u_N)\,,
+\end{equation*}
+
+donde el potencial se desacopla, \textit{i.e.} sin derivadas cruzadas, y se puede describir por $n$ osciladores armónicos individuales
+
+\begin{equation*}
+  V(u_1, \dots, u_N) = \frac{1}{2} \sum_{i=1}^{N} \frac{\partial^2 V}{\partial u_i^{2}}\Big|_0 u_i^2\,.
+\end{equation*}
+
+Considerando un ejemplo básico de un oscilador armónico clásico, se tienen las ecuaciones clásicas de movimiento
+
+\begin{align}
+  m \frac{d^2x}{xt^2} & = -kx \,, \label{OA.2}            \\
+  p                   & = m\frac{dx}{dt} \,, \label{OA.3}
+\end{align}
+
+con $k$ la constante del resorte, $m$ la masa de la partícula, $x$ el desplazamiento de la posición de equilibrio y $p$ el momento lineal, esto se sustituye en la ecuación estacionaria de Schrödinger, que se debe resolver es:
+
+\begin{equation}
+  \label{OA.4}
+  -\frac{\hbar^2}{2m}\frac{d^2}{dx^2}\psi(x) + \frac{1}{2}m \omega^2 x^2 \psi(x) = E \psi(x) \,.
+\end{equation}
+
+Una partícula en un sistema tiene una energía cinética que corresponde a
+\begin{equation*}
+  \hat{T} = \frac{\hat{p}^2}{2m}\,,
+\end{equation*}
+
+y el hamiltoniano correspondiente está dado por
+\begin{equation}
+  \hat{H} = \hat{T} + \hat{V} = \frac{\hat{p}^2}{2m} +\frac{1}{2} m\omega^2 \hat{q}^2 \label{OA.5}\,,
+\end{equation}
+
+% Following the Loudon method
+
+donde $\omega$ es la frecuencia angular del oscilador clásico.
+El problema del oscilador armónico puede ser resuelto de forma analítica (encontrando los eigenvalores y eigenfunciones de la ecuación de Schrödinger) o de forma algebraica, que involucra la introducción de dos operadores $\hat{a}^{\dagger}$ y $\hat{a}$, los operadores escalera de creación y aniquilación, respectivamente, definidos en términos de $\hat{q}$ y $\hat{p}$ como:
+% Definido en Sakurai de esta forma
+
+\begin{align}
+  \hat{a}^{\dagger} & = (2m\hbar\omega)^{-1/2}(m\omega \hat{q} - i\hat{p})\label{OA.6} \,,   \\
+  \hat{a}           & = (2m\hbar \omega)^{-1/2}(m\omega \hat{q} + i \hat{p})\label{OA.7} \,,
+\end{align}
+el conmutador de estos operadores resulta
+\begin{equation}
+  \label{OA.8}
+  [\hat{a}, \hat{a}^{\dagger}] = \hat{1} \,,
+\end{equation}
+los operadores no son hermitianos, y como tal no representan una propiedad observable del oscilador. % Loudon
+
+Los productos entre estos dos operadores son
+\begin{align}
+  \hat{a}^{\dagger}\hat{a} & = \frac{1}{2m\hbar\omega} \left( \hat{p}^2 + m^2\omega^2\hat{q}^2 + im\omega\hat{q}\hat{p} - im\omega\hat{p}\hat{q} \right) \nonumber \\
+                           & = \frac{1}{\hbar\omega}\left( \frac{\hat{p}^2}{2m} + \frac{1}{2}m\omega^2\hat{q}^2 +\frac{i\omega}{2} [\hat{q}, \hat{p}] \right)
+  \nonumber                                                                                                                                                        \\
+                           & = \frac{1}{\hbar\omega} \left( \hat{H} + \frac{i\omega}{2}(i\hbar) \right) \nonumber                                                  \\
+                           & = \frac{1}{\hbar\omega} \left( \hat{H} - \frac{1}{2}\hbar\omega \right) \label{OA.9}\,.
+\end{align}
+A partir del anticonmutador de los operadores (\ref{OA.5}) y (\ref{OA.6}), se obtiene lo siguiente
+\begin{align}
+  \frac{1}{2}\{ \hat{a},\hat{a}^{\dagger}\} & = \frac{1}{2}\hat{a}\hat{a}^{\dagger} + \frac{1}{2}\hat{a}^{\dagger}\hat{a}                                                \nonumber                             \\
+                                            & = \frac{1}{2}\hat{a}\hat{a}^{\dagger} - \frac{1}{2}\hat{a}^{\dagger}\hat{a} +\frac{1}{2}\hat{a}^{\dagger}\hat{a} + \frac{1}{2}\hat{a}^{\dagger}\hat{a} \nonumber \\
+                                            & = \frac{1}{2}[\hat{a},\hat{a}^{\dagger}] + \hat{a}^{\dagger}\hat{a}                                                        \nonumber                             \\
+                                            & = \frac{1}{2} + \hat{a}^{\dagger}\hat{a} \label{OA.10}\,,
+\end{align}
+
+por lo que el de las ecuaciones (\ref{OA.9}) y (\ref{OA.10}) el hamiltoniano (\ref{OA.5}) se puede reescribir como
+
+\begin{equation}
+  \label{OA.11}
+  \hat{H} = \hbar \omega \left(\hat{a} \hat{a}^{\dagger} + \frac{1}{2}\right) = \frac{1}{2}\hbar \omega \left( \hat{a}\hat{a}^{\dagger} + \hat{a}^{\dagger}\hat{a} \right) \,.
+\end{equation}
+
+Se introduce también el operador número, definido como
+\begin{equation}
+  \label{OA.12}
+  \hat{n} = \hat{a}^{\dagger} \hat{a}\,,
+\end{equation}
+y el hamiltoniano (\ref{OA.11}) se puede escribir también como
+
+\begin{equation}
+  \label{OA.13}
+  \hat{H} = \hbar \omega \left(\hat{n} + \frac{1}{2}\right)\,,
+\end{equation}
+cuya ecuación de eigenvalores de la energía es
+\begin{equation}
+  \label{OA.14}
+  \hat{H} \ket{n} = E_n\ket{n} \,,
+\end{equation}
+donde $\ket{n}$ es un eigenestado del OAC con eigenvalor $E_n$. A partir de ciertas operaciones algebráicas, se puede encontrar otra ecuación de eigenvalores a partir de la anterior multiplicando $\hat{a}$ por la izquierda, y resulta de la forma
+\begin{align*}
+  \hat{H} \hat{a}\ket{n} & = \hbar\omega\left(\hat{a}^{\dagger}\hat{a}+\frac{1}{2}\right)\hat{a}\ket{n} = \hbar\omega\left(\hat{a}\hat{a}^{\dagger}+\hat{a}^{\dagger}\hat{a}-\hat{a}\hat{a}^{\dagger}+\frac{1}{2}\right)\hat{a}\ket{n} \\
+                         & = \hbar\omega\left(\hat{a}\hat{a}^{\dagger}-\left[\hat{a},\hat{a}^{\dagger}\right]+\frac{1}{2}\right)\hat{a}\ket{n} = \hbar\omega\left(\hat{a}\hat{a}^{\dagger}-1+\frac{1}{2}\right)\hat{a}\ket{n}          \\
+                         & = \hbar\omega\left(\hat{a}\hat{a}^{\dagger}\hat{a}-\hat{a}+\frac{1}{2}\hat{a}\right)\ket{n} = \hat{a}\hbar\omega\left(\hat{a}^{\dagger}\hat{a}+\frac{1}{2}-1\right)\ket{n}                                  \\
+                         & = \hat{a}\left(\hbar\omega\left(\hat{n}+\frac{1}{2}\right)-\hbar\omega\right)\ket{n} = \hat{a}\left(\hat{H}-\hbar\omega\right)\ket{n} = \left(E_{n}-\hbar\omega\right)\hat{a}\ket{n}\,,
+\end{align*}
+donde $\hat{a}\ket{n}$ es también un eigenestado del sistema, pero ahora con un valor propio de energía $E_n - \hbar\omega$, los cuales se denotarán como $\ket{n-1}$ y $E_{n-1}$ respectivamente. Así, la nueva ecuación de eigenvalores es
+\begin{equation}
+  \label{OA.15}
+  \hat{H}\, \hat{a}\ket{n} = E_{n-1}\, \hat{a}\ket{n}\,,
+\end{equation} % Citar a Loudon para este procedimiento
+de manera similar, pero ahora aplicando el operador $\hat{a}^{\dagger}$ por la izquierda, se llega a la ecuación
+\begin{equation}
+  \label{OA.16}
+  \hat{H} \,\hat{a}^{\dagger}\ket{n} = E_{n+1}\, \hat{a}^{\dagger}\ket{n}\,.
+\end{equation}
+Los operadores escalera nos permiten conocer el resto de los valores de la energía del oscilador armónico una vez conocido $E_n$, estos valores varían en incrementos de $\hbar\omega$. Debido a que no puede haber un estado con energía negativa, se propone un estado $\ket{0}$, llamado estado base, al que corresponda una energía mínima $E_0$, y con la propiedad:
+\begin{equation}
+  \label{OA.17}
+  \hat{a}\ket{0} = 0\,.
+\end{equation}
+A partir de esta propiedad se determina que $E_0 = \frac{1}{2}\hbar\omega$ y en general
+\begin{equation}
+  \label{OA.18}
+  E_n = \left( n + \frac{1}{2} \right) \hbar\omega, \quad n\in\mathbf{N}\,.
+\end{equation}
+% ============================
+% ============================
+% ============================
+% Add explanation of how the cavity modes of EM field expansion = harmonic oscillator = why problems reduce to the harmonic oscillator (what properties let us do that simplification)
+% ============================
+% ============================
+% ============================
+Los estados número son eigenestados simultáneos del operador hamiltoniano (\ref{OA.13}) y del operador número (\ref{OA.12}), por lo que tienen una base de eigenvectores en común, donde
+\begin{equation}
+  \label{OA.19}
+  \hat{n}\ket{n} = n\ket{n}\,.
+\end{equation}
+
+Los estados se pueden normalizar utilizando las condiciones
+\begin{equation}
+  \label{OA.20}
+  \langle n\vert m\rangle = \delta_{n,m}
+\end{equation}
+y los coeficientes de normalización para la aplicación de los operadores escalón resultan
+\begin{align}
+  \hat{a}\ket{n}           & = \sqrt{n} \ket{n-1} \,,\label{OA.21}   \\
+  \hat{a}^{\dagger}\ket{n} & = \sqrt{n+1} \ket{n+1} \,.\label{OA.22}
+\end{align}
+
+Los operadores $\hat{a}^{\dagger}$ y $\hat{a}$ no son hermitianos, por lo que no representan alguna magnitud f\'isica observable. Es conveniente entonces definir, a partir de la definición de operadores posición $\hat{q}$ y momento $\hat{p}$ generalizado en su forma adimensional utilizados en la expresión del Hamiltoniano del oscilador armónico, los operadores de cuadratura \cite{Loudon}
+
+\begin{equation}
+  \label{OA.23}
+  \hat{X} = \sqrt{\frac{m\omega}{2\hbar}} \, \hat{q} = \frac{1}{2}\left( \hat{a} + \hat{a}^{\dagger} \right)\,,
+\end{equation}
+\begin{equation}
+  \label{OA.24}
+  \hat{Y} = \frac{1}{\sqrt{2m\hbar\omega}} \, \hat{p} = \frac{i}{2}\left( \hat{a}^{\dagger} - \hat{a} \right)\,,
+\end{equation}
+los operadores escalera en términos de los de cuadratura son
+\begin{equation}
+  \label{OA.25}
+  \hat{a} = \hat{X} + i{Y}\,,
+\end{equation}
+\begin{equation}
+  \label{OA.26}
+  \hat{a}^{\dagger} = \hat{X} - i\hat{Y}\,,
+\end{equation}
+la relación de conmutación entre estos operadores es
+\begin{equation}
+  \label{OA.27}
+  \left[ \hat{X}, \hat{Y} \right] = \frac{i}{2}
+\end{equation}
+y su relación de incertidumbre es:
+\begin{equation}
+  \label{OA.28}
+  \langle (\Delta X)^2 \rangle \langle (\Delta Y)^2 \rangle \geq \frac{1}{16}\,,
+\end{equation}
+con estos también se puede expresar el Hamiltoniano del oscilador armónico simple
+\begin{equation}
+  \label{OA.29}
+  \hat{H} = \hbar \omega \left( \hat{X}^2 + \hat{Y}^2 \right)\,.
+\end{equation}
+% Agregar teoría de fasores e incertidumbre de Fox cap 7.3
