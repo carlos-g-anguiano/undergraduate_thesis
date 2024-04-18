@@ -27,11 +27,36 @@ Dos operadores se dicen compatibles si son tales que su conmutación es cero, es
 \end{equation}
 
 Dado un observable $\hat{A}$, se puede definir un operador $\Delta A \def \hat{A} - \langle \hat{A} \rangle$. El cuadrado del valor esperado de este operador se conoce como la dispersión $\langle (\Delta A)^2 \rangle = \langle \hat{A}^2\rangle  - \langle\hat{A}\rangle^2$. La dispersión se anula cuando el estado tratado es un eigenestado del observable $\hat{A}$. A partir de estas definiciones, para dos observables $\hat{A}$ y $\hat{B}$ y cualquier estado se debe satisfacer la relación de incertidumbre generalizada \cite{Sakurai}
-
 \begin{equation}
   \label{1.4}
   \langle (\Delta A)^2 \rangle \langle (\Delta B)^2 \rangle \geq \frac{1}{4} \left| \left\langle \left[ \hat{A}, \hat{B} \right] \right\rangle  \right|^2 \,.
 \end{equation}
+% Change of basis and diagonalization theory
+Dados dos observables incompatibles $\hat{A}$ y $\hat{B}$ con bases dados por sus eigenestados $\left\{\ket{a}\right\}$ y $\left\{\ket{b}\right\}$ respectivamente, se puede realizar un cambio de representación o base para estudiar cómo están relacionadas estas dos descripciones del espacio de kets. Este cambio de base está dado por una transformación de similitud $\hat{B} = \hat{U}^\dagger \hat{A} \hat{U}$. con $\hat{U}$ un operador unitario llamado matriz de transformación dado por $\hat{U} = \sum_k \ket{b_k}\bra{a_k}$, con $\ket{a_k}$ y $\ket{b_k}$ las bases de los eigenestados de los operadores $\hat{A}$ y $\hat{B}$ respectivamente. La traza de un operador $\hat{A}$ está definida como la suma de los elementos diagonales de la matriz asociada $A$ y es independiente a la representación
+\begin{equation}
+  \text{Tr}(A) = \sum_a \bra{a}A\ket{a}
+\end{equation}
+El encontrar la matriz unitaria que diagonaliza $B$ es equivalente a encontrar los eigenvalores y eigenestados del operador $B$ cuyos elementos matriciales en la base $\{\ket{a}\}$ previa a la transformación son conocidos. Conocida la matriz de transformación $U$, se puede construir la transformación unitaria de $A$ $UAU^{-1}$ y se dicen observables unitariamente equivalentes. El conjunto $\{ket{b}\}$ son eigenestados de $UAU^{-1}$ con los mismos eigenvalores que los eigenvalores de $A$, haciendo su espectro idéntico.
+% Teoría de matriz de densidad
+Los estados cuánticos que describe un ket $\ket{\psi}$ y su respectiva función de onda $\psi$ pueden representar un sistema físico solo si este no está compuesto por más subensembles independientes entre si. A dichos estados se les denomina puros. Si, por el contrario, el sistema físico no puede ser descrito por un estado puro, se utiliza una distribución estadística de estados puros a la que se le denomina estado mixto. Ambos tipos de sistemas se pueden describir usando la matriz de densidad $\hat{\rho}$, que es la forma más general para describir sistemas en la mecánica cuántica\cite{Pena}. Sea $\hat{A}$ un operador cualquiera, el valor esperado de este operador se calcula como $\hat{A} = \text{Tr}\left\{ \hat{\rho} \hat{A} \right\}$. En el caso de un ensemble con varios subensembles descritos por un estado $\ket{i}$, cada uno contribuyendo al sistema con un peso $\omega_i$, el operador de densidad está dado por $\hat{\rho} = \sum_i \omega_i \ket{i} \bra{i}$, lo que en un estado puro $\ket{\psi}$ se reduce a $\hat{\rho} = \ket{\psi}\bra{\psi}$ que recupera la definición de valor esperado de un operador $\hat{A}$ en estados puros dada por $\langle\hat{A}\rangle = \bra{\psi}\hat{A}\ket{\psi}$.
+%Ecuación de Schrödinger y necesidad del operador de evolución temporal
+Todos los sistemas cuánticos reales están sujetos a una evolución temporal. La ecuación de Schrödinger completa justamente describe la evolución temporal de una función de onda $\psi$
+\begin{equation}
+  i\hbar\frac{\partial \psi}{\partial t} = -\frac{\hbar^2}{2m}\nabla^2 \psi + V\psi
+\end{equation}
+Se pueden expresar las soluciones en términos de funciones propias que corresponden al problema estacionario y el potencial $V$ no es función del tiempo. Se expresa entonces la función de onda como una superposición de las ondas monocromáticas que resultan de la solución espacial de la ecuación de onda del problema estacionario $\varphi_n(\mathbf{r})$
+\begin{equation}
+  \psi(\mathbf{r}, t) = \sum_n c_n e^{-iE_n t/\hbar}\psi_n(\mathbf{r})
+\end{equation}
+% Evolución temporal de un sistema cuántico
+En la notación de Dirac, considere un estado que depende del tiempo cuyo valor $\ket{\psi(t)}$ que se encuentra en el estado $\ket{\psi}(t_0)$ en un tiempo fijo $t_0$. Se relaciona al estado fijo con el dependiente del tiempo a través del operador de evolución temporal como $\ket{\psi(t)} = \hat{U}(t, t_0) \ket{\psi(t_0)}$, que considerando $t_0=0$ se puede simplificar a $\ket{\psi(t)} = \hat{U}(t) \ket{\psi(t_0)}$. La expresión explícita del operador se obtiene construyendola a partir de las propiedades que debe cumplir. El operador debe ser unitario $U^\dagger(t)\hat{U}(t) = 1$, que aplicaciones sucesivas de tiempos $t_1$ y $t_2$ sean equivalentes a la evolución en un tiempo $t_1+t_2$, y que el operador infinitesimal se reduzca a la identidad cuando $dt$ vaya a cero. Resulta de las anteriores consideraciones que el operador es de la form $\hat{U}(t) = 1-\frac{i\hat{H}dt}{\hbar}$, y su ecuación diferencial fundamental es la ecuación de Schrödinger para el operador de evolución temporal.
+\begin{equation}
+  i\hbar\frac{\partial}{\partial t} \hat{U}(t) = \hat{H}\hat{U}(t)
+\end{equation}
+Cuando el Hamiltoniano es independiente del tiempo, la solución a esta ecuación está dada por
+\begin{equation*}
+  \hat{U}(t) = \exp{\left[ \frac{-i\hat{H}t}{\hbar} \right]}
+\end{equation*}
 % Oscilador armónico simple
 \section{Oscilador armónico cuántico}
 

@@ -66,7 +66,7 @@ El significado físico de $\alpha$ se da considerando un modo polarizado de frec
 \begin{equation*}
   \alpha = X^2 + iY^2
 \end{equation*}
-Se puede separar $\alpha$ en su amplitud $|\alpha|=\sqrt{X^2 + Y^2}$ y fase $\phi$ considerando $X = |\alpha|\cos\theta$ y $Y=|\alpha|\sen\theta$ como
+Se puede separar $\alpha$ en su amplitud $|\alpha|=\sqrt{X^2 + Y^2}$ y fase $\phi$ considerando $X = |\alpha|\cos\phi$ y $Y=|\alpha|\sen\phi$ como
 \begin{equation*}
   \alpha = |\alpha|e^{i\phi}
 \end{equation*}
@@ -151,9 +151,8 @@ Así, de nuevo por la condición de completez, podemos escribir cualquier estado
 \begin{equation*}
   \ket{\alpha} = \int K(\alpha, \beta) \ket{\beta} d^2\beta
 \end{equation*}
-\section{Operador desplazamiento}
 % Grupo y álgebra de Heisenberg Weyl
-\subsection{Grupos y Álgebras de Lie, Grupo de Heisenberg-Weyl}
+\section{Grupos y Álgebras de Lie, Grupo de Heisenberg-Weyl}
 
 El teorema de Noether estipula que correspondiente a cada ley de conservación existe una simetría diferenciable. En particular establece una conexión entre el generador de una transformación de simetría con la cantidad conservada. El estudio de estas cantidades conservadas es la base de la física, pues describen a los sistemas en sí. En la mecánica cuántica se puede ver como generador de traslaciones en el espacio $-i\delta_i$ al momento $\hat{p}_i$, mientras que la energía $\hat{E}$ como cantidad conservada proviene de la invarianza bajo la acción del generador de traslaciones temporales $i\delta_0$. La posición no tiene relacionada una simetría o ley de conservación, por lo que simplemente se utiliza el operador de posición $\hat{x}_i$. \cite{Schwichtenberg}
 
@@ -321,7 +320,6 @@ se puede obtener la expresión para el operador desplazamiento simplemente susti
 \end{equation}
 la cual resulta útil para hacer cálculos en la base de estados de posición.
 % Search in Perelomov for the connection between lie algebra and the single mode operator
-
 %Operador desplazamiento
 \subsection{Propiedades del operador desplazamiento}
 
@@ -755,12 +753,15 @@ La solución entonces se puede expresar en términos del operador de compresión
 \begin{equation*}
   \hat{S}(z) = \exp{\left( \frac{z}{2}(\hat{a}^2 - {\hat{a}^{\dagger}}^2) \right)}
 \end{equation*}
-del estado vacío se obtiene entonces $\ket{\varphi} = \hat{S}(z)\ket{0}$
-Esta definición del operador compresión permite comprimir al estado vacío solo a lo largo y ancho de los ejes del espacio fase, sin embargo, como se discutió al inicio del capítulo, un estado comprimido puede rotar un ángulo $\beta$ en el espacio fase, y la elipse que representa al estados no necesariamente tiene su semieje mayor o menor en paralelo con los ejes del espacio fase (hacer figura)
-La forma más general del operador de compresión como operador unitario considera al argumento del parámetro de compresión $z$ como complejo, lo que permite que la compresión se de respecto a otro eje no necesariamente paralelo al de la cuadratura de momento o posición \cite{Loudon}
+del estado vacío se obtiene entonces
+\begin{equation*}
+  \ket{\varphi} = \hat{S}(z)\ket{0}
+\end{equation*}
+Esta definición del operador compresión permite comprimir al estado vacío solo a lo largo y ancho de los ejes del espacio fase, sin embargo, como se discutió al inicio del capítulo, un estado comprimido puede rotar un ángulo $\beta$ en el espacio fase, y la elipse que representa al estados no necesariamente tiene su semieje mayor o menor en paralelo con los ejes del espacio fase. La forma más general del operador de compresión como operador unitario considera al argumento del parámetro de compresión $z$ como complejo, lo que permite que la compresión se de respecto a otro eje no necesariamente paralelo al de la cuadratura de momento o posición \cite{Loudon}
 \begin{equation*}
   \hat{S}(z) = \exp{\left( \frac{1}{2} (z{\hat{a}^{\dagger}}^2 - z^* {\hat{a}}^2) \right)}, \quad z = re^{i\beta}
 \end{equation*}
+
 Del teorema de expansión de operadores, se puede encontrar la transformación unitaria del operador aniquilación $\hat{a}$ por el de compresión $\hat{S}(z)$,
 \begin{align*}
   \hat{A}(z) & = \hat{S}(z)\hat{a} \hat{S}(z)                                                                       \\
@@ -782,6 +783,7 @@ donde se deja implícita la dependencia de estos operadores en el parámetro de 
   \hat{a}           & = \mu \hat{A} - \nu \hat{A}^\dagger   \\
   \hat{a}^{\dagger} & = \mu \hat{A}^\dagger - \nu^* \hat{A}
 \end{align*}
+
 El estado que se obtiene al aplicar el operador de compresión en un estado coherente $\ket{\alpha}$ se denomina estado coherente de dos fotones \cite{Mandel}, denotado por
 \begin{equation*}
   \ket{[z,\alpha]} = \hat{S}(z)\ket{\alpha} = \hat{S}(z)\hat{D}(\alpha)\ket{0}

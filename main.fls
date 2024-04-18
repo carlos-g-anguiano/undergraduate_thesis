@@ -984,6 +984,8 @@ INPUT ./introduccion_1.tex
 INPUT introduccion_1.tex
 INPUT ./introduccion_1.tex
 INPUT introduccion_1.tex
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/ecrm0800.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/ecrm0600.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
@@ -998,7 +1000,6 @@ INPUT ./capitulo_2.tex
 INPUT capitulo_2.tex
 INPUT ./capitulo_2.tex
 INPUT capitulo_2.tex
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/ecrm0800.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
@@ -1017,7 +1018,6 @@ INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/esint/esint10.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/esint/esint10.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/esint/esint10.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/ecrm0700.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/ecrm0600.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/ecbx0800.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/ecbx0600.tfm
 INPUT ./capitulo_3.tex
