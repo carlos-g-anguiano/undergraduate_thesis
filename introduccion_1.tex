@@ -1,64 +1,67 @@
 \chapter{Introducci\'on}
 
-La mecánica cuántica (MC) es un modelo físico que describe el comportamiento de las formas más pequeñas de la materia a través de la cuantización de la energía. La razón de su existencia se da a partir de fenómenos físicos que la mecánica clásica falla en predecir. Algunos de estos fenómenos son la radiación de cuerpo negro, el efecto fotoeléctrico y el no colapso de los electrones en los átomos.
+\section{Brevísima introducción a la Mecánica Cuántica}
 
-Un experimento que ilustra la necesidad de un espacio complejo de considerar un espacio vectorial complejo para modelar fenómenos físicos es el de Stern-Gerlach (SG). El experimento consiste en átomos de plata (Ag) disparados a lo largo de dos piezas polares, teniendo una de estas un borde afilado. De los 47 electrones del átomo de plata, uno (5s) no tiene una contraparte simétrica, y genera un momento angular intrínseco. El momento magnético es proporcional al espín, y estos átomos al pasar a lo largo del espacio entre las dos piezas polares experimentarán una fuerza dependiendo de la dirección de su componente $z$. Estos colisionan en una pantalla, donde clásicamente se esperaría una distribución Gaussiana de puntos de choque de los átomos a lo largo de la pantalla. Sin embargo en realidad se observan dos manchas bien distinguidas entre sí. Del experimento se concluye que son solo dos los posibles valores del espín del electrón, sucediendo con la misma probabilidad.
+La mecánica cuántica (MC) es un modelo físico que describe el comportamiento de las formas más pequeñas de la materia a través de la cuantización de la energía. La razón de su existencia se da a partir de fenómenos físicos que la mecánica clásica falla en predecir. Algunos de estos fenómenos son la radiación de cuerpo negro, el efecto fotoeléctrico y que los electrones no colapsen en sus ``órbitas'' atómicas. Esta descripción requiere que la energía esté cuantizada, es decir, que existe una unidad mínima de energía la cual no se puede dividir más.
 
-Realizando este experimento de manera secuencial, pero direccionando el campo magnético en la componente $x$ y bloqueamos con una pantalla el haz de átomos con electrones con $S_z^-$. De esta forma asumiríamos que la mitad de los átomos pasando el segundo experimento tendrían una configuración $S_z^+$, $S_x^-$ y la otra mitad
-$S_z^+$, $S_x^+$. Para verificar esta hipótesis, se puede realizar un tercer experimento de SG en secuencia, de nueva cuenta generando un campo magnético no homogéneo a lo largo del eje $z$. Si todos los átomos tienen una configuración con $S_z^+$, se esperaría que todos los átomos se vean reflejados en la pantalla superior, sin embargo, este no es el caso. La "selección" de átomos en el segundo experimento de SG destruye cualquier información del primer experimento de SG en la componente $z$. En notación de Dirac, estas posibles combinaciones se pueden escribir como:
+Los fenómenos cuánticos están regidos por la ecuación de Shcrödinger, que es una ecuación lineal cuyas soluciones son funciones de onda, elementos de un espacio complejo de Hilbert de dimensión infinita donde se engloban los posibles estados del sistema. Representa a los sistemas de base continua. Por otro lado, la mecánica matricial de Heisenberg, desarrollada en simultáneo con la mecánica ondulatoria de Schrödinger, es una representación que permite describir sistemas de base discreta.
+
+Un experimento que ilustra la necesidad de considerar un espacio vectorial complejo para modelar fenómenos físicos es el de Stern-Gerlach (SG). El experimento consiste en átomos de plata (Ag) disparados a lo largo de dos piezas polares, teniendo una de estas un borde afilado. De los 47 electrones del átomo de plata, aquel en el nivel 5s no tiene una contraparte simétrica, y genera un momento angular intrínseco \cite{Sakurai}. El momento magnético es proporcional al espín, y estos átomos al pasar a lo largo del espacio entre las dos piezas polares experimentarán una fuerza dependiendo de la dirección de su componente $z$. Estos colisionan en una pantalla, donde clásicamente se esperaría una distribución Gaussiana de puntos de choque de los átomos a lo largo de la pantalla. Sin embargo en realidad se observan dos manchas bien distinguidas entre sí. Del experimento se concluye que son solo dos los posibles valores del espín del electrón, sucediendo con la misma probabilidad.
+
+Considere ahora un segundo experimento de manera secuencial, pero ahora de forma que el campo magnético tenga dirección en $x$ y bloqueando con una pantalla el haz de átomos con electrones con $S_z^-$. De esta forma asumiríamos que la mitad de los átomos pasando el segundo experimento tendrían una configuración $S_z^+$, $S_x^-$ y la otra mitad $S_z^+$, $S_x^+$, bloqueando todos los átomos $S_z^-$. Para verificar esta hipótesis, se puede realizar un tercer experimento de SG en secuencia, de nueva cuenta generando un campo magnético no homogéneo a lo largo del eje $z$. Si todos los átomos tienen una configuración con $S_z^+$, se esperaría que todos los átomos se vean reflejados en la pantalla superior, sin embargo, este no es el caso. La ``selección'' de átomos en el segundo experimento de SG destruye cualquier información del primer experimento de SG en la componente $z$. En notación de Dirac, estas posibles combinaciones se pueden escribir como kets de la forma
 \begin{equation}
   \label{1.1}
   \ket{S_x; \pm} = \pm \frac{1}{\sqrt{2}}\ket{S_z; +} + \frac{1}{\sqrt{2}}\ket{S_z; -}\,.
 \end{equation}
-Esto se puede representar en un espacio vectorial bidimensional complejo. Esta necesidad surge de utilizar la misma base $\ket{S_z; \pm}$ para representar los estados de espín en $y$. El espacio se describe por combinaciones lineales de los vectores base y coeficientes complejos
+donde la primera etiqueta indica la componente del espín, y la segunda indica la dirección. Esto se puede representar en un espacio vectorial bidimensional complejo. Esta necesidad surge de utilizar la misma base $\ket{S_z; \pm}$ para representar los estados de espín en $y$. El espacio se describe por combinaciones lineales de los vectores base y coeficientes complejos
 \begin{equation}
   \label{1.2}
   \ket{S_y; \pm} = \frac{1}{\sqrt{2}}\ket{S_z; +} \pm \frac{i}{\sqrt{2}}\ket{S_z; -}\,.
 \end{equation}
-
 % Aquí, ^x y ^p obedecen la relación canónica de conmutación, por lo tanto su espectro no tiene máximo y es continuo (Ver pág. 40 Leonhardt)
+El espacio vectorial complejo utilizado tiene una dimensionalidad que depende el sistema físico estudiado. En el caso del experimento de SG previamente considerado, la dimensión es dos. En casos donde las variables son continuas, como es el caso del momento y la posición, la dimensión es infinita y los elementos $\ket{\psi}$ se denominan estados, y a las variables se les representa por observables $\hat{A}$. Los estados se pueden representar por distintas bases, por ejemplo la de momento o posición, cuyos respectivos observables son $\hat{p}$ y $\hat{x}$. De la naturaleza de un espacio vectorial, se obtiene el principio de superposición, dados dos estados $\ket{\psi_1}$ y $\ket{\psi_2}$, cualquier combinación lineal $c_1 \ket{\psi_1} + c_2 \ket{\psi_2}$ con $|c_1|^2 + |c_2|^2 = 1$ es también un estado puro del sistema. El principio de superposición explica la interferencia y, de acuerdo a la interpretación probabilista de Max Born, los módulos cuadrados de los coeficientes denotan las probabilidades de que el sistema se encuentre en dicho estado al momento de realizar una medición.
 
-El espacio vectorial complejo utilizado tiene una dimensionalidad que depende el sistema físico estudiado. En el caso del experimento de SG previamente considerado, la dimensión es dos. En casos donde las variables son continuas, como es el caso del momento y la posición, estos se describen por espacios de infinita dimensión denominados de Hilbert, cuyos elementos $\ket{\psi}$ se denominan estados, y a las variables se les representa por observables $\hat{A}$, en este caso $\hat{p}$ y $\hat{x}$ para el momento y posición, respectivamente. De la naturaleza de un espacio vectorial, se obtiene el principio de superposición, dados dos estados $\ket{\psi_1}$ y $\ket{\psi_2}$, cualquier combinación lineal $c_1 \ket{\psi_1} + c_2 \ket{\psi_2}$ con $|c_1|^2 + |c_2|^2 = 1$ es también un estado puro del sistema. El principio de superposición explica la interferencia y, de acuerdo a la interpretación probabilista de Max Born, los módulos cuadrados de los coeficientes denotan las probabilidades de que el sistema se encuentre en dicho estado al momento de realizar una medición.
-
-Dos operadores se dicen compatibles si son tales que su conmutación es cero, es decir $[\hat{A}, \hat{B}] = \hat{A}\hat{B} - \hat{B}\hat{A} = 0$, es decir, que el orden de aplicación de los operadores afecta de igual manera a un estado $\hat{A} \hat{B} \ket{\psi} = \hat{B} \hat{A} \ket{\psi}$. Por otro lado, si la diferencia es distinta de cero, se dice que son no compatibles. Este último es el caso de los operadores $\hat{x}$ y momento $\hat{p}$, cuya relación de conmutación es
+Dos operadores se dicen compatibles si son tales que su conmutación es cero, es decir $[\hat{A}, \hat{B}] = \hat{A}\hat{B} - \hat{B}\hat{A} = 0$, es decir, que el orden de aplicación de los operadores afecta de igual manera a un estado $\hat{A} \hat{B} \vert\psi\langle = \hat{B} \hat{A} \vert \psi \rangle$. Por otro lado, si la diferencia es distinta de cero, se dice que son no compatibles. Este último es el caso de los operadores $\hat{x}$ y momento $\hat{p}$, cuya relación de conmutación, llamada relación de conmutación canónica, es
 \begin{equation}
   \label{1.3}
   [\hat{x}, \hat{p}] = i\hbar \hat{I}\,.
 \end{equation}
-
-Dado un observable $\hat{A}$, se puede definir un operador $\Delta A \def \hat{A} - \langle \hat{A} \rangle$. El cuadrado del valor esperado de este operador se conoce como la dispersión $\langle (\Delta A)^2 \rangle = \langle \hat{A}^2\rangle  - \langle\hat{A}\rangle^2$. La dispersión se anula cuando el estado tratado es un eigenestado del observable $\hat{A}$. A partir de estas definiciones, para dos observables $\hat{A}$ y $\hat{B}$ y cualquier estado se debe satisfacer la relación de incertidumbre generalizada \cite{Sakurai}
+Dado un observable $\hat{A}$, se puede definir un operador $\Delta A \equiv \hat{A} - \langle \hat{A} \rangle$. El cuadrado del valor esperado de este operador se conoce como la dispersión $\langle (\Delta A)^2 \rangle = \langle \hat{A}^2\rangle  - \langle\hat{A}\rangle^2$. La dispersión se anula cuando el estado tratado es un eigenestado del observable $\hat{A}$. A partir de estas definiciones, para dos observables $\hat{A}$ y $\hat{B}$ y cualquier estado se debe satisfacer la relación de incertidumbre generalizada
 \begin{equation}
   \label{1.4}
   \langle (\Delta A)^2 \rangle \langle (\Delta B)^2 \rangle \geq \frac{1}{4} \left| \left\langle \left[ \hat{A}, \hat{B} \right] \right\rangle  \right|^2 \,.
 \end{equation}
 % Change of basis and diagonalization theory
-Dados dos observables incompatibles $\hat{A}$ y $\hat{B}$ con bases dados por sus eigenestados $\left\{\ket{a}\right\}$ y $\left\{\ket{b}\right\}$ respectivamente, se puede realizar un cambio de representación o base para estudiar cómo están relacionadas estas dos descripciones del espacio de kets. Este cambio de base está dado por una transformación de similitud $\hat{B} = \hat{U}^\dagger \hat{A} \hat{U}$. con $\hat{U}$ un operador unitario llamado matriz de transformación dado por $\hat{U} = \sum_k \ket{b_k}\bra{a_k}$, con $\ket{a_k}$ y $\ket{b_k}$ las bases de los eigenestados de los operadores $\hat{A}$ y $\hat{B}$ respectivamente. La traza de un operador $\hat{A}$ está definida como la suma de los elementos diagonales de la matriz asociada $A$ y es independiente a la representación
+Dados dos observables incompatibles $\hat{A}$ y $\hat{B}$ con bases dados por sus eigenestados $\left\{\vert a \rangle\right\}$ y $\left\{\vert b \rangle\right\}$ respectivamente, se puede realizar un cambio de representación o base para estudiar cómo están relacionadas estas dos descripciones del espacio de kets. Este cambio de base está dado por una transformación de similitud $\hat{B} = \hat{U}^\dagger \hat{A} \hat{U}$. con $\hat{U}$ un operador unitario llamado matriz de transformación dado por $\hat{U} = \sum_k \vert b_k \rangle \langle a_k \vert$, con $\vert a_k\rangle$ y $\vert b_k\rangle $ las bases de los eigenestados de los operadores $\hat{A}$ y $\hat{B}$ respectivamente. La traza de un operador $\hat{A}$ está definida como la suma de los elementos diagonales de la matriz asociada $A$ y es independiente a la representación
 \begin{equation}
-  \text{Tr}(A) = \sum_a \bra{a}A\ket{a}
+  \text{Tr}(A) = \sum_a \langle a\vert A\vert a \rangle.
 \end{equation}
-El encontrar la matriz unitaria que diagonaliza $B$ es equivalente a encontrar los eigenvalores y eigenestados del operador $B$ cuyos elementos matriciales en la base $\{\ket{a}\}$ previa a la transformación son conocidos. Conocida la matriz de transformación $U$, se puede construir la transformación unitaria de $A$ $UAU^{-1}$ y se dicen observables unitariamente equivalentes. El conjunto $\{ket{b}\}$ son eigenestados de $UAU^{-1}$ con los mismos eigenvalores que los eigenvalores de $A$, haciendo su espectro idéntico.
+El encontrar la matriz unitaria que diagonaliza $B$ es equivalente a encontrar los eigenvalores y eigenestados del operador $B$ cuyos elementos matriciales en la base $\{\vert a\rangle\}$ previa a la transformación son conocidos. Conocida la matriz de transformación $U$, se puede construir la transformación unitaria de $A$ $UAU^{-1}$ y se dicen observables unitariamente equivalentes. El conjunto $\{\vert b\rangle\}$ son eigenestados de $UAU^{-1}$ con los mismos eigenvalores que los eigenvalores de $A$, haciendo su espectro idéntico.
 % Teoría de matriz de densidad
-Los estados cuánticos que describe un ket $\ket{\psi}$ y su respectiva función de onda $\psi$ pueden representar un sistema físico solo si este no está compuesto por más subensembles independientes entre si. A dichos estados se les denomina puros. Si, por el contrario, el sistema físico no puede ser descrito por un estado puro, se utiliza una distribución estadística de estados puros a la que se le denomina estado mixto. Ambos tipos de sistemas se pueden describir usando la matriz de densidad $\hat{\rho}$, que es la forma más general para describir sistemas en la mecánica cuántica\cite{Pena}. Sea $\hat{A}$ un operador cualquiera, el valor esperado de este operador se calcula como $\hat{A} = \text{Tr}\left\{ \hat{\rho} \hat{A} \right\}$. En el caso de un ensemble con varios subensembles descritos por un estado $\ket{i}$, cada uno contribuyendo al sistema con un peso $\omega_i$, el operador de densidad está dado por $\hat{\rho} = \sum_i \omega_i \ket{i} \bra{i}$, lo que en un estado puro $\ket{\psi}$ se reduce a $\hat{\rho} = \ket{\psi}\bra{\psi}$ que recupera la definición de valor esperado de un operador $\hat{A}$ en estados puros dada por $\langle\hat{A}\rangle = \bra{\psi}\hat{A}\ket{\psi}$.
+
+Los estados cuánticos que describe un ket $\vert\psi\rangle$ y su respectiva función de onda $\psi$ pueden representar un sistema físico solo si este no está compuesto por más subensembles independientes entre sí. A dichos estados se les denomina puros. Si, por el contrario, el sistema físico no puede ser descrito por un estado puro, se utiliza una distribución estadística de estados puros a la que se le denomina estado mixto. Ambos tipos de sistemas se pueden describir usando la matriz de densidad $\hat{\rho}$, que es la forma más general para describir sistemas en la mecánica cuántica \cite{Pena}. Sea $\hat{A}$ un operador cualquiera, el valor esperado de este operador se calcula como $\hat{A} = \text{Tr}\left\{ \hat{\rho} \hat{A} \right\}$. En el caso de un ensemble con varios subensembles descritos por un estado $\ket{i}$, cada uno contribuyendo al sistema con un peso $\omega_i$, el operador de densidad está dado por $\hat{\rho} = \sum_i \omega_i \ket{i} \bra{i}$, lo que en un estado puro $\ket{\psi}$ se reduce a $\hat{\rho} = \ket{\psi}\bra{\psi}$ que recupera la definición de valor esperado de un operador $\hat{A}$ en estados puros dada por $\langle\hat{A}\rangle = \bra{\psi}\hat{A}\ket{\psi}$
 %Ecuación de Schrödinger y necesidad del operador de evolución temporal
-Todos los sistemas cuánticos reales están sujetos a una evolución temporal. La ecuación de Schrödinger completa justamente describe la evolución temporal de una función de onda $\psi$
+
+Todos los sistemas cuánticos reales están sujetos a una evolución temporal. La ecuación de Schrödinger completa justamente describe la evolución temporal de una función de onda $\psi$ bajo la acción de un potencial $V$
 \begin{equation}
-  i\hbar\frac{\partial \psi}{\partial t} = -\frac{\hbar^2}{2m}\nabla^2 \psi + V\psi
+  i\hbar\frac{\partial \psi}{\partial t} = -\frac{\hbar^2}{2m}\nabla^2 \psi + V\psi.
 \end{equation}
-Se pueden expresar las soluciones en términos de funciones propias que corresponden al problema estacionario y el potencial $V$ no es función del tiempo. Se expresa entonces la función de onda como una superposición de las ondas monocromáticas que resultan de la solución espacial de la ecuación de onda del problema estacionario $\varphi_n(\mathbf{r})$
+Se pueden expresar las soluciones en términos de funciones propias que corresponden al problema estacionario siempre y cuando el potencial $V$ sea independiente del tiempo. Se expresa entonces la función de onda como una superposición de las ondas monocromáticas que resultan de la solución espacial de la ecuación de onda del problema estacionario $\varphi_n(\mathbf{r})$
 \begin{equation}
-  \psi(\mathbf{r}, t) = \sum_n c_n e^{-iE_n t/\hbar}\psi_n(\mathbf{r})
+  \psi(\mathbf{r}, t) = \sum_n c_n e^{-iE_n t/\hbar}\varphi_n(\mathbf{r}).
 \end{equation}
 % Evolución temporal de un sistema cuántico
-En la notación de Dirac, considere un estado que depende del tiempo cuyo valor $\ket{\psi(t)}$ que se encuentra en el estado $\ket{\psi}(t_0)$ en un tiempo fijo $t_0$. Se relaciona al estado fijo con el dependiente del tiempo a través del operador de evolución temporal como $\ket{\psi(t)} = \hat{U}(t, t_0) \ket{\psi(t_0)}$, que considerando $t_0=0$ se puede simplificar a $\ket{\psi(t)} = \hat{U}(t) \ket{\psi(t_0)}$. La expresión explícita del operador se obtiene construyendola a partir de las propiedades que debe cumplir. El operador debe ser unitario $U^\dagger(t)\hat{U}(t) = 1$, que aplicaciones sucesivas de tiempos $t_1$ y $t_2$ sean equivalentes a la evolución en un tiempo $t_1+t_2$, y que el operador infinitesimal se reduzca a la identidad cuando $dt$ vaya a cero. Resulta de las anteriores consideraciones que el operador es de la form $\hat{U}(t) = 1-\frac{i\hat{H}dt}{\hbar}$, y su ecuación diferencial fundamental es la ecuación de Schrödinger para el operador de evolución temporal.
+
+En la notación de Dirac, considere un estado que depende del tiempo cuyo valor $\ket{\psi(t)}$ que se encuentra en el estado $\ket{\psi}(t_0)$ en un tiempo fijo $t_0$. Se relaciona al estado fijo con el dependiente del tiempo a través del operador de evolución temporal como $\ket{\psi(t)} = \hat{U}(t, t_0) \ket{\psi(t_0)}$, que considerando $t_0=0$ se puede simplificar a $\ket{\psi(t)} = \hat{U}(t) \ket{\psi(t_0)}$. La expresión explícita del operador se obtiene por construcción a partir de las propiedades que debe cumplir. El operador debe ser unitario $U^\dagger(t)\hat{U}(t) = 1$, que aplicaciones sucesivas de tiempos $t_1$ y $t_2$ sean equivalentes a la evolución en un tiempo $t_1+t_2$, y que el operador infinitesimal se reduzca a la identidad cuando $dt$ vaya a cero. Resulta de las anteriores consideraciones que el operador es de la form $\hat{U}(t) = 1-\frac{i\hat{H}dt}{\hbar}$, y su ecuación diferencial fundamental es la ecuación de Schrödinger para el operador de evolución temporal.
 \begin{equation}
-  i\hbar\frac{\partial}{\partial t} \hat{U}(t) = \hat{H}\hat{U}(t)
+  i\hbar\frac{\partial}{\partial t} \hat{U}(t) = \hat{H}\hat{U}(t).
 \end{equation}
 Cuando el Hamiltoniano es independiente del tiempo, la solución a esta ecuación está dada por
 \begin{equation*}
-  \hat{U}(t) = \exp{\left[ \frac{-i\hat{H}t}{\hbar} \right]}
+  \hat{U}(t) = \exp{\left[ \frac{-i\hat{H}t}{\hbar} \right] }.
 \end{equation*}
 % Oscilador armónico simple
-\section{Oscilador armónico cuántico}
+\subsection{Oscilador armónico cuántico}
 
 El oscilador armónico cuántico (OAC) es uno de los pocos modelos que tiene soluciones analíticas en la mecánica cuántica. La cinemática de varios sistemas periódicos y de tipo ondulatorio se puede describir utilizando el modelo del OAC.
 Varios potenciales independientes del tiempo $V(x)$ se pueden describir alrededor de un mínimo con una expansión en serie de Taylor
@@ -70,56 +73,40 @@ el segundo término se anula por definición de mínimo local. Por formalismo, s
   \label{OA.1}
   V(x) = \frac{1}{2}\frac{d^2V(x)}{dx^2}\Big|_{x_0}x^2 \,,
 \end{equation}
-
 lo anterior se puede aplicar para un potencial que depende de más dimensiones $V(\mathbf{x})$. Asumiendo que todos los potenciales se han recorrido de manera análoga $x_i \to x_i + x_{oi}$
-
 \begin{equation*}
   V(x_1, \dots, x_N) = \frac{1}{2}\sum_{i=1}^N \sum_{j=1}^N \frac{\partial^2 V}{\partial x_i \partial x_j}\Big|_{0} x_i x_j \,,
 \end{equation*}
-
 para hamiltonianos con potenciales cuadráticos, es siempre posible hacer un cambio de coordenadas de la forma
-
 \begin{equation*}
   (x_{1}, \dots, x_N) \to (u_1, \dots, u_N)\,,
 \end{equation*}
-
 donde el potencial se desacopla, \textit{i.e.} sin derivadas cruzadas, y se puede describir por $n$ osciladores armónicos individuales
-
 \begin{equation*}
   V(u_1, \dots, u_N) = \frac{1}{2} \sum_{i=1}^{N} \frac{\partial^2 V}{\partial u_i^{2}}\Big|_0 u_i^2\,.
 \end{equation*}
-
 Considerando un ejemplo básico de un oscilador armónico clásico, se tienen las ecuaciones clásicas de movimiento
-
 \begin{align}
-  m \frac{d^2x}{xt^2} & = -kx \,, \label{OA.2}            \\
+  m \frac{d^2x}{dt^2} & = -kx \,, \label{OA.2}            \\
   p                   & = m\frac{dx}{dt} \,, \label{OA.3}
 \end{align}
-
 con $k$ la constante del resorte, $m$ la masa de la partícula, $x$ el desplazamiento de la posición de equilibrio y $p$ el momento lineal, esto se sustituye en la ecuación estacionaria de Schrödinger, que se debe resolver es:
-
 \begin{equation}
   \label{OA.4}
   -\frac{\hbar^2}{2m}\frac{d^2}{dx^2}\psi(x) + \frac{1}{2}m \omega^2 x^2 \psi(x) = E \psi(x) \,.
 \end{equation}
-
 Una partícula en un sistema tiene una energía cinética que corresponde a
 \begin{equation*}
   \hat{T} = \frac{\hat{p}^2}{2m}\,,
 \end{equation*}
-
 y el hamiltoniano correspondiente está dado por
 \begin{equation}
   \hat{H} = \hat{T} + \hat{V} = \frac{\hat{p}^2}{2m} +\frac{1}{2} m\omega^2 \hat{q}^2 \label{OA.5}\,,
 \end{equation}
-
 % Following the Loudon method
-
 donde $\omega$ es la frecuencia angular del oscilador clásico.
-El problema del oscilador armónico puede ser resuelto de forma analítica (encontrando los eigenvalores y eigenfunciones de la ecuación de Schrödinger) o de forma algebraica, que involucra la introducción de dos operadores $\hat{a}^{\dagger}$ y $\hat{a}$, los operadores escalera de creación y aniquilación, respectivamente, definidos en términos de $\hat{q}$ y $\hat{p}$ como:
-% Definido en Sakurai de esta forma
-
-\begin{align}
+El problema del oscilador armónico puede ser resuelto de forma analítica encontrando los eigenvalores y eigenfunciones de la ecuación de Schrödinger, o de forma algebraica, que involucra la introducción de dos operadores $\hat{a}^{\dagger}$ y $\hat{a}$, los operadores escalera de creación y aniquilación, respectivamente. Procediendo por el método algebraico, los operadores $\hat{a}$ y $\hat{a}^\dagger$ en términos de $\hat{q}$ y $\hat{p}$ se escriben como
+\begin{align} % Definido en Sakurai de esta forma
   \hat{a}^{\dagger} & = (2m\hbar\omega)^{-1/2}(m\omega \hat{q} - i\hat{p})\label{OA.6} \,,   \\
   \hat{a}           & = (2m\hbar \omega)^{-1/2}(m\omega \hat{q} + i \hat{p})\label{OA.7} \,,
 \end{align}
@@ -145,21 +132,17 @@ A partir del anticonmutador de los operadores (\ref{OA.5}) y (\ref{OA.6}), se ob
                                             & = \frac{1}{2}[\hat{a},\hat{a}^{\dagger}] + \hat{a}^{\dagger}\hat{a}                                                        \nonumber                             \\
                                             & = \frac{1}{2} + \hat{a}^{\dagger}\hat{a} \label{OA.10}\,,
 \end{align}
-
 por lo que el de las ecuaciones (\ref{OA.9}) y (\ref{OA.10}) el hamiltoniano (\ref{OA.5}) se puede reescribir como
-
 \begin{equation}
   \label{OA.11}
   \hat{H} = \hbar \omega \left(\hat{a} \hat{a}^{\dagger} + \frac{1}{2}\right) = \frac{1}{2}\hbar \omega \left( \hat{a}\hat{a}^{\dagger} + \hat{a}^{\dagger}\hat{a} \right) \,.
 \end{equation}
-
 Se introduce también el operador número, definido como
 \begin{equation}
   \label{OA.12}
   \hat{n} = \hat{a}^{\dagger} \hat{a}\,,
 \end{equation}
 y el hamiltoniano (\ref{OA.11}) se puede escribir también como
-
 \begin{equation}
   \label{OA.13}
   \hat{H} = \hbar \omega \left(\hat{n} + \frac{1}{2}\right)\,,
@@ -196,19 +179,12 @@ A partir de esta propiedad se determina que $E_0 = \frac{1}{2}\hbar\omega$ y en 
   \label{OA.18}
   E_n = \left( n + \frac{1}{2} \right) \hbar\omega, \quad n\in\mathbf{N}\,.
 \end{equation}
-% ============================
-% ============================
-% ============================
 % Add explanation of how the cavity modes of EM field expansion = harmonic oscillator = why problems reduce to the harmonic oscillator (what properties let us do that simplification)
-% ============================
-% ============================
-% ============================
 Los estados número son eigenestados simultáneos del operador hamiltoniano (\ref{OA.13}) y del operador número (\ref{OA.12}), por lo que tienen una base de eigenvectores en común, donde
 \begin{equation}
   \label{OA.19}
   \hat{n}\ket{n} = n\ket{n}\,.
 \end{equation}
-
 Los estados se pueden normalizar utilizando las condiciones
 \begin{equation}
   \label{OA.20}
@@ -219,9 +195,7 @@ y los coeficientes de normalización para la aplicación de los operadores escal
   \hat{a}\ket{n}           & = \sqrt{n} \ket{n-1} \,,\label{OA.21}   \\
   \hat{a}^{\dagger}\ket{n} & = \sqrt{n+1} \ket{n+1} \,.\label{OA.22}
 \end{align}
-
-Los operadores $\hat{a}^{\dagger}$ y $\hat{a}$ no son hermitianos, por lo que no representan alguna magnitud f\'isica observable. Es conveniente entonces definir, a partir de la definición de operadores posición $\hat{q}$ y momento $\hat{p}$ generalizado en su forma adimensional utilizados en la expresión del Hamiltoniano del oscilador armónico, los operadores de cuadratura \cite{Loudon}
-
+Es conveniente definir, a partir de la definición de operadores posición $\hat{q}$ y momento $\hat{p}$ generalizado en su forma adimensional utilizados en la expresión del Hamiltoniano del oscilador armónico, los operadores de cuadratura \cite{Loudon}
 \begin{equation}
   \label{OA.23}
   \hat{X} = \sqrt{\frac{m\omega}{2\hbar}} \, \hat{q} = \frac{1}{2}\left( \hat{a} + \hat{a}^{\dagger} \right)\,,
@@ -255,3 +229,12 @@ con estos también se puede expresar el Hamiltoniano del oscilador armónico sim
   \hat{H} = \hbar \omega \left( \hat{X}^2 + \hat{Y}^2 \right)\,.
 \end{equation}
 % Agregar teoría de fasores e incertidumbre de Fox cap 7.3
+\section{Óptica cuántica}
+Existen tres métodos generales para estudiar la teoría de la luz. La óptica clásica los átomos se tratan como un filamento de corriente corto e infinitesimalmente delgado con una corriente uniforme que radia un campo electromagnético y la luz descrita por ondas electromagnéticas. La teoría semiclásica cuantiza la energía de los átomos, manteniendo el comportamiento de onda de la luz. Estos modelos son suficientes para describir la mayoría de los fenómenos ópticos. Son relativamente pocas las situaciones físicas en las que una descripción cuántica, donde además de la cuantización atómica, la luz se describe por fotones.
+
+Durante el siglo XIX, la luz pasó de ser considerada como formada por partículas a ondas debido a experimentos que el modelo corpuscular de la luz no podía explicar como la difracción, refracción o birrefringencia, dando inicio al desarrollo de la óptica clásica. El concepto de fotón fue retomado luego por Einstein (y acuñado tiempo después como ``fotón'' por Gilbert Lewis en 1926 \cite{Fox}) para explicar la independencia de la energía cinética de los electrones liberados de la intensidad de la luz y la existencia de una frecuencia mínima para poder producir electrones en el efecto fotoeléctrico, proceso en el que los electrones en el material son liberados al absorber energía que reciben en forma de luz. A cada fotón se le asigna un \textit{quantum} de energía $E=h \nu$ y este fotón cede toda su energía para liberar al electrón del material.
+
+Sin embargo, aunque el efecto fotoeléctrico y otros experimentos sustentan la existencia de fotones, la cuantización de la materia también puede explicar este fenómeno sin la necesidad de fotones. En este marco, los electrones de los átomos se describen mediante funciones de onda que están cuantificadas, teniendo niveles de energía discretos. Cuando un fotón con suficiente energía interactúa con un electrón, puede excitarlo a un nivel de energía más alto o permitirle escapar del material por completo si la energía del fotón es mayor a la función de trabajo del material. Esta explicación no depende explícitamente de la existencia de fotones, y es por lo tanto una teoría semiclásica.
+
+% Agregar un pequeño resumen de cómo funciona el experimento HBT y la función de correlación de segundo orden
+Fueron experimentos como el diseñado por Hanbury Brown y Twiss (HBT) en 1956, el descubrimiento del láser en 1960 y la propuesta de estados cuasi-clásicos por Glauber en 1963 que impulsaron una nueva ola de investigación sobre la teoría fotónica y propuestas para demostrar su existencia. La prueba experimental de estas propiedades, que la teoría clásica no podía explicar, fueron obtenidas por Kimble, Dagenais y Mandel en 1977 cuando observaron \textit{photon antibunching} en experimentos de fluorescencia con átomos de sodio excitados por un haz láser de colorante \cite{PhysRevLett.39.691}.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.2.26)  23 APR 2024 19:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.2.26)  2 MAY 2024 10:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -853,7 +853,10 @@ File: pgflibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 LaTeX Warning: Unused global option(s):
     [twside].
 
-No file main.aux.
+(./main.aux (./portada.aux)
+LaTeX Info: Redefining \. on input line 26.
+LaTeX Info: Redefining \% on input line 26.
+ (./agradecimientos.aux) (./contents.aux) (./introduccion_1.aux) (./capitulo_2.aux) (./capitulo_3.aux) (./capitulo_4.aux) (./capitulo_5.aux) (./bibliografia.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 176.
@@ -878,7 +881,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 176.
 LaTeX Font Info:    ... okay on input line 176.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 176.
 LaTeX Font Info:    ... okay on input line 176.
-(c:/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (c:/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count351
 \scratchdimen=\dimen318
@@ -953,6 +956,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 176.
 LaTeX Info: Redefining \pageref on input line 176.
 LaTeX Info: Redefining \nameref on input line 176.
+ (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
@@ -975,12 +979,12 @@ Package gensymb Warning: Not defining \micro.
 \openout2 = `portada.aux'.
 
 (./portada.tex
-<ipn.png, id=31, 101.4189pt x 146.2263pt>
+<ipn.png, id=110, 101.4189pt x 146.2263pt>
 File: ipn.png Graphic file (type png)
 <use ipn.png>
 Package pdftex.def Info: ipn.png  used on input line 3.
 (pdftex.def)             Requested size: 56.90561pt x 85.36241pt.
-<esfm.png, id=32, 122.859pt x 151.0443pt>
+<esfm.png, id=111, 122.859pt x 151.0443pt>
 File: esfm.png Graphic file (type png)
 <use esfm.png>
 Package pdftex.def Info: esfm.png  used on input line 11.
@@ -1012,7 +1016,30 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 :<+ contents.tex
 \openout2 = `contents.aux'.
 
-(./contents.tex
+(./contents.tex (./main.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+ (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+ (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 3.
+ (c:/texlive/2021/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Trying to load font information for U+esint on input line 3.
+ (c:/texlive/2021/texmf-dist/tex/latex/esint/uesint.fd
+File: uesint.fd 
+)
+LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 3.
+ (c:/texlive/2021/texmf-dist/tex/latex/yhmath/OMXyhex.fd
+File: OMXyhex.fd 
+File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
+))
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
@@ -1040,29 +1067,8 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 
 (./introduccion_1.tex
  1.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
-(c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
- (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 5.
- (c:/texlive/2021/texmf-dist/tex/latex/jknapltx/ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
-LaTeX Font Info:    Trying to load font information for U+esint on input line 5.
- (c:/texlive/2021/texmf-dist/tex/latex/esint/uesint.fd
-File: uesint.fd 
-)
-LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 5.
- (c:/texlive/2021/texmf-dist/tex/latex/yhmath/OMXyhex.fd
-File: OMXyhex.fd 
-File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
-)
 
-Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 9.
+Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 11.
 
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
@@ -1078,8 +1084,8 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 
 
 ]
-
-LaTeX Warning: Citation `Sakurai' on page 5 undefined on input line 29.
+LaTeX Info: Redefining \. on input line 25.
+LaTeX Info: Redefining \% on input line 25.
 
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
@@ -1089,8 +1095,8 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
 [5]
-
-LaTeX Warning: Citation `Pena' on page 6 undefined on input line 41.
+LaTeX Info: Redefining \. on input line 44.
+LaTeX Info: Redefining \% on input line 44.
 
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
@@ -1100,8 +1106,8 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
 [6]
-LaTeX Info: Redefining \. on input line 72.
-LaTeX Info: Redefining \% on input line 72.
+LaTeX Info: Redefining \. on input line 68.
+LaTeX Info: Redefining \% on input line 68.
 
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
@@ -1111,8 +1117,8 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
 [7]
-LaTeX Info: Redefining \. on input line 114.
-LaTeX Info: Redefining \% on input line 114.
+LaTeX Info: Redefining \. on input line 97.
+LaTeX Info: Redefining \% on input line 97.
 
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
@@ -1122,23 +1128,9 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
 [8]
+LaTeX Info: Redefining \. on input line 134.
+LaTeX Info: Redefining \% on input line 134.
 
-LaTeX Warning: Reference `OA.5' on page 9 undefined on input line 141.
-
-
-LaTeX Warning: Reference `OA.6' on page 9 undefined on input line 141.
-
-
-LaTeX Warning: Reference `OA.9' on page 9 undefined on input line 149.
-
-
-LaTeX Warning: Reference `OA.10' on page 9 undefined on input line 149.
-
-
-LaTeX Warning: Reference `OA.5' on page 9 undefined on input line 149.
-
-LaTeX Info: Redefining \. on input line 154.
-LaTeX Info: Redefining \% on input line 154.
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1147,11 +1139,9 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
 [9]
+LaTeX Info: Redefining \. on input line 166.
+LaTeX Info: Redefining \% on input line 166.
 
-LaTeX Warning: Reference `OA.11' on page 10 undefined on input line 161.
-
-LaTeX Info: Redefining \. on input line 193.
-LaTeX Info: Redefining \% on input line 193.
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1160,17 +1150,9 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
 [10]
+LaTeX Info: Redefining \. on input line 215.
+LaTeX Info: Redefining \% on input line 215.
 
-LaTeX Warning: Reference `OA.13' on page 11 undefined on input line 206.
-
-
-LaTeX Warning: Reference `OA.12' on page 11 undefined on input line 206.
-
-
-LaTeX Warning: Citation `Loudon' on page 11 undefined on input line 223.
-
-LaTeX Info: Redefining \. on input line 251.
-LaTeX Info: Redefining \% on input line 251.
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1178,18 +1160,29 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
-[11])
+[11]
+LaTeX Info: Redefining \. on input line 238.
+LaTeX Info: Redefining \% on input line 238.
+
+
+Package fancyhdr Warning: \headheight is too small (6.50403pt): 
+(fancyhdr)                Make it at least 14.84344pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.84344pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-8.33942pt}.
+
+[12])
 LaTeX Info: Redefining \. on input line 190.
 LaTeX Info: Redefining \% on input line 190.
 
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                Make it at least 14.84344pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.84344pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
+(fancyhdr)                \addtolength{\topmargin}{-8.33942pt}.
 
-[12]
+[13]
 :<-
 :<+ capitulo_2.tex
 \openout2 = `capitulo_2.aux'.
@@ -1197,7 +1190,7 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (./capitulo_2.tex
  2.
 
-Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 26.
+Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 20.
 
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
@@ -1206,55 +1199,15 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
-[13
+[14
 
 
 
 
 
 ]
-
-LaTeX Warning: Citation `Agarwal_2012' on page 14 undefined on input line 29.
-
-
-LaTeX Warning: Reference `EM.4' on page 14 undefined on input line 29.
-
-
-LaTeX Warning: Reference `EM.5' on page 14 undefined on input line 29.
-
-
-LaTeX Warning: Reference `EM.6' on page 14 undefined on input line 29.
-
-
-LaTeX Warning: Reference `EM.4' on page 14 undefined on input line 30.
-
-
-LaTeX Warning: Citation `Riley' on page 14 undefined on input line 49.
-
-
-LaTeX Warning: Citation `Walls' on page 14 undefined on input line 49.
-
-
-LaTeX Warning: Citation `Arfken' on page 14 undefined on input line 51.
-
-
-LaTeX Warning: Citation `Riley' on page 14 undefined on input line 61.
-
-
-LaTeX Warning: Reference `EM.9' on page 14 undefined on input line 61.
-
-LaTeX Info: Redefining \. on input line 62.
-LaTeX Info: Redefining \% on input line 62.
-
-Package fancyhdr Warning: \headheight is too small (6.50403pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
-
-[14]
-LaTeX Info: Redefining \. on input line 108.
-LaTeX Info: Redefining \% on input line 108.
+LaTeX Info: Redefining \. on input line 53.
+LaTeX Info: Redefining \% on input line 53.
 
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
@@ -1264,8 +1217,8 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
 [15]
-LaTeX Info: Redefining \. on input line 139.
-LaTeX Info: Redefining \% on input line 139.
+LaTeX Info: Redefining \. on input line 91.
+LaTeX Info: Redefining \% on input line 91.
 
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
@@ -1275,11 +1228,9 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
 [16]
+LaTeX Info: Redefining \. on input line 120.
+LaTeX Info: Redefining \% on input line 120.
 
-LaTeX Warning: Citation `Mandel' on page 17 undefined on input line 144.
-
-LaTeX Info: Redefining \. on input line 164.
-LaTeX Info: Redefining \% on input line 164.
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1288,17 +1239,9 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
 [17]
+LaTeX Info: Redefining \. on input line 148.
+LaTeX Info: Redefining \% on input line 148.
 
-LaTeX Warning: Reference `EM.20' on page 18 undefined on input line 165.
-
-
-LaTeX Warning: Citation `Loudon' on page 18 undefined on input line 228.
-
-
-LaTeX Warning: Citation `Leonhardt' on page 18 undefined on input line 234.
-
-LaTeX Info: Redefining \. on input line 239.
-LaTeX Info: Redefining \% on input line 239.
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1307,10 +1250,17 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
 [18]
+LaTeX Info: Redefining \. on input line 218.
+LaTeX Info: Redefining \% on input line 218.
 
-LaTeX Warning: Citation `Agarwal_2012' on page 19 undefined on input line 241.
 
-)
+Package fancyhdr Warning: \headheight is too small (6.50403pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
+
+[19])
 LaTeX Info: Redefining \. on input line 191.
 LaTeX Info: Redefining \% on input line 191.
 
@@ -1321,7 +1271,7 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
-[19]
+[20]
 :<-
 :<+ capitulo_3.tex
 \openout2 = `capitulo_3.aux'.
@@ -1329,13 +1279,7 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (./capitulo_3.tex
  3.
 
-LaTeX Warning: Citation `Agarwal_2012' on page 20 undefined on input line 20.
-
-
-LaTeX Warning: Citation `Leonhardt' on page 20 undefined on input line 20.
-
-
-Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 27.
+Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 24.
 
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
@@ -1344,34 +1288,15 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
-[20
+[21
 
 
 
 
 
 ]
-
-LaTeX Warning: Citation `Walls' on page 21 undefined on input line 30.
-
-
-LaTeX Warning: Citation `Glauber' on page 21 undefined on input line 59.
-
-
-LaTeX Warning: Citation `Leonhardt' on page 21 undefined on input line 59.
-
-LaTeX Info: Redefining \. on input line 66.
-LaTeX Info: Redefining \% on input line 66.
-
-Package fancyhdr Warning: \headheight is too small (6.50403pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
-
-[21]
-LaTeX Info: Redefining \. on input line 130.
-LaTeX Info: Redefining \% on input line 130.
+LaTeX Info: Redefining \. on input line 57.
+LaTeX Info: Redefining \% on input line 57.
 
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
@@ -1381,8 +1306,8 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
 [22]
-LaTeX Info: Redefining \. on input line 161.
-LaTeX Info: Redefining \% on input line 161.
+LaTeX Info: Redefining \. on input line 119.
+LaTeX Info: Redefining \% on input line 119.
 
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
@@ -1392,8 +1317,8 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
 [23]
-LaTeX Info: Redefining \. on input line 185.
-LaTeX Info: Redefining \% on input line 185.
+LaTeX Info: Redefining \. on input line 151.
+LaTeX Info: Redefining \% on input line 151.
 
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
@@ -1403,27 +1328,20 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
 [24]
+LaTeX Info: Redefining \. on input line 171.
+LaTeX Info: Redefining \% on input line 171.
 
-LaTeX Warning: Citation `Schwichtenberg' on page 25 undefined on input line 203.
-
-LaTeX Info: Redefining \. on input line 204.
-LaTeX Info: Redefining \% on input line 204.
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
-(fancyhdr)                Make it at least 14.84344pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.84344pt}.
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-8.33942pt}.
+(fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
 [25]
+LaTeX Info: Redefining \. on input line 190.
+LaTeX Info: Redefining \% on input line 190.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-LaTeX Info: Redefining \. on input line 338.
-LaTeX Info: Redefining \% on input line 338.
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
 (fancyhdr)                Make it at least 14.84344pt, for example:
@@ -1432,9 +1350,11 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                \addtolength{\topmargin}{-8.33942pt}.
 
 [26]
-LaTeX Info: Redefining \. on input line 346.
-LaTeX Info: Redefining \% on input line 346.
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Info: Redefining \. on input line 316.
+LaTeX Info: Redefining \% on input line 316.
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
 (fancyhdr)                Make it at least 14.84344pt, for example:
@@ -1443,8 +1363,8 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                \addtolength{\topmargin}{-8.33942pt}.
 
 [27]
-LaTeX Info: Redefining \. on input line 379.
-LaTeX Info: Redefining \% on input line 379.
+LaTeX Info: Redefining \. on input line 324.
+LaTeX Info: Redefining \% on input line 324.
 
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
@@ -1454,16 +1374,9 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                \addtolength{\topmargin}{-8.33942pt}.
 
 [28]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 380.
- (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/ueuf.fd
-File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-)
-Overfull \hbox (2.64017pt too wide) in paragraph at lines 389--390
-[][]\T1/cmr/m/n/12 Satisfacen la iden-ti-dad de Ja-co-bi: $\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 X; \OT1/cmr/m/n/12 [\OML/cmm/m/it/12 Y; Z\OT1/cmr/m/n/12 ]] + [\OML/cmm/m/it/12 Z; \OT1/cmr/m/n/12 [\OML/cmm/m/it/12 X; Y\OT1/cmr/m/n/12 ]] + [\OML/cmm/m/it/12 Y; \OT1/cmr/m/n/12 [\OML/cmm/m/it/12 Z; X\OT1/cmr/m/n/12 ]] = 0$\T1/cmr/m/n/12 , $\OMS/cmsy/m/n/12 8\OML/cmm/m/it/12 X; Y; Z \OMS/cmsy/m/n/12 2
- []
+LaTeX Info: Redefining \. on input line 357.
+LaTeX Info: Redefining \% on input line 357.
 
-LaTeX Info: Redefining \. on input line 411.
-LaTeX Info: Redefining \% on input line 411.
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
 (fancyhdr)                Make it at least 14.84344pt, for example:
@@ -1472,24 +1385,23 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                \addtolength{\topmargin}{-8.33942pt}.
 
 [29]
+LaTeX Font Info:    Trying to load font information for U+euf on input line 360.
+ (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+)
+LaTeX Info: Redefining \. on input line 384.
+LaTeX Info: Redefining \% on input line 384.
 
-LaTeX Warning: Reference `eq:generator' on page 30 undefined on input line 428.
-
-
-LaTeX Warning: Citation `Perelomov' on page 30 undefined on input line 437.
-
-LaTeX Info: Redefining \. on input line 444.
-LaTeX Info: Redefining \% on input line 444.
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                Make it at least 14.84344pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.84344pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
+(fancyhdr)                \addtolength{\topmargin}{-8.33942pt}.
 
 [30]
-LaTeX Info: Redefining \. on input line 475.
-LaTeX Info: Redefining \% on input line 475.
+LaTeX Info: Redefining \. on input line 418.
+LaTeX Info: Redefining \% on input line 418.
 
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
@@ -1499,14 +1411,9 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
 [31]
+LaTeX Info: Redefining \. on input line 447.
+LaTeX Info: Redefining \% on input line 447.
 
-LaTeX Warning: Reference `eq:C3_op_posicion_esc' on page 32 undefined on input line 476.
-
-
-LaTeX Warning: Reference `eq:C3_op_momento_esc' on page 32 undefined on input line 476.
-
-LaTeX Info: Redefining \. on input line 503.
-LaTeX Info: Redefining \% on input line 503.
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1515,8 +1422,8 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
 [32]
-LaTeX Info: Redefining \. on input line 525.
-LaTeX Info: Redefining \% on input line 525.
+LaTeX Info: Redefining \. on input line 483.
+LaTeX Info: Redefining \% on input line 483.
 
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
@@ -1526,8 +1433,8 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
 [33]
-LaTeX Info: Redefining \. on input line 541.
-LaTeX Info: Redefining \% on input line 541.
+LaTeX Info: Redefining \. on input line 505.
+LaTeX Info: Redefining \% on input line 505.
 
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
@@ -1537,16 +1444,9 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
 [34]
+LaTeX Info: Redefining \. on input line 521.
+LaTeX Info: Redefining \% on input line 521.
 
-LaTeX Warning: Citation `schwichtenberg2015physics' on page 35 undefined on input line 542.
-
-
-Overfull \hbox (15.31157pt too wide) detected at line 565
-[]
- []
-
-LaTeX Info: Redefining \. on input line 565.
-LaTeX Info: Redefining \% on input line 565.
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1556,102 +1456,89 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 
 [35]
 
-LaTeX Warning: Citation `Sakurai' on page 36 undefined on input line 576.
-
-LaTeX Info: Redefining \. on input line 596.
-LaTeX Info: Redefining \% on input line 596.
-
-Package fancyhdr Warning: \headheight is too small (6.50403pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
-
-[36]pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.599         \begin{equation}
-                              pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.599         \begin{equation}
-                              pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.599         \begin{equation}
-                              pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.599         \begin{equation}
-                              pdfTeX warning (ext4): destination with the same identifier (name{equation.3.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.606         \end{align}
-                         pdfTeX warning (ext4): destination with the same identifier (name{equation.3.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.609         \begin{equation}
-                              pdfTeX warning (ext4): destination with the same identifier (name{equation.3.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.609         \begin{equation}
-                              pdfTeX warning (ext4): destination with the same identifier (name{equation.3.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.609         \begin{equation}
-                              pdfTeX warning (ext4): destination with the same identifier (name{equation.3.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.609         \begin{equation}
-                              
-
-LaTeX Warning: Reference `eq:res3-1' on page 37 undefined on input line 612.
+LaTeX Warning: Citation `schwichtenberg2015physics' on page 36 undefined on input line 522.
 
 
-LaTeX Warning: Reference `eq:prob3-1' on page 37 undefined on input line 620.
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.622         \begin{equation}
-                              pdfTeX warning (ext4): destination with the same identifier (name{equation.3.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.622         \begin{equation}
-                              pdfTeX warning (ext4): destination with the same identifier (name{equation.3.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.622         \begin{equation}
-                              pdfTeX warning (ext4): destination with the same identifier (name{equation.3.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.622         \begin{equation}
-                              
-
-LaTeX Warning: Reference `eq:res3-1' on page 37 undefined on input line 625.
-
-
-LaTeX Warning: Reference `eq:res3-2' on page 37 undefined on input line 625.
-
-
-LaTeX Warning: Reference `eq:prob3-1' on page 37 undefined on input line 625.
-
-LaTeX Info: Redefining \. on input line 629.
-LaTeX Info: Redefining \% on input line 629.
-
-Package fancyhdr Warning: \headheight is too small (6.50403pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
-
-[37]
-Overfull \hbox (23.42963pt too wide) detected at line 671
+Overfull \hbox (15.31157pt too wide) detected at line 545
 []
  []
 
-LaTeX Info: Redefining \. on input line 671.
-LaTeX Info: Redefining \% on input line 671.
+LaTeX Info: Redefining \. on input line 545.
+LaTeX Info: Redefining \% on input line 545.
+
+Package fancyhdr Warning: \headheight is too small (6.50403pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
+
+[36]
+LaTeX Info: Redefining \. on input line 576.
+LaTeX Info: Redefining \% on input line 576.
+
+
+Package fancyhdr Warning: \headheight is too small (6.50403pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
+
+[37]pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.579         \begin{equation}
+                              pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.579         \begin{equation}
+                              pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.579         \begin{equation}
+                              pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.579         \begin{equation}
+                              pdfTeX warning (ext4): destination with the same identifier (name{equation.3.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.586         \end{align}
+                         pdfTeX warning (ext4): destination with the same identifier (name{equation.3.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.589         \begin{equation}
+                              pdfTeX warning (ext4): destination with the same identifier (name{equation.3.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.589         \begin{equation}
+                              pdfTeX warning (ext4): destination with the same identifier (name{equation.3.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.589         \begin{equation}
+                              pdfTeX warning (ext4): destination with the same identifier (name{equation.3.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.589         \begin{equation}
+                              pdfTeX warning (ext4): destination with the same identifier (name{equation.3.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.602         \begin{equation}
+                              pdfTeX warning (ext4): destination with the same identifier (name{equation.3.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.602         \begin{equation}
+                              pdfTeX warning (ext4): destination with the same identifier (name{equation.3.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.602         \begin{equation}
+                              pdfTeX warning (ext4): destination with the same identifier (name{equation.3.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.602         \begin{equation}
+                              
+LaTeX Info: Redefining \. on input line 609.
+LaTeX Info: Redefining \% on input line 609.
+
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1660,8 +1547,22 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
 [38]
-LaTeX Info: Redefining \. on input line 709.
-LaTeX Info: Redefining \% on input line 709.
+Overfull \hbox (23.42963pt too wide) detected at line 651
+[]
+ []
+
+LaTeX Info: Redefining \. on input line 651.
+LaTeX Info: Redefining \% on input line 651.
+
+Package fancyhdr Warning: \headheight is too small (6.50403pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
+
+[39]
+LaTeX Info: Redefining \. on input line 689.
+LaTeX Info: Redefining \% on input line 689.
 
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
@@ -1670,29 +1571,22 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
-[39]pdfTeX warning (ext4): destination with the same identifier (name{equation.3.5}) has been already used, duplicate ignored
+[40]pdfTeX warning (ext4): destination with the same identifier (name{equation.3.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.717         \end{align}
+l.697         \end{align}
                          
-
-LaTeX Warning: Reference `eq:6-1' on page 40 undefined on input line 719.
-
-
-Overfull \hbox (58.26047pt too wide) detected at line 722
+Overfull \hbox (58.26047pt too wide) detected at line 702
 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12  \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 ^^L\OT1/cmr/m/n/12 )(\OML/cmm/m/it/12 ^^M[] \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 i^^M[]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 (\OML/cmm/m/it/12  \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 ^^L\OT1/cmr/m/n/12 )[](\OML/cmm/m/it/12 ^^M[] \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 i^^M[]\OT1/cmr/m/n/12 ) = (\OML/cmm/m/it/12 [] \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 ^^L[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 i\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 [] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 ^^L[]\OT1/cmr/m/n/12 ))(\OML/cmm/m/it/12 ^^M[] \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 i^^M[]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 [] \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 ^^L[] \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 i\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 [] \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 ^^L[]\OT1/cmr/m/n/12 ))(\OML/cmm/m/it/12 ^^M[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 i^^M[]\OT1/cmr/m/n/12 )
  []
 
 
-Overfull \hbox (105.1107pt too wide) detected at line 730
+Overfull \hbox (105.1107pt too wide) detected at line 710
 []
  []
 
-
-LaTeX Warning: Reference `eq:6-1' on page 40 undefined on input line 731.
-
-LaTeX Info: Redefining \. on input line 740.
-LaTeX Info: Redefining \% on input line 740.
+LaTeX Info: Redefining \. on input line 720.
+LaTeX Info: Redefining \% on input line 720.
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1700,13 +1594,13 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
-[40]
-Overfull \hbox (91.36311pt too wide) detected at line 766
+[41]
+Overfull \hbox (91.36311pt too wide) detected at line 746
 []
  []
 
-LaTeX Info: Redefining \. on input line 766.
-LaTeX Info: Redefining \% on input line 766.
+LaTeX Info: Redefining \. on input line 746.
+LaTeX Info: Redefining \% on input line 746.
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1714,49 +1608,45 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
-[41]pdfTeX warning (ext4): destination with the same identifier (name{equation.3.6}) has been already used, duplicate ignored
+[42]pdfTeX warning (ext4): destination with the same identifier (name{equation.3.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.781         \end{align}
-                         
-
-LaTeX Warning: Reference `eq:9-1' on page 42 undefined on input line 783.
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.7}) has been already used, duplicate ignored
+l.761         \end{align}
+                         pdfTeX warning (ext4): destination with the same identifier (name{equation.3.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.784         \begin{equation}
+l.764         \begin{equation}
                               pdfTeX warning (ext4): destination with the same identifier (name{equation.3.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.784         \begin{equation}
+l.764         \begin{equation}
                               pdfTeX warning (ext4): destination with the same identifier (name{equation.3.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.784         \begin{equation}
+l.764         \begin{equation}
                               pdfTeX warning (ext4): destination with the same identifier (name{equation.3.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.784         \begin{equation}
+l.764         \begin{equation}
                               pdfTeX warning (ext4): destination with the same identifier (name{equation.3.8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.789         \begin{equation}
+l.769         \begin{equation}
                               pdfTeX warning (ext4): destination with the same identifier (name{equation.3.8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.789         \begin{equation}
+l.769         \begin{equation}
                               pdfTeX warning (ext4): destination with the same identifier (name{equation.3.8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.789         \begin{equation}
+l.769         \begin{equation}
                               pdfTeX warning (ext4): destination with the same identifier (name{equation.3.8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.789         \begin{equation}
+l.769         \begin{equation}
                               
-LaTeX Info: Redefining \. on input line 796.
-LaTeX Info: Redefining \% on input line 796.
+LaTeX Info: Redefining \. on input line 776.
+LaTeX Info: Redefining \% on input line 776.
 
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
@@ -1765,45 +1655,29 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
-[42]pdfTeX warning (ext4): destination with the same identifier (name{equation.3.9}) has been already used, duplicate ignored
+[43]pdfTeX warning (ext4): destination with the same identifier (name{equation.3.9}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.814         \begin{equation}
+l.794         \begin{equation}
                               pdfTeX warning (ext4): destination with the same identifier (name{equation.3.9}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.814         \begin{equation}
+l.794         \begin{equation}
                               pdfTeX warning (ext4): destination with the same identifier (name{equation.3.9}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.814         \begin{equation}
+l.794         \begin{equation}
                               pdfTeX warning (ext4): destination with the same identifier (name{equation.3.9}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.814         \begin{equation}
+l.794         \begin{equation}
                               
-Overfull \hbox (48.55597pt too wide) detected at line 826
+Overfull \hbox (48.55597pt too wide) detected at line 806
 []
  []
 
-LaTeX Info: Redefining \. on input line 826.
-LaTeX Info: Redefining \% on input line 826.
-
-Package fancyhdr Warning: \headheight is too small (6.50403pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
-
-[43]
-
-LaTeX Warning: Reference `eq:9-3' on page 44 undefined on input line 828.
-
-
-LaTeX Warning: Reference `eq:9-4' on page 44 undefined on input line 841.
-
-LaTeX Info: Redefining \. on input line 845.
-LaTeX Info: Redefining \% on input line 845.
+LaTeX Info: Redefining \. on input line 806.
+LaTeX Info: Redefining \% on input line 806.
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1812,8 +1686,8 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
 [44]
-LaTeX Info: Redefining \. on input line 875.
-LaTeX Info: Redefining \% on input line 875.
+LaTeX Info: Redefining \. on input line 825.
+LaTeX Info: Redefining \% on input line 825.
 
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
@@ -1823,11 +1697,9 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
 [45]
+LaTeX Info: Redefining \. on input line 855.
+LaTeX Info: Redefining \% on input line 855.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-LaTeX Info: Redefining \. on input line 977.
-LaTeX Info: Redefining \% on input line 977.
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1836,9 +1708,11 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
 [46]
-LaTeX Info: Redefining \. on input line 987.
-LaTeX Info: Redefining \% on input line 987.
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Info: Redefining \. on input line 957.
+LaTeX Info: Redefining \% on input line 957.
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1847,14 +1721,9 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
 [47]
+LaTeX Info: Redefining \. on input line 967.
+LaTeX Info: Redefining \% on input line 967.
 
-LaTeX Warning: Citation `Leonhardt' on page 48 undefined on input line 992.
-
-
-LaTeX Warning: Citation `Loudon' on page 48 undefined on input line 1004.
-
-LaTeX Info: Redefining \. on input line 1020.
-LaTeX Info: Redefining \% on input line 1020.
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1863,14 +1732,9 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
 [48]
+LaTeX Info: Redefining \. on input line 1000.
+LaTeX Info: Redefining \% on input line 1000.
 
-LaTeX Warning: Citation `Mandel' on page 49 undefined on input line 1031.
-
-
-LaTeX Warning: Citation `Loudon' on page 49 undefined on input line 1035.
-
-LaTeX Info: Redefining \. on input line 1057.
-LaTeX Info: Redefining \% on input line 1057.
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1878,7 +1742,18 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
-[49])
+[49]
+LaTeX Info: Redefining \. on input line 1037.
+LaTeX Info: Redefining \% on input line 1037.
+
+
+Package fancyhdr Warning: \headheight is too small (6.50403pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
+
+[50])
 LaTeX Info: Redefining \. on input line 192.
 LaTeX Info: Redefining \% on input line 192.
 
@@ -1889,22 +1764,13 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
-[50]
+[51]
 :<-
 :<+ capitulo_4.tex
 \openout2 = `capitulo_4.aux'.
 
 (./capitulo_4.tex
  4.
-
-LaTeX Warning: Citation `Leonhardt' on page 51 undefined on input line 7.
-
-
-LaTeX Warning: Citation `Moya' on page 51 undefined on input line 9.
-
-
-LaTeX Warning: Citation `Mandel' on page 51 undefined on input line 11.
-
 
 Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 12.
 
@@ -1915,7 +1781,7 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
-[51
+[52
 
 
 
@@ -1933,17 +1799,14 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
-[52]
+[53]
 
-LaTeX Warning: Citation `.' on page 53 undefined on input line 39.
+LaTeX Warning: Citation `.' on page 54 undefined on input line 39.
 
 
 Overfull \hbox (41.21346pt too wide) in paragraph at lines 38--40
 \T1/cmr/m/n/12 se ex-pre-sa en-ton-ces la fun-ción de Wig-ner en tér-mi-nos de la tra-za del ope-ra-dor $[]\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[][]\OML/cmm/m/it/12 D[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 \OT1/cmr/m/n/12 )[]\OML/cmm/m/it/12 ^^Z[]D\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 \OT1/cmr/m/n/12 )$
  []
-
-
-LaTeX Warning: Citation `sanchez' on page 53 undefined on input line 43.
 
 )
 
@@ -1953,7 +1816,7 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
-[53]
+[54]
 :<-
 :<+ capitulo_5.tex
 \openout2 = `capitulo_5.aux'.
@@ -1975,7 +1838,7 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
-[54
+[55
 
 
 
@@ -1992,7 +1855,7 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
-[55]
+[56]
 LaTeX Info: Redefining \. on input line 94.
 LaTeX Info: Redefining \% on input line 94.
 
@@ -2003,7 +1866,7 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
-[56]
+[57]
 LaTeX Info: Redefining \. on input line 115.
 LaTeX Info: Redefining \% on input line 115.
 
@@ -2014,7 +1877,7 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
-[57]
+[58]
 LaTeX Info: Redefining \. on input line 156.
 LaTeX Info: Redefining \% on input line 156.
 
@@ -2025,13 +1888,10 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
-[58]
+[59]
 Overfull \hbox (58.27176pt too wide) detected at line 170
 []
  []
-
-
-LaTeX Warning: Reference `eq:c4-moya' on page 59 undefined on input line 172.
 
 
 Overfull \hbox (75.64125pt too wide) detected at line 183
@@ -2047,7 +1907,7 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
-[59]
+[60]
 Overfull \hbox (63.90688pt too wide) detected at line 196
 []
  []
@@ -2071,7 +1931,7 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
-[60]
+[61]
 Overfull \hbox (15.9782pt too wide) detected at line 230
 []
  []
@@ -2095,7 +1955,7 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
-[61]
+[62]
 Overfull \hbox (37.55983pt too wide) detected at line 261
 []
  []
@@ -2119,7 +1979,7 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
-[62]
+[63]
 Overfull \hbox (12.61061pt too wide) detected at line 310
 []
  []
@@ -2133,7 +1993,7 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
-[63])
+[64])
 LaTeX Info: Redefining \. on input line 194.
 LaTeX Info: Redefining \% on input line 194.
 
@@ -2144,7 +2004,7 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
-[64]
+[65]
 :<-
 :<+ bibliografia.tex
 \openout2 = `bibliografia.aux'.
@@ -2153,7 +2013,7 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 :<+ main.bbl
 (./main.bbl
 
-Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 77.
+Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 76.
 
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
@@ -2162,7 +2022,7 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
-[65
+[66
 
 
 
@@ -2183,7 +2043,7 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-22.61455pt}.
 
-[66]
+[67]
 :<-
 (./main.aux (./portada.aux)
 LaTeX Info: Redefining \. on input line 26.
@@ -2192,31 +2052,22 @@ LaTeX Info: Redefining \% on input line 26.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  A911E59A59C62BE7989463ECCE28F96F;3661.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 7E01C728CAD06602E52B35135ECD45DC;4114.
  ) 
 Here is how much of TeX's memory you used:
- 32052 strings out of 478276
- 644945 string characters out of 5850489
- 946452 words of memory out of 5000000
- 49403 multiletter control sequences out of 15000+600000
- 498563 words of font info for 105 fonts, out of 8000000 for 9000
+ 32108 strings out of 478276
+ 645692 string characters out of 5850489
+ 956735 words of memory out of 5000000
+ 49428 multiletter control sequences out of 15000+600000
+ 497787 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 85i,16n,82p,1391b,917s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/yhmath/yhcmex.pfb>
-Output written on main.pdf (66 pages, 569828 bytes).
+ 85i,16n,82p,1389b,915s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/yhmath/yhcmex.pfb>
+Output written on main.pdf (67 pages, 570885 bytes).
 PDF statistics:
- 645 PDF objects out of 1000 (max. 8388607)
- 494 compressed objects within 5 object streams
- 203 named destinations out of 1000 (max. 500000)
- 119 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 793 PDF objects out of 1000 (max. 8388607)
+ 641 compressed objects within 7 object streams
+ 209 named destinations out of 1000 (max. 500000)
+ 279 words of extra memory for PDF output out of 10000 (max. 10000000)
 

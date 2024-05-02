@@ -7,43 +7,35 @@
 % - anihilation and creation operators can be used in this states
 % - why is the state of number of photons equivalent to the  energy eigenstate
 
-Los valores esperados de los observables, que son representados por operadores Hermitianos en MC, representan las cantidades medibles de un sistema. El campo electromagnético puede ser representado por un espacio de estados, cuantizando un sistema de bosones de masa finita, llamada espacio de Fock. Los estados Fock o número $\ket{n}$ tienen una cantidad definida de número de fotones. El observable que opera sobre los estados Fock es el operador número $\hat{n}_{k\lambda}$, el cual se conforma de los operadores de un solo modo $\hat{a}_{k\lambda}$ y $\hat{a}^{\dagger}_{k\lambda}$. De este punto en adelante, se tratarán a estos operadores para un solo modo, por lo que el subíndice de polarización y modo se omiten y $\hat{n}$, $\hat{a}$ y $\hat{a}^{\dagger}$ corresponderán al operador número, aniquilación y creación de un solo modo de luz.
+Los valores esperados de los observables, que son representados por operadores Hermitianos en MC, representan las cantidades medibles de un sistema. El campo electromagnético puede ser representado por un espacio de estados, cuantizando un sistema de bosones de masa finita, llamada espacio de Fock. Los estados Fock o número $\ket{n}$ tienen una cantidad definida de número de fotones. El observable que opera sobre los estados Fock es el operador número $\hat{n}_{k}$, el cual se conforma de los operadores de un solo modo $\hat{a}_{k}$ y $\hat{a}^{\dagger}_{k}$. De este punto en adelante, se tratarán a estos operadores para un solo modo, por lo que el subíndice de polarización y modo se omiten y $\hat{n}$, $\hat{a}$ y $\hat{a}^{\dagger}$ corresponderán al operador número, aniquilación y creación de un solo modo de luz.
 
 %Answer the question: What is a mode?: A mode refers to an eigenvector of a linear equation. Consider the coupled springs problem 
 
-Un modo se refiere a un eigenvector de una ecuación de eigenvalores dada. En este caso, si un estado $\ket{\psi}$ es un observable y bajo cierto operador $\mathbf{O}$ genera el mismo estado multiplicado por un eigenvalor $\alpha$, es decir $\mathbf{O}\ket{\psi} = \alpha \ket{\psi}$ decimos que $\ket{\psi}$ es un modo normal (o estado estacionario) del sistema.
+Un modo se refiere a un eigenvector de una ecuación de eigenvalores dada. En este caso, si un estado $\ket{\psi}$ es un observable y bajo cierto operador $\mathbf{A}$ genera el mismo estado multiplicado por un eigenvalor $\alpha$, es decir $\mathbf{A}\ket{\psi} = \alpha \ket{\psi}$ decimos que $\ket{\psi}$ es un modo normal (o estado estacionario) del sistema.
 Se define al operador número $n$ a partir de los operadores escalera $\hat{n} = \hat{a}^{\dagger}\hat{a}$ y es un operador Hermitiano. Cumple con la ecuación de eigenvalores % Sakurai
 \begin{equation*}
-  \hat{n}\ket{n} = n \ket{n}
+  \hat{n}\ket{n} = n \ket{n}.
 \end{equation*}
-
 Un modo es una onda plana con una polarización dada \cite{Agarwal_2012}. Es un grado de libertad del campo electromagnético donde $n$ es en este caso particular, el número de fotones \cite{Leonhardt}. Los operadores de aniquilación y creación siguen la relación de comutación bosónica
-
 \begin{equation*}
-  [\hat{a}, \hat{a}^{\dagger}] = 1
+  [\hat{a}, \hat{a}^{\dagger}] = 1,
 \end{equation*}
-
 y al igual que en el caso del oscilador armónico, se tiene un nivel mínimo de energía, en este caso corresponde al estado vacío $\ket{0}$, es decir, sin \textit{quantum} en el campo de radiación. La definición de los operadores escalera difiere de aquella dada en el oscilador armónico simple, puesto que ahora no se está tratando con partículas con masa. En términos de los operadores posición $\hat{q}$ y momento $\hat{p}$ se definen los operadores de aniquilación y creación como
 \begin{equation}\label{eq:crea-anni-def}
-  \hat{a} = (2\hbar)^{-1/2}(\hat{q} + i\hat{p}) \quad \hat{a}^{\dagger} = (2\hbar)^{-1/2}(\hat{q} - i\hat{p})
+  \hat{a} = (2\hbar)^{-1/2}(\hat{q} + i\hat{p}) \quad \hat{a}^{\dagger} = (2\hbar)^{-1/2}(\hat{q} - i\hat{p}).
 \end{equation} % Perelomov
-Cumple con la propiedad $\hat{a} \ket{0} = 0$. La energía en este caso difiere del resultado clásico, ya que $\langle 0\vert\hat{H}\vert 0\rangle = \hbar\omega/2$ con $\omega$ la frecuencia angular correspondiente a ese modo, y esto corresonde a la energía del vacío o energía de punto cero. \cite{Walls} El estado de un fotón se obtiene a partir de este y resulta ser $\ket{1} = \hat{a}^{\dagger} \ket{0}$, y siguiendo este proceso de forma iterativa $n$ veces se obtiene el estado $\ket{n}$ que resulta ser
+Cumple con la propiedad $\hat{a} \ket{0} = 0$. La energía en este caso difiere del resultado clásico, ya que $\langle 0\vert\hat{H}\vert 0\rangle = \hbar\omega/2$ con $\omega$ la frecuencia angular correspondiente a ese modo, y esto corresonde a la energía del vacío o energía de punto cero \cite{Walls}. El estado de un fotón se obtiene a partir de este y resulta ser $\ket{1} = \hat{a}^{\dagger} \ket{0}$, y siguiendo este proceso de forma iterativa $n$ veces se obtiene el estado $\ket{n}$ que resulta ser
 \begin{equation*}
-  \ket{n} = \frac{\hat{a}^{\dagger}}{\sqrt{n!}}\ket{0}
+  \ket{n} = \frac{\hat{a}^{\dagger}}{\sqrt{n!}}\ket{0}.
 \end{equation*}
-
 Los estados número son ortogonales y completos
 \begin{equation*}
-  \braket{n_k}{m_k} = \delta_{mn} \quad \sum_{n_k = 0}^{\infty} \ket{n_k} \bra{n_k} = 1
+  \braket{n_k}{m_k} = \delta_{mn} \quad \sum_{n_k = 0}^{\infty} \ket{n_k} \bra{n_k} = 1.
 \end{equation*}
-
 La mayoría de los campos ópticos son una superposición de estados número (ensemble puro) o una mezcla de ellos (estado mixto).
-
 % Difference of mixed and pure states: https://physics.stackexchange.com/questions/80434/how-is-a-quantum-superposition-different-from-a-mixed-state
-
 % Mixed state: The ensemble has different types of kets
 % Pure state: Superposition of the same type of kets, described by a single ket
-
 \iffalse
   donde se considera la aportación de la energía del vacío. Usando la relación de conmutación de $\hat{a}$ y $\hat{a}^{\dagger}$ sobre el estado vacío $(\hat{a}\hat{a}^{\dagger}-\hat{a}^{\dagger}\hat{a})\ket{0} = \hat{a}\hat{a}^{\dagger}\ket{0} = \ket{0}$ implica que $\hat{a}^{\dagger}\hat{a}(\hat{a}^{\dagger}\ket{0}) = \hat{a}^{\dagger}\ket{0}$, por lo que $\hat{a}^{\dagger}\ket{0}$ es un eigenestado de $\hat{a}^{\dagger}\hat{a}$ con valor propio 1, a este estado se le denomina estado de un fotón y se denota como $\ket{1} = \hat{a}^{\dagger}\ket{0}$. De forma análoga, se puede obtener el n-ésimo estado de $n$ fotones $\ket{n}$ de forma inductiva, lo que resulta en
   \begin{equation*}
@@ -52,27 +44,25 @@ La mayoría de los campos ópticos son una superposición de estados número (en
 \fi
 % Estados coherentes
 \section{Estados coherentes}
-
 % To do - First talk about quadrature of the fields and phasor diagrams
-El valor esperado de el operador de aniquilación $\hat{a}$ y los de cuadratura $\hat{X}$ y $\hat{Y}$ son cero, por lo que no tienen una amplitud bien definida de manera clásica. Por otro lado, el haz de un láser es coherente y tiene definida una amplitud y fase. Los estados que representan este fenómeno son los estados coherentes.
+El valor esperado de el operador de aniquilación $\hat{a}$ y los de cuadratura $\hat{X}$ y $\hat{Y}$ son cero en la base de estados número, estos estados carecen entonces de amplitudes bien definidas y fase. Una base más apropiada para campos ópticos son los estados coherentes, los cuales son construidos a partir de una superposición de una cantidad indefinida de fotones de forma que tengan una fase y amplitud bien definida. Es precisamente estas dos propiedades por lo que se le considera el análogo más próximo a una onda electromagnética clásica. Estos estados cuánticos representan luz ideal de un láser.
+% Add more theory about lasers?
 
-Los estados coherentes son el equivalente a un haz monocromático de luz en la mecánica cuántica en el sentido de que son estados de mínima incertidumbre.  Paquetes de onda coherentes derivados del OAC fueron estudiados primeramente por Shcrödinger en 1926, y estos inspiraron el trabajo de Roy J. Glauber \cite{Glauber} que introdujo los estados coherentes (también llamados de Glauber) publicado en 1963 y por el cuál ganó el premio Nobel en 2005. La luz de un láser tiene una amplitud definida, y los estados coherentes $\alpha$ se definen como eigenestados del operador amplitud o aniquilación $\hat{a}$ \cite{Leonhardt}
+Los estados coherentes son el equivalente a un haz monocromático de luz en la mecánica cuántica en el sentido de que son estados de mínima incertidumbre.  Paquetes de onda coherentes derivados del OAC fueron estudiados primeramente por Shcrödinger en 1926, y estos inspiraron el trabajo de Roy J. Glauber \cite{Glauber} que introdujo los estados coherentes (también llamados de Glauber) publicado en 1963 y por el cuál ganó el premio Nobel en 2005. La luz de un láser tiene una amplitud definida, y los estados coherentes $\alpha$ se definen como eigenestados del operador amplitud o aniquilación $\hat{a}$
 \begin{equation*}
-  \hat{a} \ket{\alpha} = \alpha\ket{\alpha}
+  \hat{a} \ket{\alpha} = \alpha\ket{\alpha},
 \end{equation*}
 donde $\alpha$ es en general un número complejo adimensional
 
 El significado físico de $\alpha$ se da considerando un modo polarizado de frecuencia angular $\omega$ dentro de una cavidad de volumen $V$. Se puede definir a $\alpha$ en términos de los valores esperados adimensionales de los operadores de cuadratura
 \begin{equation*}
-  \alpha = X^2 + iY^2
+  \alpha = X^2 + iY^2.
 \end{equation*}
 Se puede separar $\alpha$ en su amplitud $|\alpha|=\sqrt{X^2 + Y^2}$ y fase $\phi$ considerando $X = |\alpha|\cos\phi$ y $Y=|\alpha|\sen\phi$ como
 \begin{equation*}
-  \alpha = |\alpha|e^{i\phi}
+  \alpha = |\alpha|e^{i\phi},
 \end{equation*}
-el estado coherente entonces se puede representar de forma fasorial con longitud $|\alpha|$ y en un ángulo $\phi$.
-
-
+y el estado coherente entonces se puede representar de forma fasorial con longitud $|\alpha|$ y en un ángulo $\phi$.
 \begin{figure}[!h]
   \centering
   \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
@@ -99,9 +89,9 @@ el estado coherente entonces se puede representar de forma fasorial con longitud
     \draw  [draw opacity=0] (235.25,327.1) .. controls (239.71,331.78) and (242.48,338.09) .. (242.57,345.05) -- (216.09,345.39) -- cycle ; \draw   (235.25,327.1) .. controls (239.71,331.78) and (242.48,338.09) .. (242.57,345.05) ;
 
     % Text Node
-    \draw (313.17,105.48) node [anchor=north west][inner sep=0.75pt]    {$\Delta X\ =\ \frac{1}{4}$};
+    \draw (313.17,105.48) node [anchor=north west][inner sep=0.75pt]    {$\Delta X\ =\ \frac{1}{2}$};
     % Text Node
-    \draw (431.47,193.77) node [anchor=north west][inner sep=0.75pt]    {$\Delta Y\ =\ \frac{1}{4}$};
+    \draw (431.47,193.77) node [anchor=north west][inner sep=0.75pt]    {$\Delta Y\ =\ \frac{1}{2}$};
     % Text Node
     \draw (261.06,250.74) node [anchor=north west][inner sep=0.75pt]    {$|\alpha |$};
     % Text Node
@@ -117,57 +107,53 @@ el estado coherente entonces se puede representar de forma fasorial con longitud
   \label{fig:displaced-vacuum}
 \end{figure}
 
-
 Las cuadraturas están sujetas a la misma incertidumbre que la posición y el momento generalizado del oscilador armónico simple
 \begin{equation*}
-  \Delta X \Delta Y \geq \frac{1}{4}
+  \Delta X \Delta Y \geq \frac{1}{4},
 \end{equation*}
 dado que no hay preferencia entre las dos cuadraturas, se concluye que sus incertidumbres son iguales
 \begin{equation*}
-  \Delta X = \Delta Y = \frac{1}{2}
+  \Delta X = \Delta Y = \frac{1}{2}.
 \end{equation*}
 Por ser $\hat{a}$ no Hermitiano, los eigenvalores de los estados coherentes son complejos, y estos corresponden físicamente a las amplitudes de onda complejas en óptica clásica, con magnitud $|\alpha|$ y fase $\arg \alpha$. El estado cuántico de un haz láser continuo es un ensemble de estados coherentes con fase aleatoria.
 
 El estado vacío es un estado coherente, ya que satisface la ecuación $\hat{a} \ket{0} = 0 \ket{0} = 0$, y corresponde a un estado de amplitud cero. La energía promedio de un estado coherente corresponde a
 \begin{equation*}
-  \langle \alpha \vert \hat{H}\vert \alpha \rangle = \left\langle \alpha \right\vert \hat{a}^{\dagger}\hat{a} + \frac{1}{2} \left\vert \alpha \right\rangle = |\alpha|^2 + \frac{1}{2}
+  \langle \alpha \vert \hat{H}\vert \alpha \rangle = \hbar\omega \left\langle \alpha \right\vert \hat{a}^{\dagger}\hat{a} + \frac{1}{2} \left\vert \alpha \right\rangle = \hbar\omega \left(|\alpha|^2 + \frac{1}{2} \right).
 \end{equation*}
-
-El valor esperado del operador de aniquilación (o también llamado amplitud) $\hat{a}$, y las cuadraturas, bajo los estados coherentes ahora ti tienen un amplitud definida.
+El valor esperado del operador de aniquilación (o también llamado amplitud) $\hat{a}$, y las cuadraturas, bajo los estados coherentes ahora tienen un amplitud definida.
 \begin{equation*}
-  \langle \alpha \vert \hat{a} \vert\alpha \rangle = \alpha \quad \langle \alpha \vert \hat{X} \vert \alpha \rangle = \frac{\mathrm{Re}\alpha}{\sqrt{2}} \quad \langle \alpha \vert \hat{Y} \vert \alpha\rangle = \frac{\mathrm{Im}\alpha}{\sqrt{2}}
+  \langle \alpha \vert \hat{a} \vert\alpha \rangle = \alpha \quad \langle \alpha \vert \hat{X} \vert \alpha \rangle = \frac{\mathrm{Re}(\alpha)}{\sqrt{2}} \quad \langle \alpha \vert \hat{Y} \vert \alpha\rangle = \frac{\mathrm{Im}(\alpha)}{\sqrt{2}}.
 \end{equation*}
-(Figura de distribución de fotones Agarwal)
 Los estados coherentes se pueden descomponer en una suma de estados número
 \begin{equation*}
-  \ket{\alpha} = \sum_{n=0}^{\infty} c_n \ket{n}
+  \ket{\alpha} = \sum_{n=0}^{\infty} c_n \ket{n}.
 \end{equation*}
 Los coeficientes se calculan a partir de la relación de recursión
 \begin{equation*}
-  c_{n+1} = \frac{\alpha}{\sqrt{n+1}}c_n
+  c_{n+1} = \frac{\alpha}{\sqrt{n+1}}c_n,
 \end{equation*}
 y resultan
 \begin{equation*}
-  c_n = \frac{\alpha^n }{\sqrt{n!}}c_0
+  c_n = \frac{\alpha^n }{\sqrt{n!}}c_0.
 \end{equation*}
 El valor de $c_0$ se puede encontrar a partir de la condición de normalización, como los estados número son ortonormales, se obtiene
 \begin{align*}
   1 = \braket{\alpha}{\alpha} & = c_0^2 \sum_{n=0}^{\infty} \frac{(\alpha^n)^2}{(\sqrt{n!})^2}\braket{n}{n} \\ &= c_0^2  \sum_{n=0}^{\infty} \frac{(|\alpha|^2)^2}{n!}\braket{n}{n}\\ &= c_0^2 e^{|\alpha|^2} \\
-  c_0                         & = e^{-\frac{1}{2}|\alpha|^2}
+  c_0                         & = e^{-\frac{1}{2}|\alpha|^2},
 \end{align*}
 y la superposición de estados número resulta de manera explícita
 \begin{equation*}
-  \ket{\alpha} = e^{-\frac{1}{2}|\alpha|^2} \sum_{n=0}^{\infty} \frac{\alpha^n}{\sqrt{n!}}\ket{n}
+  \ket{\alpha} = e^{-\frac{1}{2}|\alpha|^2} \sum_{n=0}^{\infty} \frac{\alpha^n}{\sqrt{n!}}\ket{n}.
 \end{equation*}
 La probabilidad de encontrar $n$ fotones en estado coherente se da por una distribución de Poisson con media $|\alpha|^2$, y esta es a su vez igual a la varianza $\langle n \rangle = |\alpha|^2 = \langle n^2 \rangle = \langle n \rangle^2$.
-
-Los estados coherentes forman una base sobrecompleta, es decir, son completos pero no son ortonormales entre sí. La condición de completez es
+Los estados coherentes forman una base sobrecompleta, es decir, los estados forman una base pero no son ortonormales entre sí. La condición de completez es
 \begin{equation*}
-  \frac{1}{\pi}\int d^2 \alpha \ket{\alpha}\bra{\alpha} = 1
+  \frac{1}{\pi}\int d^2 \alpha \ket{\alpha}\bra{\alpha} = 1,
 \end{equation*}
-donde $\alpha$ es un número complejo y la integral se realiza sobre el plano complejo, siendo $d^2\alpha = dxdy$, con $x = \mathrm{Re}\alpha$ y $y = \mathrm{Im}\alpha$. La desmostración se da sustituyendo la definición de $\ket{\alpha}$ en la condición de completez y verificando que $\sum_n \ket{\alpha}\bra{\alpha}=1$. sustituyendo en el lado izquierdo
+donde $\alpha$ es un número complejo y la integral se realiza sobre el plano complejo, siendo $d^2\alpha = dxdy$, con $x = \mathrm{Re}(\alpha)$ y $y = \mathrm{Im}(\alpha)$. La desmostración se da sustituyendo la definición de $\ket{\alpha}$ en la condición de completez y verificando que $\sum_n \ket{\alpha}\bra{\alpha}=1$. sustituyendo en el lado izquierdo
 \begin{equation*}
-  \sum_{n.m} \frac{1}{\sqrt{n!m!}}\int d^2\alpha (\alpha)^n \alpha^{*m}\ket{n}\bra{m}e^{-|\alpha|^2}
+  \sum_{n.m} \frac{1}{\sqrt{n!m!}}\int d^2\alpha (\alpha)^n \alpha^{*m}\ket{n}\bra{m}e^{-|\alpha|^2},
 \end{equation*}
 que cambiando a coordenadas polares
 \begin{align*}
@@ -175,23 +161,23 @@ que cambiando a coordenadas polares
     & = \sum_{n}\frac{1}{n!}\int_0^{\infty} dr  r^{2n+1} \ket{n}\bra{n}e^{-r^2}                                                   \\
     & = \sum_{n} \ket{n}\bra{n} \frac{1}{n!}\int_0^{\infty} dr  r^{2(n+1)-1} e^{-r^2}                                             \\
     & = \sum_{n} \ket{n}\bra{n} \frac{1}{n!} \Gamma(n+1)                                                                          \\
-  1 & = \sum_{n} \ket{n}\bra{n}
+  1 & = \sum_{n} \ket{n}\bra{n}.
 \end{align*}
-La sobrecompletitud hace que los estados sean no ortogonales entre si, el producto interno entre dos elementos del espacio de estados coherentes es distinto de cero, y es en particular se puede calcular de la expresión de estado coherente
+La sobrecompletitud hace que los estados sean no ortogonales entre si. El producto interno entre dos elementos del espacio de estados coherentes es distinto de cero, y es en particular se puede calcular de la expresión de estado coherente
 \begin{align*}
-  \braket{\alpha|\beta} & = e^{-\frac{1}{2}|\alpha|^2} e^{-\frac{1}{2}|\beta|^2} \sum_{n,m=0}^{\infty} \frac{{\alpha^*}^n}{\sqrt{n!}}\frac{\beta^m}{\sqrt{m!}} \braket{n}{m} \\
-                        & = e^{-\frac{1}{2}|\alpha|^2} e^{-\frac{1}{2}|\beta|^2} \sum_{n=0}^{\infty} \frac{{(\alpha^*\beta)}^n}{n!} \braket{n}{n}                            \\
-                        & = \exp{\left( - \frac{1}{2}|\alpha|^2 - \frac{1}{2}|\beta|^2 + \alpha^*\beta \right)}
+  \langle\alpha\vert\beta\rangle & = e^{-\frac{1}{2}|\alpha|^2} e^{-\frac{1}{2}|\beta|^2} \sum_{n,m=0}^{\infty} \frac{{\alpha^*}^n}{\sqrt{n!}}\frac{\beta^m}{\sqrt{m!}} \langle n\vert m \rangle \\
+                                 & = e^{-\frac{1}{2}|\alpha|^2} e^{-\frac{1}{2}|\beta|^2} \sum_{n=0}^{\infty} \frac{{(\alpha^*\beta)}^n}{n!} \langle n \vert n\rangle                            \\
+                                 & = \exp{\left( - \frac{1}{2}|\alpha|^2 - \frac{1}{2}|\beta|^2 + \alpha^*\beta \right)}.
 \end{align*}
 De lo anterior, un estado coherente se puede escribir en términos de otros estados coherentes. Considerando el braket de un par de estados coherentes $\ket{\alpha}$ y $\ket{\gamma}$, y utilizando la condición de completez
 \begin{align*}
-  \braket{\alpha|\gamma}             & =  \bra{{\alpha}}\left(\frac{1}{\pi}\int d^2 \alpha \ket{\beta}\bra{\beta} \right) \ket{\gamma}      \\
-                                     & = \left(\frac{1}{\pi}\int d^2 \beta \braket{\alpha}{\beta}\braket{\beta}{\gamma} \right)             \\
-  \frac{\braket{\alpha|\gamma}}{\pi} & = \left(\int d^2 \beta \frac{\braket{\alpha}{\beta}}{\pi} \frac{\braket{\beta}{\gamma}}{\pi} \right)
+  \langle \alpha \vert \gamma \rangle           & =  \bra{{\alpha}}\left(\frac{1}{\pi}\int d^2 \alpha \vert \beta \rangle \langle \beta \vert \right) \vert \gamma \rangle  \\
+                                                & = \left(\frac{1}{\pi}\int d^2 \beta \langle \alpha\vert \beta\rangle \langle\beta\vert\gamma\rangle \right)               \\
+  \frac{\langle \alpha\vert \gamma\rangle}{\pi} & = \left(\int d^2 \beta \frac{\langle \alpha\vert \beta\rangle}{\pi} \frac{\langle \beta\vert \gamma\rangle}{\pi} \right).
 \end{align*}
 Escrito de esta forma, podemos ver que $\frac{\braket{\alpha}{\beta}}{\pi}$ es un núcleo reproductor denotado por $K(\alpha, \beta)$, que proviene de la no-ortogonalidad de los estados coherentes. Se puede entonces reescribir lo anterior como
 \begin{equation*}
-  K(\alpha, \gamma) = \int d^2 \beta K(\alpha, \beta) K(\beta, \gamma)
+  K(\alpha, \gamma) = \int d^2 \beta K(\alpha, \beta) K(\beta, \gamma).
 \end{equation*}
 Así, de nuevo por la condición de completez, podemos escribir cualquier estado coherente $\ket{\alpha}$ en términos de otro $\ket{\beta}$
 \begin{equation*}
@@ -204,16 +190,14 @@ El teorema de Noether estipula que correspondiente a cada ley de conservación e
 
 Las cantidades físicas de la teoría son representadas por operadores diferenciales. Para entender a detalle cómo funcionan los operadores, sobre qué actúan y cómo se relacionan a cantidades físicas medibles primero se tiene que estudiar las simetrías, que son la invarianza bajo alguna transformación y que es el objeto de estudio de la teoría de grupos. El grupo de Poincaré es el conjunto de todas las transformaciones permitidas por estas restricciones, donde el objeto invariante es la métrica de Minkowski en el espacio-tiempo.
 
-Un grupo es una colección de transformaciones. Formalmente es un conjunto $G$ con una operación binaria $\circ$ de finida en $G$ que satisface cuatro condiciones
+Un grupo se puede considerar como una colección de transformaciones. Formalmente es un conjunto $G$ con una operación binaria $\circ$ de finida en $G$ que satisface cuatro condiciones
 \begin{enumerate}
   \item Sean $g_1,g_2 \in G$ dos elementos del grupo, entonces el producto de $g_1$ y $g_2$ bajo $\circ$ pertenece también al grupo, es decir $g_1 \circ g_2 \in G$.
-  \item Existe un elemento $e\in G$ tal que para toda $g\in G$, $g\circ g = g$. A este elemento se le llama identidad.
+  \item Existe un elemento $e\in G$ tal que para toda $g\in G$, $g\circ e = e\circ g = g$. A este elemento se le llama identidad.
   \item Para cada $g\in G$ existe un elemento $g^{-1}$ llamado inverso que cumple $g\circ g^{-1} = g^{-1}\circ g =e$
   \item Asociatividad. Para todo $g_1, g_2, g_3 \in G$, $g_1 \circ (g_2 \circ g_3) = (g_1 \circ g_2) \circ g_3$
 \end{enumerate}
-
-Las transformaciones bajo las cuales se conserva una simetría pueden ser continuas o discretas. Considere el caso de una rotación de un cuadrado centrado en $x,y=0$ en el plano cartesiano. Matemáticamente un cuadrado es un conjunto de puntos, y su simetría es una transformación que  Al rotar el cuadrado por una cantidad menor de $pi/2$ radianes en dirección contrarreloj respecto al origen sobre el plano $xy$, las nuevas posiciones de los vértices no coinciden con las posiciones de estos previo a la rotación. Sin embargo, cuando se hace una rotación de $n\pi/2$ radianes con $n\in \mathbb{Z}$, los vértices se alinearán con las posiciones iniciales, y bajo esta transformación es virtualmente imposible diferenciar entre el cuadrado previo o posterior a esta. Se dice entonces que el sistema es simétrico ante rotaciones discretas de $n\pi/2$ radianes.
-
+Las transformaciones bajo las cuales se conserva una simetría pueden ser continuas o discretas. Considere el caso de una rotación de un cuadrado centrado en $x,y=0$ en el plano cartesiano. Matemáticamente un cuadrado es un conjunto de puntos, y su simetría es una transformación que al rotar por una cantidad menor de $\pi/2$ radianes en dirección contrarreloj respecto al origen sobre el plano $xy$, las nuevas posiciones de los vértices no coinciden con las posiciones de estos previo a la rotación. Sin embargo, cuando se hace una rotación de $n\pi/2$ radianes con $n\in \mathbb{Z}$, los vértices se alinearán con las posiciones iniciales, y bajo esta transformación es virtualmente imposible diferenciar entre el cuadrado previo o posterior a esta. Se dice entonces que el sistema es simétrico ante rotaciones discretas de $n\pi/2$ radianes.
 
 \begin{figure}[!h]
   \centering
@@ -296,8 +280,6 @@ Las transformaciones bajo las cuales se conserva una simetría pueden ser contin
   \caption{Rotación de un cuadrado (a) Posición inicial de los vértices (b) Posición final de los vértices tras una rotación de $\frac{\pi}{2}$ rad. (c) Rotación por $5^\circ$ donde los vértices de la posición inicial no coinciden con los de la posición final}
   \label{fig:square-rotation}
 \end{figure}
-
-
 Por otro lado, considere ahora una circunferencia de radio $a$ centrada en $x,y=0$. Rotando sobre el plano $xy$ respecto al origen cualquier cantidad de $\phi$ radianes será imposible distinguir entre la circunferencia rotada y la no transformada. El anterior es un ejemplo de una simetría continua, que es el objeto de estudio del álgebra de Lie.
 
 \begin{figure}[!h]
@@ -333,18 +315,16 @@ Por otro lado, considere ahora una circunferencia de radio $a$ centrada en $x,y=
   \label{fig:circle-rotation}
 \end{figure}
 
-
 De manera más formal, sea $\mathbf{a}$ un vector y $O$ una transformación, que mantenga la norma de este, es decir que $|\mathbf{a}| = |O\mathbf{a}|$. La transformación tiene que ser ortogonal, es decir $O^{T}O = I$. Las transformaciones ortogonales en dos dimensiones se denotan por $O(2)$. Estas transformación también cumplen $\det(O) = \pm 1$, esta característica les da el nombre de grupo especial ortogonal, y se denota por $SO(2)$. Una matriz de rotación en dos dimensiones por un ángulo $\theta$ se representa matricialmente como
 \begin{equation*}
   R_\theta = \begin{pmatrix}
     \cos(\theta) & -\sen(\theta) \\
-    \sen(\theta) & cos(\theta)
-  \end{pmatrix}
+    \sen(\theta) & \cos(\theta)
+  \end{pmatrix}.
 \end{equation*}
-
 Por otro lado, los números complejos junto a su operación de multiplicación forman un grupo unitario llamado $U(1)$, el cuál se caracteriza por la condición $U^\dagger U = 1$. La transformación se escribe usando el parámetro $\theta$ como
 \begin{equation*}
-  R_\theta = e^{i\theta} = \cos(\theta) + i\sen(\theta)
+  R_\theta = e^{i\theta} = \cos(\theta) + i\sen(\theta),
 \end{equation*}
 que cumple la característica de ser unitaria.
 
@@ -354,39 +334,39 @@ Las anteriores dos transformaciones describen rotaciones, y son un ejemplo de do
     1 & 0 \\ 0 & 1
   \end{pmatrix} \quad i = \begin{pmatrix}
     0 & -1 \\ 1 & 0
-  \end{pmatrix}
+  \end{pmatrix}.
 \end{equation*}
 Para el caso de la circunferencia, se puede realizar una rotación con un argumento tan pequeño como se guste, una rotación arbitrariamente cercana a la identidad, a diferencia de los grupos discretos  donde el parámetro de transformación no es continuo y por tanto no hay elementos arbitrariamente cercanos a la identidad. Esta transformación infinitesimal se define como
 \begin{equation*}
-  g(\epsilon) = I + gX
+  g(\epsilon) = I + gX,
 \end{equation*}
 donde $\epsilon>0$ es un número pequeño y $X$ es un objeto llamado generador. Una transformación infinitesimal aplicada de manera sucesiva genera una transformación finita $h(\theta) = \prod_k (I+\epsilon X)$, con $\theta$ un parámetro de transformación finita. Se puede reescribir $\epsilon$ en términos del parámetro de transformación finita $\theta$ dividiendo este último entre un número entero arbitrariamente grande $N$. El generador es entonces
 \begin{equation*}
-  g(\theta) = I = \frac{\theta}{N} X
+  g(\theta) = I = \frac{\theta}{N} X.
 \end{equation*}
 Aplicando esta transformación $N$ veces, y aplicando el límite $N\to\infty$ se genera una transformación finita
 \begin{equation*}
-  h(\theta) = \lim_{N\to\infty}\left( I + \frac{\theta}{N}X \right)^N = e^{\theta X}
+  h(\theta) = \lim_{N\to\infty}\left( I + \frac{\theta}{N}X \right)^N = e^{\theta X},
 \end{equation*}
-observamos entonces que la transformación de argumento finito $\theta$ es generada por $X$. Para calcular el generador se obtiene la derivada de la transformación finita respecto al argumento y se evalúa en $\theta=0$
+y observamos entonces que la transformación de argumento finito $\theta$ es generada por $X$. Para calcular el generador se obtiene la derivada de la transformación finita respecto al argumento y se evalúa en $\theta=0$
 \begin{equation}\label{eq:generator}
-  X = \frac{dh(\theta)}{d\theta} \bigg|_{\theta=0}
+  X = \frac{dh(\theta)}{d\theta} \bigg|_{\theta=0},
 \end{equation}
 los generadores brindan información importante sobre los grupos que se estudian.
 En el caso particular de un grupo de transformaciones dado por matrices, se puede calcular la expansión en series de Taylor de un elemento del grupo cercano a la identidad
 \begin{equation*}
-  h(\theta) = I + \frac{dh}{d\theta}\bigg|_{\theta=0}\theta + \frac{1}{2}\frac{d^2h}{d\theta^2}\bigg|_{\theta=0}\theta^2 + \dots = \sum_{n=0}^{\infty} \frac{1}{n!}\frac{d^n h}{h\theta^n}\bigg|_{\theta=0}\theta^n
+  h(\theta) = I + \frac{dh}{d\theta}\bigg|_{\theta=0}\theta + \frac{1}{2}\frac{d^2h}{d\theta^2}\bigg|_{\theta=0}\theta^2 + \dots = \sum_{n=0}^{\infty} \frac{1}{n!}\frac{d^n h}{d\theta^n}\bigg|_{\theta=0}\theta^n.
 \end{equation*}
 Para grupos de matrices de Lie se define un correspondiente álgebra de Lie como una colección de objetos que generan un elemento del grupo cuando se calculan sus exponenciales. Para un grupo de Lie $G$ dado por matrices de dimensión $n\times n$, el álgebra $\mathfrak{g}$ de $G$ está dada por aquellas matrices $n\times n$ $X$ tales que $e^{tX}\in G$ para $t\in \mathbb{R}$, junto a una operación llamada corchete de Lie $[,]$ que define cómo se combinan estas matrices. La multiplicación de dos elementos del álgebra de Lie no necesariamente es un elemento de este mismo, es decir, no es cerrada bajo la multiplicación del grupo, pero si lo es bajo el corchete de Lie. La relación entre el álgebra de Lie y el grupo de Lie está dada por la fórmula de Baker-Campbell-Hausdorff
 \begin{equation*}
-  e^X \circ e^Y = e^{X+Y+\frac{1}{2}[X,Y] + \frac{1}{12}[X,[X,Y]] - \frac{1}{12}[Y,[X,Y]] + \dots}
+  e^X \circ e^Y = e^{X+Y+\frac{1}{2}[X,Y] + \frac{1}{12}[X,[X,Y]] - \frac{1}{12}[Y,[X,Y]] + \dots},
 \end{equation*}
 del lado izquierdo, hay dos elementos del grupo escritos en término de los generadores $X,Y\in \mathfrak{g}$, mientras que del lado derecho se tiene un solo elemento del grupo y la multiplicación de elementos del grupo se ha transformado en una suma de elementos del álgebra de Lie. En el caso particular de matrices, el corchete de Lie es el conmutador $[X,Y] = XY-YX$.
 De manera formal, un álgebra de Lie es un espacio vectorial $\mathfrak{g}$ junto a una operación binaria $[,]:\mathfrak{g}\times \mathfrak{g} \to \mathfrak{g}$. La operación binaria satisface los siguientes axiomas:
 \begin{enumerate}
-  \item Bilinearidad: $[aX + bY, Z] = a[X,Y] + b[Y, Z]$ y $[Z, aX + bY] = a[Z,X] + b[Z,Y]$ para $a,b\in \mathbb{F}$ con $\mathbb{F}$ un cuerpo, y se cumple para todo $X,Y,Z\in \mathfrak{g}$
-  \item Anti-conmutatividad: $[X,Y] = -[Y,X]$, $\forall X, Y \in \mathfrak{g}$
-  \item Satisfacen la identidad de Jacobi: $[X, [Y,Z]] + [Z,[X,Y]] + [Y,[Z,X]] = 0$, $\forall X,Y,Z\in \mathfrak{g}$
+  \item Bilinearidad: $[aX + bY, Z] = a[X,Y] + b[Y, Z]$ y $[Z, aX + bY] = a[Z,X] + b[Z,Y]$ para $a,b\in \mathbb{F}$ con $\mathbb{F}$ un cuerpo, y se cumple para todo $X,Y,Z\in \mathfrak{g}$.
+  \item Anti-conmutatividad: $[X,Y] = -[Y,X]$, $\forall X, Y \in \mathfrak{g}$.
+  \item Identidad de Jacobi: $[X, [Y,Z]] + [Z,[X,Y]] + [Y,[Z,X]] = 0$, $\forall X$,$Y$,$Z\in \mathfrak{g}$.
 \end{enumerate}
 Diferentes grupos pueden tener el mismo álgebra de Lie, la diferencia d estos es cómo los generadores de estos grupos se comportan bajo el álgebra de Lie.
 Considerando el ejemplo particular de las matrices de rotación $SO(3)$, recordando que estas están dadas por
@@ -395,35 +375,35 @@ Considerando el ejemplo particular de las matrices de rotación $SO(3)$, recorda
     1 & 0            & 0             \\
     0 & \cos(\theta) & -\sen(\theta) \\
     0 & \sen(\theta) & \cos(\theta)
-  \end{pmatrix} \quad
+  \end{pmatrix}, \quad
   R_y = \begin{pmatrix}
     \cos(\theta)  & -\sen(\theta) & 0            \\
     0             & 1             & 0            \\
     -\sen(\theta) & 0             & \cos(\theta)
-  \end{pmatrix}
+  \end{pmatrix},
 \end{equation*}
 \begin{equation*}
   R_z = \begin{pmatrix}
     \cos(\theta) & -\sen(\theta) & 0 \\
     \sen(\theta) & \cos(\theta)  & 0 \\
     0            & 0             & 1
-  \end{pmatrix}
+  \end{pmatrix}.
 \end{equation*}
 Las condiciones de estas transformaciones son las mismas que las rotaciones en dos dimensiones, es decir, son ortogonales $O^T O = I$ y su determinante es la unidad $\det(O) = 1$. Un elemento cualesquiera del grupo en términos de un generador $J$ está dado por $O = e^{\theta J}$. Sustituyendo esto en las condiciones de las transformaciones se obtiene que $J^T + J = 0$ y $\mathrm{Tr}(J) = 0$. A partir de estas condiciones se pueden escribir tres elementos linealmente independientes que formen una base para $SO(3)$, considere
 \begin{equation*}
   J_1 = \begin{pmatrix}
     0 & 0 & 0 \\ 0 & 0 & -1 \\ 0 & 1 & 0
-  \end{pmatrix} \quad
+  \end{pmatrix}, \quad
   J_2 = \begin{pmatrix}
     0 & 0 & 1 \\ 0 & 0 & 0 \\ -1 & 0 & 0
-  \end{pmatrix} \quad
+  \end{pmatrix}, \quad
   J_3 = \begin{pmatrix}
     0 & -1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 0
-  \end{pmatrix} \quad
+  \end{pmatrix}.
 \end{equation*}
 Así, cualquier generador se puede escribir de la forma $J = aJ_1+ bJ_2+cJ_3$. Las entradas de las bases se pueden representar por
 \begin{equation*}
-  (J_i)_{jk} = -\epsilon_{ijk}
+  (J_i)_{jk} = -\epsilon_{ijk}.
 \end{equation*}
 Como en este caso se conocen de antemano las matrices de rotación, se puede ocupar la fórmula (\ref{eq:generator}) para deducir $J_i$ de cada matriz de rotación $R_i$, para $J_1$ por ejemplo
 \begin{equation*}
@@ -431,39 +411,39 @@ Como en este caso se conocen de antemano las matrices de rotación, se puede ocu
     0 & 0 & 0 \\ 0 & -\sen(\theta) & -cos(\theta)\\ 0 & \cos(\theta) & -\sen(\theta)
   \end{pmatrix} \Bigg|_{\theta=0} = \begin{pmatrix}
     0 & 0 & 0 \\ 0&0&-1\\ 0&1&0
-  \end{pmatrix}
+  \end{pmatrix}.
 \end{equation*}
 \section{Operador desplazamiento}
 Los operadores que se utilizan con frecuencia para describir sistemas cuánticos con un grado de libertad son la posición $\hat{q}$ y momento $\hat{p}$ y tienen las relaciones de conmutación de Heisenberg $[\hat{q}, \hat{p}] = i\hbar \hat{I}$, $[\hat{q}, \hat{I}] = [\hat{p}, \hat{I}]=0$ con $\hat{I}$ el operador identidad. Estos operadores actuan sobre un espacio de Hilbert $\mathcal{H}$. A partir de estos operadores se definieron los operadores escalera $\hat{a}$ y $\hat{a}^{\dagger}$, que siguen las relaciones de conmutación $[\hat{a}, \hat{a}^{\dagger}] = \hat{I}$, $[\hat{a}, \hat{I}]=[\hat{a}^{\dagger}, \hat{I}] = 0$. Estas relaciones de conmutación entre los operadores $\hat{q}$, $\hat{p}$ y la identidad $\hat{I}$ (y respectivamente $\hat{a}$, $\hat{a}^{\dagger}$ y $\hat{I}$) indica que estos son generadores de un álgebra de Lie $\mathcal{W}_1$, a la que se le llama álgebra de Heisenberg-Weyl \cite{Perelomov}. Este álgebra tridimensional se define usando las siguientes cantidades
 \begin{equation*}
-  e_1 = i\frac{\hat{p}}{\sqrt{\hbar}}, \quad e_2 = i\frac{\hat{q}}{\sqrt{\hbar}}, \quad e_3 = i\hat{I}
+  e_1 = i\frac{\hat{p}}{\sqrt{\hbar}}, \quad e_2 = i\frac{\hat{q}}{\sqrt{\hbar}}, \quad e_3 = i\hat{I},
 \end{equation*}
 que, además de ser elementos abstractos del álgebra de Lie, son a su vez operadores en un espacio de Hilbert. Las relaciones de conmutación de este álgebra son
 \begin{equation*}
-  [e_1, e_2] = e_3, \quad [e_1, e_3] = [e_2, e_3] = 0
+  [e_1, e_2] = e_3, \quad [e_1, e_3] = [e_2, e_3] = 0.
 \end{equation*}
 Un elemento $x$ del álgebra de Lie se representa por una combinación lineal $x = x_1e_1 + x_2e_2 + s e_3$ o una 3-tupla de números reales $(s;x_1,x_2)$. Se eligen $x_1 = -Q/\sqrt{h}$ y $x_2 = P/\sqrt{h}$, y en términos de los generadores del álgebra de Lie se escribe al elemento $x$ como
 \begin{equation}\label{eq:C3_combinacion_lineal}
-  x = \frac{i}{\hbar}(P\hat{q} - Q\hat{p}) is\hat{I}
+  x = \frac{i}{\hbar}(P\hat{q} - Q\hat{p}) + is\hat{I},
 \end{equation}
 que, usando las expresiones de posición de momento en términos de los operadores escalera
 \begin{align}
-  \hat{q} & = \sqrt{\hbar/2}(\hat{a} + \hat{a}^{\dagger}) \label{eq:C3_op_posicion_esc}  \\
-  \hat{p} & = -i\sqrt{\hbar/2}(\hat{a} - \hat{a}^{\dagger}) \label{eq:C3_op_momento_esc}
+  \hat{q} & = \sqrt{\hbar/2}(\hat{a} + \hat{a}^{\dagger}) \label{eq:C3_op_posicion_esc},  \\
+  \hat{p} & = -i\sqrt{\hbar/2}(\hat{a} - \hat{a}^{\dagger}) \label{eq:C3_op_momento_esc},
 \end{align}
 se puede escribir también en términos de los operadores escalera
 \begin{equation*}
-  x = \left( \frac{Q+iP}{\sqrt{2\hbar}} \right)\hat{a}^{\dagger} - \left( \frac{Q-iP}{\sqrt{2\hbar}} \right)\hat{a} + is\hat{I}
+  x = \left( \frac{Q+iP}{\sqrt{2\hbar}} \right)\hat{a}^{\dagger} - \left( \frac{Q-iP}{\sqrt{2\hbar}} \right)\hat{a} + is\hat{I},
 \end{equation*}
 definiendo $\alpha =  \frac{Q+iP}{\sqrt{2\hbar}}$ la expresión se reduce a
 \begin{equation*}
-  x = \alpha\hat{a} - \alpha^* \hat{a}^{\dagger} + is\hat{I}
+  x = \alpha\hat{a} - \alpha^* \hat{a}^{\dagger} + is\hat{I}.
 \end{equation*}
 El conmutador de dos elementos $x = (s_x; x_1, x_2)$ y $y = (s_y, y_1, y_2)$ del álgebra está dado por $[x,y] = (x_1 y_2 - x_2 y_1)e_3$. Finalmente, se puede construir el grupo de Lie a partir del álgebra por exponenciación
 \begin{equation*}
-  e^{x} = e^{is\hat{I}}D(\alpha), \quad D(\alpha) = e^{\alpha\hat{a}^{\dagger} - \alpha^* \hat{a}}
+  e^{x} = e^{is\hat{I}}D(\alpha), \quad D(\alpha) = e^{\alpha\hat{a}^{\dagger} - \alpha^* \hat{a}},
 \end{equation*}
-$D(\alpha)$ se define como el operador desplazamiento. Para encontrar la ley de multiplicación para estos operadores, se considera que la relación de conmutación de los operadores bosónicos del operador escalón $[\hat{a}, \hat{a}^{\dagger}]=1$. Dado que la conmutación es constante, la conmutación de $\hat{a}$ o $\hat{a}^{\dagger}$ con este es cero, es decir $[\hat{a}, [\hat{a}, \hat{a}^{\dagger}]] = 0$ y $[\hat{a}^{\dagger}, [\hat{a}, \hat{a}^{\dagger}]] = 0$. De forma más general, usando la relación de Baker-Campbell-Hausdorff, se puede demostrar que dados dos operadores $\hat{A}$ y $\hat{B}$ que satisfacen $[\hat{A}, [\hat{A}, \hat{B}]] = [\hat{B}, [\hat{A}, \hat{B}]]$ se cumple entonces
+donde $D(\alpha)$ se define como el operador desplazamiento. Para encontrar la ley de multiplicación para estos operadores, se considera que la relación de conmutación de los operadores bosónicos del operador escalón $[\hat{a}, \hat{a}^{\dagger}]=1$. Dado que la conmutación es constante, la conmutación de $\hat{a}$ o $\hat{a}^{\dagger}$ con este es cero, es decir $[\hat{a}, [\hat{a}, \hat{a}^{\dagger}]] = 0$ y $[\hat{a}^{\dagger}, [\hat{a}, \hat{a}^{\dagger}]] = 0$. De forma más general, usando la relación de Baker-Campbell-Hausdorff, se puede demostrar que dados dos operadores $\hat{A}$ y $\hat{B}$ que satisfacen $[\hat{A}, [\hat{A}, \hat{B}]] = [\hat{B}, [\hat{A}, \hat{B}]]$ se cumple entonces
 \begin{equation*}
   e^{\hat{A}} e^{\hat{B}} = e^{\frac{1}{2}[\hat{A}, \hat{B}]}e^{\hat{A}+\hat{B}}
 \end{equation*}
@@ -471,7 +451,7 @@ sustituyendo $\hat{A} = \alpha \hat{a}^{\dagger} - \alpha^* \hat{a}$ y $\hat{B} 
 \begin{equation*}
   \hat{D}(\alpha)\hat{D}(\beta) = e^{\frac{1}{2}(\alpha\beta^* - \alpha^*\beta)}\hat{D}(\alpha+\beta)
 \end{equation*}
-una consecuencia de esta relación es que los operadores $e^{it}\hat{D}(\alpha)$ forman una representación del grupo con elementos dados por un número real $t$ y otro número complejo $\alpha$, $g = (t, \alpha)$ (Que a su vez se puede representar por tres números reales, $t$ y $\Re{\alpha}$ y $\Im{\alpha}$). A este grupo se le denomina de Heisenberg-Weyl $W_1$.
+una consecuencia de esta relación es que los operadores $e^{it}\hat{D}(\alpha)$ forman una representación del grupo con elementos dados por un número real $t$ y otro número complejo $\alpha$, $g = (t, \alpha)$, que a su vez se puede representar por tres números reales, $t$ y $\mathrm{Re}(\alpha)$ y $\mathrm{Im}(\alpha)$. A este grupo se le denomina de Heisenberg-Weyl $W_1$.
 
 Otra forma de escribir el operador desplazamiento es en términos de los operadores de posición $\hat{q}$ y momento $\hat{p}$ (Glauber 1963). Utilizando la definición del parámetro complejo $\alpha$, y los parámetros escalera en términos de los operadores de posición y momento, que despejando de (\ref{eq:C3_op_posicion_esc}) y (\ref{eq:C3_op_momento_esc}) son
 \begin{align}
@@ -487,7 +467,7 @@ la cual resulta útil para hacer cálculos en la base de estados de posición.
 %Operador desplazamiento
 \subsection{Propiedades del operador desplazamiento}
 
-A continuación se enlistan las propiedades del operador desplazamiento (Agarwal) y se demuestra cada una de estas.
+A continuación se enlistan las propiedades del operador desplazamiento dadas por Agarwal \cite{Agarwal_2012} y se demuestra cada una de estas.
 
 \begin{align}
   \hat{D}(\alpha)                                                     & = e^{-\frac{1}{2}|\alpha|^2} e^{\alpha \hat{a}^\dagger} e^{-\alpha^* \hat{a}}  = e^{\frac{1}{2}|\alpha|^2} e^{-\alpha^* \hat{a}} e^{\alpha \hat{a}^\dagger} \\
