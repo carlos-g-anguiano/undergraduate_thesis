@@ -11,36 +11,39 @@ Dado que $\hat{q}$ y $\hat{p}$ no son observables compatibles, el principio de i
 La clasificación del ordenamiento de estos operadores permite realizar cálculos más inmediatos a través del uso de propiedades que resultan de tal orden. Una función simétricamente ordenada o Weyl-ordenada se tiene cuando hay simetría respecto al ordenamiento de los operadores, por ejemplo ${\hat{a}^\dagger}^2 \hat{a} + \hat{a}^\dagger \hat{a}\hat{a}^\dagger + \hat{a} {\hat{a}^\dagger}^2 $ \cite{Mandel}. Una función de los operadores $\hat{a}$ y $\hat{a}^\dagger$ se dice normalmente ordenada cuando en cada producto los operadores de creación $\hat{a}^\dagger$ se multiplican por la derecha a los de aniquilación $\hat{a}$. Cuando se reescribe una función de estos operadores a través del uso de las relaciones de conmutación para seguir esta estructura se le llama ordenamiento. Por ejemplo la segunda potencia del operador número $\hat{N}={\hat{a}^\dagger}^2 \hat{a}^2 + \hat{a}^\dagger \hat{a}$. El anti-ordenamiento es el proceso contrario, de escribir las funciones de los operadores escalera de forma que el de aniquilación $\hat{a}$ preceda en cada término como factor al de creación $\hat{a}^\dagger$.
 
 La función de Wigner, de manera análoga a las funciones de densidad de probabilidad clásicas, se define como la transformada de Fourier de una función característica $\chi(\beta)$
-\begin{equation*}
-  W(\alpha) = \frac{1}{\pi^2}\int \exp{\left[ \beta^* \alpha - \beta \alpha^* \right]} \chi(\beta) d^2\beta
-\end{equation*}
+\begin{equation}
+  W(\alpha) = \frac{1}{\pi^2}\int \exp{\left[ \beta^* \alpha - \beta \alpha^* \right]} \chi(\beta) d^2\beta.
+\end{equation}
 La función característica debe ser simétricamente ordenada. En este caso, el operador de densidad brinda la descripción completa del sistema, y está determinado por su función característica
-\begin{equation*}
-  \chi(\alpha) = \text{Tr}\left\{ \rho \hat{D}(\alpha)  \right\}
-\end{equation*}
-
+\begin{equation}
+  \chi(\alpha) = \text{Tr}\left\{ \rho \hat{D}(\alpha)  \right\}.
+\end{equation}
 A parte de la función de Wigner, existen otras funciones de distribución cuasi-probabilísticas como lo son la función $Q$ de Husimi o la función $P$ de Glauber-Sudarshan. La diferencia entre ellas radica en el orden de los factores de aniquilación y creación, usando una función característica ad hoc a su  ordenamiento. La función $P$ es conveniente para evaluar funciones normalmente ordenadas, mientras que la función $Q$ lo es para evaluar funciones anti-normalmente ordenadas.
 
 La función de Wigner también se puede construir usando la perspectiva de funciones de onda como Wigner (1932) la describió originalmente a partir de la descripción de un salto de una partícula de una posición $q'$ a otra $q''$. Sea $\xi = q'' -q'$ la distancia de esta transición. En el caso de una dimensión describimos el estado de la partícula con el operador de densidad $\hat{\rho}$ y el elemento de matriz $\bra{q''}\hat{\rho}\ket{q'}$ describe el salto del eigenestado de posición $\ket{q'}$ al eigenestado de posición $\ket{q''}$. Sea $q = (q'-q'')/2$ el punto medio entre la posición inicial y final de la transición y expresamos $q'$ y $q''$ en términos de la distancia de transición y el punto medio
-\begin{equation*}
-  q' = q - \frac{1}{2}\xi; \quad q'' = q + \frac{1}{2}\xi
-\end{equation*}
+\begin{equation}
+  q' = q - \frac{1}{2}\xi; \quad q'' = q + \frac{1}{2}\xi,
+\end{equation}
 y el elemento de matriz que describe la transición es $\bra{q + \frac{1}{2}\xi}\hat{\rho}\ket{q - \frac{1}{2}\xi}$. Dado que el momento es el generador de traslaciones, se asocia el momento $p$ de la partícula con el salto $\xi$ de la partícula. La transformada de Fourier del salto brinda la distribución del momento y define a la función de Wigner
 \begin{equation}
   W(q,p) = \frac{1}{2\pi\hbar} \int_{-\infty}^{\infty} \text{d}\xi \exp{\left( -\frac{i}{\hbar}\xi p \right)} \bra{q + \frac{1}{2}\xi}\hat{\rho}\ket{q - \frac{1}{2}\xi}
 \end{equation}
 donde $1/(2\pi\hbar)$ es el factor de normalización. haciendo el cambio de variable $y = \xi/2$
-\begin{align*}
-  W(q,p) & = \frac{1}{\pi\hbar} \int_{-\infty}^{\infty} \text{d}y \exp{\left( -2\frac{i}{\hbar}y p \right)} \bra{q + \frac{1}{2}\xi}\hat{\rho}\ket{q - \frac{1}{2}\xi}                                  \\
-         & = \frac{1}{\pi\hbar} \int_{-\infty}^{\infty} \text{d}y \exp{\left( -2\frac{i}{\hbar}y p \right)} \bra{-y}e^{-iq\hat{p}/\hbar}  \hat{\rho} e^{iq\hat{p}/\hbar} \ket{y}                        \\
-         & = \frac{1}{\pi\hbar} \int_{-\infty}^{\infty} \text{d}y \bra{-y} e^{ip\hat{q}/\hbar} e^{-iq\hat{p}/\hbar}  \hat{\rho} e^{iq\hat{p}} e^{-ip\hat{q}/\hbar} \ket{y}                              \\
-         & = \frac{1}{\pi\hbar} \int_{-\infty}^{\infty} \text{d}y \bra{y} (-1)^{\hat{a}^\dagger\hat{a}} e^{ip\hat{q}/\hbar} e^{-iq\hat{p}/\hbar}  \hat{\rho} e^{iq\hat{p}} e^{-ip\hat{q}/\hbar} \ket{y} \\
-\end{align*}
-se expresa entonces la función de Wigner en términos de la traza del operador $(-1)^{\hat{a}^\dagger\hat{a}} \hat{D}^{\dagger}(\alpha) \hat{\rho} \hat{D}(\alpha)$ \cite[Moya].
-\begin{equation}\label{eq:c4-moya}
-  W(q,p) = \frac{1}{\pi} \text{Tr}{\left\{ (-1)^{\hat{a}^\dagger\hat{a}} \hat{D}^{\dagger}(\alpha) \hat{\rho} \hat{D}(\alpha) \right\}}
+\begin{align}
+  W(q,p) & = \frac{1}{\pi\hbar} \int_{-\infty}^{\infty} \text{d}y \exp{\left( -2\frac{i}{\hbar}y p \right)} \bra{q + \frac{1}{2}\xi}\hat{\rho}\ket{q - \frac{1}{2}\xi}                                  \nonumber \\
+         & = \frac{1}{\pi\hbar} \int_{-\infty}^{\infty} \text{d}y \exp{\left( -2\frac{i}{\hbar}y p \right)} \bra{-y}e^{-iq\hat{p}/\hbar}  \hat{\rho} e^{iq\hat{p}/\hbar} \ket{y}                        \nonumber \\
+         & = \frac{1}{\pi\hbar} \int_{-\infty}^{\infty} \text{d}y \bra{-y} e^{ip\hat{q}/\hbar} e^{-iq\hat{p}/\hbar}  \hat{\rho} e^{iq\hat{p}} e^{-ip\hat{q}/\hbar} \ket{y}                              \nonumber \\
+         & = \frac{1}{\pi\hbar} \int_{-\infty}^{\infty} \text{d}y \bra{y} (-1)^{\hat{a}^\dagger\hat{a}} e^{ip\hat{q}/\hbar} e^{-iq\hat{p}/\hbar}  \hat{\rho} e^{iq\hat{p}} e^{-ip\hat{q}/\hbar} \ket{y}
+\end{align}
+se expresa entonces la función de Wigner en términos de la traza del operador \cite{Moya}
+\begin{equation}
+  (-1)^{\hat{a}^\dagger\hat{a}} \hat{D}^{\dagger}(\alpha) \hat{\rho} \hat{D}(\alpha),
 \end{equation}
-Donde por convención se toma $\hbar$ como la unidad. Para calcular la función de Wigner en términos de estados coherentes puros, se utiliza $\hat{\rho} = \bra{\beta}\ket{\beta}$ y se puede demostrar que \cite{sanchez}
+como
+\begin{equation}\label{eq:c4-moya}
+  W(q,p) = \frac{1}{\pi} \text{Tr}{\left\{ (-1)^{\hat{a}^\dagger\hat{a}} \hat{D}^{\dagger}(\alpha) \hat{\rho} \hat{D}(\alpha) \right\}},
+\end{equation}
+donde por convención se toma $\hbar$ como la unidad. Para calcular la función de Wigner en términos de estados coherentes puros, se utiliza $\hat{\rho} = \bra{\beta}\ket{\beta}$ y se puede demostrar que \cite{sanchez}
 \begin{equation*}
-  W(\alpha) = \frac{1}{\pi}e^{-2|\beta-\alpha|}
+  W(\alpha) = \frac{1}{\pi}e^{-2|\beta-\alpha|}.
 \end{equation*}

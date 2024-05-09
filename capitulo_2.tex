@@ -60,11 +60,11 @@ nos enfocaremos solo en los términos de amplitudes incidentes, las cuales deben
   \nabla \cdot \mathbf{u}(\mathbf{r}) = 0 \,,
 \end{equation}
 lo cual se cumple al momento de asignarle un vector de polarización $\mathbf{\hat{e}}^{(\lambda)}$ perpendicular a $\mathbf{k}$. A su vez las funciones forman un conjunto ortogonal bajo el producto interno del espacio de Hilbert. Se establecen condiciones de frontera periódicas que corresponden a modos de vibración que llevan a ondas estacionarias en un volúmen cúbico de paredes reflejantes de lados de longitud $L$. De esta condición de ortogonalidad
-\begin{equation*}
+\begin{equation}
   \int_V \exp{(i\mathbf{k}\cdot\mathbf{r})} \exp{(-i\mathbf{k}\cdot\mathbf{r})} d\mathbf{r}
   =  \int_V d\mathbf{r}
   =  L^3 = V \,,
-\end{equation*}
+\end{equation}
 \begin{equation}
   \label{EM.14}
   \int_V \mathbf{u}^{*}_k(\mathbf{r}) \mathbf{u}_{k'}(\mathbf{r}) d\mathbf{r} = L^3\delta_{kk'} \,.
@@ -90,16 +90,16 @@ y en forma de operador se expresa con el Hamiltoniano
   \hat{H} = \frac{1}{8\pi}\int_V \left[ \hat{\mathbf{E}}^2(\mathbf{r}, t) + \hat{\mathbf{B}}^2(\mathbf{r}, t) \right] d\mathbf{r} \,.
 \end{equation}
 El campo magnético y la inducción magnética se calculan en términos del conjunto de funciones ortonormales $\mathbf{u}_k(\mathbf{r})$ a partir del campo vectorial $\hat{\mathbf{A}}(\mathbf{r}, t)$
-\begin{align*}
-  \hat{\mathbf{E}}           & = -\frac{1}{c} \frac{\partial \hat{\mathbf{A}}}{\partial t}                                                                                                                                                         \\
-                             & =-\frac{1}{c}\left[ \frac{\partial \hat{\mathbf{A}}^{(+)}}{\partial t} + \frac{\partial \mathbf{A}^{(-)}}{\partial t} \right]                                                                                       \\
-                             & = -\frac{1}{c} \sum_{k,\lambda} \left[ -i\omega_{k}\hat{c}_{k} \mathbf{u}_{k\lambda} (\mathbf{r})e^{-i\omega_k t} +  i\omega_{k}\hat{c}_{k}^* \mathbf{u}_{k\lambda}^* (\mathbf{r})e^{i\omega_{k} t} \right] \,,     \\
-  c^2 \vert\mathbf{E}\vert^2 & = c^2 \mathbf{E} \cdot \mathbf{E}                                                                                                                                                                                   \\
-                             & = \sum_{k,\lambda}\sum_{k',\lambda'}\left(-i\omega_{k}\hat{c}_{k}\mathbf{u}_{k\lambda} (\mathbf{r})e^{-i\omega_{k}t} + i \omega_{k} c^{*}_{k}\mathbf{u}^{*}_{k\lambda}(\mathbf{r})e^{i\omega_{k}t} \right)\cdot     \\
-                             & \cdot \left(-i\omega_{k'}\hat{c}_{k'}\mathbf{u}_{k'\lambda} (\mathbf{r})e^{-i\omega_{k'}t} + i \omega_{k'} \hat{c}^{*}_{k}\mathbf{u}^{*}_{k'\lambda'}(\mathbf{r})e^{i\omega_{k'}t} \right)                          \\
-                             & = \sum_{k,\lambda} \Big[ \left(-i\omega_{k}\hat{c}_{k} \mathbf{u}_{k\lambda} (\mathbf{r})e^{-i\omega_k t}\right)\cdot \left( i\omega_{k}\hat{c}_{k}^* \mathbf{u}_{k\lambda}^* (\mathbf{r})e^{i\omega_{k} t} \right) \\
+\begin{align}
+  \hat{\mathbf{E}}           & = -\frac{1}{c} \frac{\partial \hat{\mathbf{A}}}{\partial t}                                                                                                                                                         \nonumber \\
+                             & =-\frac{1}{c}\left[ \frac{\partial \hat{\mathbf{A}}^{(+)}}{\partial t} + \frac{\partial \mathbf{A}^{(-)}}{\partial t} \right]                                                                                       \nonumber \\
+                             & = -\frac{1}{c} \sum_{k,\lambda} \left[ -i\omega_{k}\hat{c}_{k} \mathbf{u}_{k\lambda} (\mathbf{r})e^{-i\omega_k t} +  i\omega_{k}\hat{c}_{k}^* \mathbf{u}_{k\lambda}^* (\mathbf{r})e^{i\omega_{k} t} \right] \,,     \nonumber \\
+  c^2 \vert\mathbf{E}\vert^2 & = c^2 \mathbf{E} \cdot \mathbf{E}                                                                                                                                                                                   \nonumber \\
+                             & = \sum_{k,\lambda}\sum_{k',\lambda'}\left(-i\omega_{k}\hat{c}_{k}\mathbf{u}_{k\lambda} (\mathbf{r})e^{-i\omega_{k}t} + i \omega_{k} c^{*}_{k}\mathbf{u}^{*}_{k\lambda}(\mathbf{r})e^{i\omega_{k}t} \right)\cdot     \nonumber \\
+                             & \cdot \left(-i\omega_{k'}\hat{c}_{k'}\mathbf{u}_{k'\lambda} (\mathbf{r})e^{-i\omega_{k'}t} + i \omega_{k'} \hat{c}^{*}_{k}\mathbf{u}^{*}_{k'\lambda'}(\mathbf{r})e^{i\omega_{k'}t} \right)                          \nonumber \\
+                             & = \sum_{k,\lambda} \Big[ \left(-i\omega_{k}\hat{c}_{k} \mathbf{u}_{k\lambda} (\mathbf{r})e^{-i\omega_k t}\right)\cdot \left( i\omega_{k}\hat{c}_{k}^* \mathbf{u}_{k\lambda}^* (\mathbf{r})e^{i\omega_{k} t} \right) \nonumber \\
                              & +  \left(i\omega_{k}\hat{c}_{k}^* \mathbf{u}_{k\lambda} (\mathbf{r})e^{i\omega_{k} t}\right)\cdot \left(-i\omega_{k}\hat{c}_{k} \mathbf{u}_{k\lambda}^* (\mathbf{r})e^{-i\omega_k t}\right) \Big],
-\end{align*}
+\end{align}
 entonces
 \begin{equation}
   \label{EM.18}
@@ -107,34 +107,34 @@ entonces
 \end{equation}
 Para el campo magnético, se selecciona la dirección de polarización del campo eléctrico, analizando solamente su carácter vectorial
 $\mathbf{e}^{\lambda}= \mathbf{\hat{\textnormal{\bfseries\i}}}$, entonces
-\begin{equation*}
+\begin{equation}
   \mathbf{B} = \mathbf{\hat{\textnormal{\bfseries\j}}} \left( \frac{\partial}{\partial z} A_x - \frac{\partial}{\partial x} A_z \right)
-\end{equation*}
+\end{equation}
 pero como la dirección de polarización es en $\mathbf{\hat{\textnormal{\bfseries\i}}}$, solo la componente de $A_x$ es distinta de cero y
-\begin{equation*}
+\begin{equation}
   \mathbf{B} = \mathbf{\hat{\textnormal{\bfseries\j}}} \frac{\partial}{\partial z} A_x
-\end{equation*}
+\end{equation}
 como
-\begin{equation*}
+\begin{equation}
   \frac{\partial \mathbf{u}_{k\lambda}(\mathbf{r})}{\partial z} = i k_z \mathbf{u}_{k\lambda}(\mathbf{r})
-\end{equation*}
+\end{equation}
 y
-\begin{equation*}
+\begin{equation}
   \frac{\partial \mathbf{u}^{*}_{k\lambda}(\mathbf{r})}{\partial z} = -i k_z \mathbf{u}^{*}_{k\lambda}(\mathbf{r}).
-\end{equation*}
-\begin{equation*}
+\end{equation}
+\begin{equation}
   \hat{\mathbf{B}} = \mathbf{\hat{\textnormal{\bfseries\j}}} \sum_{k,\lambda} \left( i k_z \hat{c}_{k} \mathbf{u}_{k\lambda}(\mathbf{r})e^{-i\omega_{k} t} - i k_z \hat{c}_{k}^* \mathbf{u}_{k\lambda}^*(\mathbf{r})e^{i\omega_{k} t}  \right)
-\end{equation*}
+\end{equation}
 Calculando su norma al cuadrado usando el producto punto para complejos
-\begin{align*}
-  \hat{\mathbf{B}}^2 & = \sum_{k,\lambda} \Big[ \left(ik_z \hat{c}_{k} \mathbf{u}_{k\lambda}(\mathbf{r})e^{-i\omega_{k} t}\right)\left(-ik_z \hat{c}_{k}^{*} \mathbf{u}_{k\lambda}^*(\mathbf{r})e^{i\omega_{k} t} \right) \\
-                     & + \left(-ik_z \hat{c}_{k}^{*} \mathbf{u}_{k\lambda}^*(\mathbf{r})e^{i\omega_{k} t} \right)  \left(ik_z \hat{c}_{k} \mathbf{u}_{k\lambda}(\mathbf{r})e^{-i\omega_{k} t}\right) \Big]                \\
+\begin{align}
+  \hat{\mathbf{B}}^2 & = \sum_{k,\lambda} \Big[ \left(ik_z \hat{c}_{k} \mathbf{u}_{k\lambda}(\mathbf{r})e^{-i\omega_{k} t}\right)\left(-ik_z \hat{c}_{k}^{*} \mathbf{u}_{k\lambda}^*(\mathbf{r})e^{i\omega_{k} t} \right) \nonumber \\
+                     & + \left(-ik_z \hat{c}_{k}^{*} \mathbf{u}_{k\lambda}^*(\mathbf{r})e^{i\omega_{k} t} \right)  \left(ik_z \hat{c}_{k} \mathbf{u}_{k\lambda}(\mathbf{r})e^{-i\omega_{k} t}\right) \Big]                \nonumber \\
                      & = 2 \sum_{k,\lambda} k_z^2 |\mathbf{u}(\mathbf{r})|^2 \left( \hat{c}_{k} \hat{c}_{k}^* + \hat{c}_{k}^* \hat{c}_{k} \right) \,.
-\end{align*}
+\end{align}
 Utilizando los operadores de cuadratura $\hat{X}$ y $\hat{Y}$ previamente definidos, se puede reescribir el campo eléctrico. Usando $\mathbf{u}_{k\lambda}(\mathbf{r})e^{-i\omega_k t} = \mathbf{e}_{k\lambda} e^{\mathbf{k}\cdot\mathbf{r}-i\omega_k t}$ se obtiene
-\begin{equation*}
+\begin{equation}
   \mathbf{E} = i \sum_{k,\lambda} \left( \frac{8\hbar \pi \omega_k}{V} \right)^{1/2} \mathbf{e}_{k\lambda} \left[ \hat{X}\cos(\mathbf{k}\cdot\mathbf{r} - \omega t) + \hat{Y}\sen(\mathbf{k}\cdot\mathbf{r} - \omega t) \right]
-\end{equation*}
+\end{equation}
 Las variables canónicas $\hat{X}$ y $\hat{Y}$ se pueden interpretar como amplitudes de las cuadraturas en las que se descompone el campo eléctrico. \cite{Mandel}
 En nuestro eje coordenado, la propagación de la onda electromagnética se de en la dirección $\mathbf{\hat{\textnormal{\bfseries k}}}$, por lo que $|\mathbf{k}| = k = k_z$. Además $\omega_k = kc$ y se obtiene
 \begin{equation}
@@ -142,10 +142,10 @@ En nuestro eje coordenado, la propagación de la onda electromagnética se de en
   \hat{\mathbf{B}}^2 = 2 \sum_{k,\lambda} \frac{\omega_k^2}{c^2}  |\mathbf{u}(\mathbf{r})|^2 \left( \hat{c}_{k} \hat{c}_{k}^* + \hat{c}_{k}^* \hat{c}_{k} \right) \,,
 \end{equation}
 sustituyendo en la expresión del Hamiltoniano (\ref{EM.17H})
-\begin{align*}
-  \hat{H} & = \frac{1}{8\pi} \Bigg[ \int_V \left( 2\sum_{k,\lambda} \frac{\omega_{k\lambda}^2}{c^2}  |\mathbf{u}_{k\lambda}(\mathbf{r})|^2 \left( \hat{c}_{k} \hat{c}_{k}^* + \hat{c}_{k}^* \hat{c}_{k} \right) \right) d\mathbf{r} \\ &+ \int_V \left( 2 \sum_{k,\lambda} \frac{\omega_{k\lambda}^2}{c^2} |\mathbf{u}_{k\lambda}(\mathbf{r})|^2 \left( \hat{c}_{k} \hat{c}_{k}^* + \hat{c}_{k}^* \hat{c}_{k} \right) \right)d\mathbf{r} \Bigg] \\
+\begin{align}
+  \hat{H} & = \frac{1}{8\pi} \Bigg[ \int_V \left( 2\sum_{k,\lambda} \frac{\omega_{k\lambda}^2}{c^2}  |\mathbf{u}_{k\lambda}(\mathbf{r})|^2 \left( \hat{c}_{k} \hat{c}_{k}^* + \hat{c}_{k}^* \hat{c}_{k} \right) \right) d\mathbf{r} \nonumber \\ &+ \int_V \left( 2 \sum_{k,\lambda} \frac{\omega_{k\lambda}^2}{c^2} |\mathbf{u}_{k\lambda}(\mathbf{r})|^2 \left( \hat{c}_{k} \hat{c}_{k}^* + \hat{c}_{k}^* \hat{c}_{k} \right) \right)d\mathbf{r} \Bigg] \nonumber \\
           & = \frac{1}{2\pi c^2} \sum_{k,\lambda} \omega_{k\lambda}^2 \left( \hat{c}_{k} \hat{c}_{k}^* + \hat{c}_{k}^* \hat{c}_{k} \right) \int_V |\mathbf{u}_{k\lambda}^2(\mathbf{r})|^2 d\mathbf{r} \,,
-\end{align*}
+\end{align}
 donde por la condición de ortogonalidad
 \begin{equation}
   \label{EM.20}
@@ -157,79 +157,79 @@ ahora si consideramos
   \hat{c}_{k} = \sqrt{\frac{\pi c^{2}\hbar}{\omega_{k}V}} \hat{a}_{k}\,,
 \end{equation}
 la ecuaci\'on (\ref{EM.20}) se convierte en:
-\begin{align*}
+\begin{align}
   \hat{H} & = \frac{V}{2\pi c^2}\sum_{k} \omega_{k}^2 \frac{\pi c^{2}\hbar}{\omega_{k}V}\left(\hat{a}_{k}\hat{a}^{*}_{k} + \hat{a}_{k}^{*} \hat{a}_{k} \right) = \frac{V}{2\pi c^2}\sum_{k} \omega_{k}^2 \frac{\pi c^{2}\hbar}{\omega_{k}V}\left(\hat{a}_{k}\hat{a}^{*}_{k} + \hat{a}_{k}^{*} \hat{a}_{k} \right) \\
-\end{align*}
+\end{align}
 \begin{equation}
   \label{EM.22}
   \hat{H} = \sum_{k} \frac{\hbar\omega_{k}}{2}\left(\hat{a}_{k}\hat{a}^{*}_{k} + \hat{a}_{k}^{*} \hat{a}_{k} \right)
 \end{equation}
 En orden de cuantizar el campo electromagnético, se escogen $\hat{a}_{k}$ y $\hat{a}^{*}_{k}$ como los operadores de aniquilaci\'on $\hat{a}_{k}$ y creaci\'on $\hat{a}^{\dagger}_{k}$ para cada modo del campo $k$. Como el objeto de estudio son fotones, el conmutador de bosones es el que se debe seguir
-\begin{equation*}
+\begin{equation}
   [\hat{a}_k, \hat{a}^{\dagger}_{k'}] = [\hat{a}^{\dagger}_k, \hat{a}_{k'}] = 0, \quad [\hat{a}_k, \hat{a}_{k'}^{\dagger}] = \delta_{kk'} \,.
-\end{equation*}
+\end{equation}
 \iffalse
   Los operadores de campo electromagnético $\mathbf{E}$, $\mathbf{B}$ y $\vec{A}$ son Hermitianos (demostrar, Agarwal), por lo que se pueden descomponer al campo $\mathbf{A}$ en la suma del campo $\mathbf{A}^{(+)}$ que contiene todas las frecuencias positivas  y su complejo conjugado $\mathbf{A}^{(-)}$. (Walls)
 
   Considere primero una onda electromagnética, descompuesta en dos términos de esta forma
-  \begin{equation*}
+  \begin{equation}
     \mathbf{E}^{(+)} = \hat{\varepsilon} E_0 \exp{\left(i\vec{k}\cdot \vec{r} - i\omega_k t\right)}, \omega > 0
-  \end{equation*}
+  \end{equation}
   Donde $k = |\vec{k}| = \omega_k/c$y $\hat{\varepsilon}$ es el vector de polarización del campo electromagnético, el cual es ortogonal a la dirección de propagación y es perpendicular a la dirección de propagación $\vec{k}$. Hay dos direcciones de polarización, y se denota por el índice $s$ con valores $1$, $2$. De esta forma se tiene que el vector de polarización depende de dos índices y $\vec{\varepsilon} = \vec{\varepsilon}_{\vec{k},s}$ En términos del operador campo vectorial $\mathbf{A}$ del gauge de Coulomb
-  \begin{align*}
+  \begin{align}
     \mathbf{A}^{(+)} & = -\frac{1}{c}\frac{\partial \mathbf{A}}{dt} \mathbf{E}^{(+)}                                                           \\
                      & = -\frac{(-i\omega_k)}{c}\hat{\varepsilon} E_0 \exp{\left(i\vec{k}\cdot \vec{r} - i\omega_k t\right)}, \quad \omega > 0 \\
                      & = \hat{\varepsilon} A_0 \exp{\left(i\vec{k}\cdot \vec{r} - i\omega_k t\right)}, \quad \omega > 0
-  \end{align*}
+  \end{align}
   Donde $A_0=\frac{(i\omega_k)}{c}E_0$. Esto nos permite construir la solución de onda plana de la ecuación de onda del campo vectorial $\mathbf{A}$. (Agarwal) Al término $\hat{\varepsilon} \exp{\left(i\vec{k}\cdot \vec{r}\right)}$ se le denomina función de modo y se le denotará por $\hat{u} = \hat{u}(\vec{r})$, satisfacen la ecuación de onda y de transversalidad al igual que $\mathbf{A}$. (Walls).
 
   Se establecen ahora condiciones de frontera, considerando un volumen cúbico de lados de longitud $L$ y periodicidad. Estas condiciones corresponden a modos de ondas viajeras que en paredes reflejantes se pueden describir como ondas estacionarias. Las funciones de modo forman un conjunto ortonormal completo con estas condiciones, es decir
-  \begin{equation*}
+  \begin{equation}
     \int_V \hat{u}_k^{*}(\vec{r}) u_{k'} \vec{r} d^3 r = \delta_{kk'}
-  \end{equation*}
+  \end{equation}
   En coordenadas cartesianas, de las condiciones de frontera establecen los valores de $k_\alpha$ con $\alpha = x,y,z$.
-  \begin{equation*}
+  \begin{equation}
     k_i = \frac{2\pi n_i}{L}, \quad n_i = 0, \pm1, \pm2, \dots
-  \end{equation*}
+  \end{equation}
   La suma en las direcciones de propagación $\vec{k}$ todos los modos y las dos direcciones de polarización $s$, denotando $V = L^3$, se tiene
-  \begin{align*}
+  \begin{align}
     \mathbf{A}^{(+)} & = \sum_{\vec{k}, s} \frac{A_{\vec{k}s}}{\sqrt{V}} \hat{\varepsilon}_{\vec{k}s} \exp{ \left( i\vec{k}\cdot\vec{r} - i \omega_k t \right) } \\
                      & = \sum_{\vec{k},s} \frac{A_{\vec{k}s}}{\sqrt{V}} \hat{u} \exp{\left( - i \omega_k t \right)}
-  \end{align*}
+  \end{align}
   Así, el potencial vectorial es
-  \begin{equation*}
+  \begin{equation}
     \mathbf{A}(\vec{r}, t) = \sum_{\vec{k}, s} \left( \frac{\hbar}{2\omega_k \epsilon_0} \right)^{1/2} \left( \hat{a}^{\dagger} \hat{u}_k(\vec{r}) e^{-i\omega_k} t + \hat{a} \hat{u}_k(\vec{r})^{*} e^{i\omega_k} t \right)
-  \end{equation*}
+  \end{equation}
   y el campo eléctrico es entonces
-  \begin{equation*}
+  \begin{equation}
     \mathbf{E}(\vec{r}, t) = i\sum_{\vec{k}, s} \left( \frac{\hbar\omega_k}{2\epsilon_0} \right)^{1/2} \left( \hat{a}^{\dagger} \hat{u}_k(\vec{r}) e^{-i\omega_k} t - \hat{a} \hat{u}_k(\vec{r})^{*} e^{i\omega_k} t \right)
-  \end{equation*}
+  \end{equation}
   Esto iría en otro capítulo?
   Los coeficientes adminesionales de Fourier son números complejos. En orden de cuantizar el campo electromagnético, se escogen $\hat{a}^{\dagger}$ y $\hat{a}$ para ser adjunto uno al otro. Como el objeto de estudio son fotones, el conmutador de bosones es el que se debe seguir
-  \begin{equation*}
+  \begin{equation}
     [\hat{a}_k, \hat{a}^{\dagger}_{k'}] = [\hat{a}^{\dagger}_k, \hat{a}_{k'}] = 0, \quad [\hat{a}^{\dagger}_k, \hat{a}_{k'}] = \delta_{kk'}
-  \end{equation*}
+  \end{equation}
 \fi
 \section{Cuantización del campo electromagnético}
 
 La cuantización del campo electromagnético se da cuando se asocia a cada modo de luz $\mathbf{k},\lambda$ de la construcción realizada en la sección 2 a un oscilador armónico. Los modos de luz siguen las mismas relaciones de los operadores de creación $\hat{a}^{\dagger}$ y destrucción $\hat{a}$, que ahora corresponden a la creación o aniquilación de un fotón de energía $\hbar\omega$ en el modo $\mathbf{k}\lambda$. (Loudon, alterar un poco, está muy textual). Bajo este contexto, a los estado $\ket{\hat{n}_{\mathbf{k}\lambda}}$ se les denomina estados número del fotón o estados Fock del campo electromagnético.
 
 Comparando las expresiones de energía del campo electromagnético y del Hamiltoniano del oscilador armónico, se obtiene la siguiente correspondencia entre los operadores de creación y aniquilación y los coeficientes complejos de la base ortogonal $\mathbf{u}_{k,\lambda}(\mathbf{r})$ \cite{Loudon}
-\begin{equation*}
+\begin{equation}
   \left( \frac{2\hbar \pi c^2}{V\omega_k} \right)^{1/2} \hat{a}_{k\lambda} \leftrightarrow \hat{c}_{k}; \quad \left( \frac{2\hbar \pi c^2}{V\omega_k} \right)^{1/2} \hat{a}^{\dagger}_{k\lambda} \leftrightarrow \hat{c}_{k}^*.
-\end{equation*}
+\end{equation}
 La luz es un objeto cuántico con estado $\ket{\Psi}$. Usando la imagen de Heisenberg, donde los operadores evolucionan en el tiempo y el estado es estacionario, se considera a los campos clásicos como los valores esperados de los observables $\mathbf{E}$, $\mathbf{D}$, $\mathbf{B}$ y $\mathbf{H}$ que actúan sobre los estados de la luz. la linealidad de las ecuaciones de Maxwell  permite que estas sean válidas para estos operadores. \cite{Leonhardt} De esta forma, se cuantiza la energía del campo electromagnético, remplazando $U$ por el operador Hamiltoniano
-\begin{equation*}
+\begin{equation}
   \hat{H}  =  \frac{V}{2\pi c^2}\sum_{k,\lambda} \left( \frac{2\hbar \pi c^2}{V\omega_k} \right) \omega_{k\lambda}^2 \left( \hat{a}_{k\lambda} \hat{a}^{\dagger}_{k\lambda} + \hat{a}^{\dagger}_{k\lambda} \hat{a}_{k\lambda} \right) = \sum_{k,\lambda} \hbar \omega_{k\lambda} \left( \hat{a}_{k\lambda} \hat{a}^{\dagger}_{k\lambda} + \hat{a}^{\dagger}_{k\lambda} \hat{a}_{k\lambda} \right).
-\end{equation*}
+\end{equation}
 De igual forma, los campos se cuantizan obteniendo \cite{Agarwal_2012}
-\begin{equation*}
+\begin{equation}
   \hat{\mathbf{A}} =  \sum_{k,\lambda} \left( \frac{2\hbar \pi c^2}{V\omega_k} \right)^{1/2} \left[ \hat{a}_{k\lambda} \mathbf{u}_{k\lambda} (\mathbf{r})e^{-i\omega_k t} + \hat{a}^{\dagger}_{k\lambda} \mathbf{u}_{k\lambda}^* (\mathbf{r})e^{i\omega_{k} t} \right],
-\end{equation*}
-\begin{align*}
-  \hat{\mathbf{E}} & = \sum_{k,\lambda} \left( \frac{2\hbar \pi c^2}{V\omega_k} \right)^{1/2} \frac{i\omega_{k}}{c} \left[ \hat{a}_{k\lambda} \mathbf{u}_{k\lambda} (\mathbf{r})e^{-i\omega_k t} -  \hat{a}^{\dagger}_{k\lambda} \mathbf{u}_{k\lambda}^* (\mathbf{r})e^{i\omega_{k} t} \right] \\
+\end{equation}
+\begin{align}
+  \hat{\mathbf{E}} & = \sum_{k,\lambda} \left( \frac{2\hbar \pi c^2}{V\omega_k} \right)^{1/2} \frac{i\omega_{k}}{c} \left[ \hat{a}_{k\lambda} \mathbf{u}_{k\lambda} (\mathbf{r})e^{-i\omega_k t} -  \hat{a}^{\dagger}_{k\lambda} \mathbf{u}_{k\lambda}^* (\mathbf{r})e^{i\omega_{k} t} \right] \nonumber \\
                    & = i \sum_{k,\lambda} \left( \frac{2\hbar \pi \omega_k}{V} \right)^{1/2} \left[ \hat{a}_{k\lambda} \mathbf{u}_{k\lambda} (\mathbf{r})e^{-i\omega_k t} -  \hat{a}^{\dagger}_{k\lambda} \mathbf{u}_{k\lambda}^* (\mathbf{r})e^{i\omega_{k} t} \right],
-\end{align*}
-\begin{equation*}
+\end{align}
+\begin{equation}
   \hat{\mathbf{B}} = i \sum_{k,\lambda} \left( \frac{2\hbar \pi \omega_k}{V} \right)^{1/2} \left[ \mathbf{\hat{k}} \times \mathbf{u}_{k\lambda}(\mathbf{r}) \hat{a}_{k\lambda} e^{-i\omega_k t} - \mathbf{\hat{k}} \times \mathbf{u}_{k\lambda}^* (\mathbf{r}) \hat{a}^{\dagger}_{k\lambda} e^{i\omega_{k} t} \right].
-\end{equation*}
+\end{equation}

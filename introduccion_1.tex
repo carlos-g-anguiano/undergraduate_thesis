@@ -57,34 +57,34 @@ En la notación de Dirac, considere un estado que depende del tiempo cuyo valor 
   i\hbar\frac{\partial}{\partial t} \hat{U}(t) = \hat{H}\hat{U}(t).
 \end{equation}
 Cuando el Hamiltoniano es independiente del tiempo, la solución a esta ecuación está dada por
-\begin{equation*}
+\begin{equation}
   \hat{U}(t) = \exp{\left[ \frac{-i\hat{H}t}{\hbar} \right] }.
-\end{equation*}
+\end{equation}
 % Oscilador armónico simple
 \subsection{Oscilador armónico cuántico}
 
 El oscilador armónico cuántico (OAC) es uno de los pocos modelos que tiene soluciones analíticas en la mecánica cuántica. La cinemática de varios sistemas periódicos y de tipo ondulatorio se puede describir utilizando el modelo del OAC.
 Varios potenciales independientes del tiempo $V(x)$ se pueden describir alrededor de un mínimo con una expansión en serie de Taylor
-\begin{align*}
+\begin{align}
   V(x) & = \sum_{n=0}^{\infty} \frac{V^{(n)}}{n!} (x)|_{x_0} (x-x_0)^n \\ &= V(x_0) + \frac{dV}{dx}\Big|_{x_0} (x-x_0) + \frac{1}{2}\frac{d^2V}{dx^2}\Big|_{x_0} (x-x_0)^2 + \dots \,,
-\end{align*}
+\end{align}
 el segundo término se anula por definición de mínimo local. Por formalismo, se puede recorrer el potencial $x = x' + x_0$ para que el potencial en $x_0$ sea $V(x_0) = 0$, eliminando el primer término. Finalmente, el término dominante en la expansión es la segunda derivada
 \begin{equation}
   \label{OA.1}
   V(x) = \frac{1}{2}\frac{d^2V(x)}{dx^2}\Big|_{x_0}x^2 \,,
 \end{equation}
 lo anterior se puede aplicar para un potencial que depende de más dimensiones $V(\mathbf{x})$. Asumiendo que todos los potenciales se han recorrido de manera análoga $x_i \to x_i + x_{oi}$
-\begin{equation*}
+\begin{equation}
   V(x_1, \dots, x_N) = \frac{1}{2}\sum_{i=1}^N \sum_{j=1}^N \frac{\partial^2 V}{\partial x_i \partial x_j}\Big|_{0} x_i x_j \,,
-\end{equation*}
+\end{equation}
 para hamiltonianos con potenciales cuadráticos, es siempre posible hacer un cambio de coordenadas de la forma
-\begin{equation*}
+\begin{equation}
   (x_{1}, \dots, x_N) \to (u_1, \dots, u_N)\,,
-\end{equation*}
+\end{equation}
 donde el potencial se desacopla, \textit{i.e.} sin derivadas cruzadas, y se puede describir por $n$ osciladores armónicos individuales
-\begin{equation*}
+\begin{equation}
   V(u_1, \dots, u_N) = \frac{1}{2} \sum_{i=1}^{N} \frac{\partial^2 V}{\partial u_i^{2}}\Big|_0 u_i^2\,.
-\end{equation*}
+\end{equation}
 Considerando un ejemplo básico de un oscilador armónico clásico, se tienen las ecuaciones clásicas de movimiento
 \begin{align}
   m \frac{d^2x}{dt^2} & = -kx \,, \label{OA.2}            \\
@@ -96,9 +96,9 @@ con $k$ la constante del resorte, $m$ la masa de la partícula, $x$ el desplazam
   -\frac{\hbar^2}{2m}\frac{d^2}{dx^2}\psi(x) + \frac{1}{2}m \omega^2 x^2 \psi(x) = E \psi(x) \,.
 \end{equation}
 Una partícula en un sistema tiene una energía cinética que corresponde a
-\begin{equation*}
+\begin{equation}
   \hat{T} = \frac{\hat{p}^2}{2m}\,,
-\end{equation*}
+\end{equation}
 y el hamiltoniano correspondiente está dado por
 \begin{equation}
   \hat{H} = \hat{T} + \hat{V} = \frac{\hat{p}^2}{2m} +\frac{1}{2} m\omega^2 \hat{q}^2 \label{OA.5}\,,
@@ -153,12 +153,12 @@ cuya ecuación de eigenvalores de la energía es
   \hat{H} \ket{n} = E_n\ket{n} \,,
 \end{equation}
 donde $\ket{n}$ es un eigenestado del OAC con eigenvalor $E_n$. A partir de ciertas operaciones algebráicas, se puede encontrar otra ecuación de eigenvalores a partir de la anterior multiplicando $\hat{a}$ por la izquierda, y resulta de la forma
-\begin{align*}
-  \hat{H} \hat{a}\ket{n} & = \hbar\omega\left(\hat{a}^{\dagger}\hat{a}+\frac{1}{2}\right)\hat{a}\ket{n} = \hbar\omega\left(\hat{a}\hat{a}^{\dagger}+\hat{a}^{\dagger}\hat{a}-\hat{a}\hat{a}^{\dagger}+\frac{1}{2}\right)\hat{a}\ket{n} \\
-                         & = \hbar\omega\left(\hat{a}\hat{a}^{\dagger}-\left[\hat{a},\hat{a}^{\dagger}\right]+\frac{1}{2}\right)\hat{a}\ket{n} = \hbar\omega\left(\hat{a}\hat{a}^{\dagger}-1+\frac{1}{2}\right)\hat{a}\ket{n}          \\
-                         & = \hbar\omega\left(\hat{a}\hat{a}^{\dagger}\hat{a}-\hat{a}+\frac{1}{2}\hat{a}\right)\ket{n} = \hat{a}\hbar\omega\left(\hat{a}^{\dagger}\hat{a}+\frac{1}{2}-1\right)\ket{n}                                  \\
+\begin{align}
+  \hat{H} \hat{a}\ket{n} & = \hbar\omega\left(\hat{a}^{\dagger}\hat{a}+\frac{1}{2}\right)\hat{a}\ket{n} = \hbar\omega\left(\hat{a}\hat{a}^{\dagger}+\hat{a}^{\dagger}\hat{a}-\hat{a}\hat{a}^{\dagger}+\frac{1}{2}\right)\hat{a}\ket{n} \nonumber \\
+                         & = \hbar\omega\left(\hat{a}\hat{a}^{\dagger}-\left[\hat{a},\hat{a}^{\dagger}\right]+\frac{1}{2}\right)\hat{a}\ket{n} = \hbar\omega\left(\hat{a}\hat{a}^{\dagger}-1+\frac{1}{2}\right)\hat{a}\ket{n}          \nonumber \\
+                         & = \hbar\omega\left(\hat{a}\hat{a}^{\dagger}\hat{a}-\hat{a}+\frac{1}{2}\hat{a}\right)\ket{n} = \hat{a}\hbar\omega\left(\hat{a}^{\dagger}\hat{a}+\frac{1}{2}-1\right)\ket{n}                                  \nonumber \\
                          & = \hat{a}\left(\hbar\omega\left(\hat{n}+\frac{1}{2}\right)-\hbar\omega\right)\ket{n} = \hat{a}\left(\hat{H}-\hbar\omega\right)\ket{n} = \left(E_{n}-\hbar\omega\right)\hat{a}\ket{n}\,,
-\end{align*}
+\end{align}
 donde $\hat{a}\ket{n}$ es también un eigenestado del sistema, pero ahora con un valor propio de energía $E_n - \hbar\omega$, los cuales se denotarán como $\ket{n-1}$ y $E_{n-1}$ respectivamente. Así, la nueva ecuación de eigenvalores es
 \begin{equation}
   \label{OA.15}
