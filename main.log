@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.2.26)  8 MAY 2024 18:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.2.26)  9 MAY 2024 18:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -979,12 +979,12 @@ Package gensymb Warning: Not defining \micro.
 \openout2 = `portada.aux'.
 
 (./portada.tex
-<ipn.png, id=114, 101.4189pt x 146.2263pt>
+<ipn.png, id=118, 101.4189pt x 146.2263pt>
 File: ipn.png Graphic file (type png)
 <use ipn.png>
 Package pdftex.def Info: ipn.png  used on input line 3.
 (pdftex.def)             Requested size: 56.90561pt x 85.36241pt.
-<esfm.png, id=115, 122.859pt x 151.0443pt>
+<esfm.png, id=119, 122.859pt x 151.0443pt>
 File: esfm.png Graphic file (type png)
 <use esfm.png>
 Package pdftex.def Info: esfm.png  used on input line 11.
@@ -2321,8 +2321,8 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
 [47]
-LaTeX Info: Redefining \. on input line 971.
-LaTeX Info: Redefining \% on input line 971.
+LaTeX Info: Redefining \. on input line 970.
+LaTeX Info: Redefining \% on input line 970.
 
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
@@ -2332,8 +2332,8 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
 [48]
-LaTeX Info: Redefining \. on input line 1007.
-LaTeX Info: Redefining \% on input line 1007.
+LaTeX Info: Redefining \. on input line 1001.
+LaTeX Info: Redefining \% on input line 1001.
 
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
@@ -2342,7 +2342,11 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
-[49])
+[49]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+)
 LaTeX Info: Redefining \. on input line 192.
 LaTeX Info: Redefining \% on input line 192.
 
@@ -2354,6 +2358,17 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
 [50]
+LaTeX Info: Redefining \. on input line 192.
+LaTeX Info: Redefining \% on input line 192.
+
+
+Package fancyhdr Warning: \headheight is too small (6.50403pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
+
+[51]
 :<-
 :<+ capitulo_4.tex
 \openout2 = `capitulo_4.aux'.
@@ -2370,7 +2385,7 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
-[51
+[52
 
 
 
@@ -2388,7 +2403,7 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
-[52])
+[53])
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2396,7 +2411,7 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
-[53]
+[54]
 :<-
 :<+ capitulo_5.tex
 \openout2 = `capitulo_5.aux'.
@@ -2404,12 +2419,7 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (./capitulo_5.tex
  5.
 
-Overfull \hbox (30.59227pt too wide) detected at line 28
-[]
- []
-
-
-Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 37.
+Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 25.
 
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
@@ -2418,27 +2428,19 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
-[54
+[55
 
 
 
 
 
 ]
-LaTeX Info: Redefining \. on input line 72.
-LaTeX Info: Redefining \% on input line 72.
+Overfull \hbox (30.59227pt too wide) detected at line 64
+[]
+ []
 
-
-Package fancyhdr Warning: \headheight is too small (6.50403pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
-
-[55]
-LaTeX Info: Redefining \. on input line 96.
-LaTeX Info: Redefining \% on input line 96.
-
+LaTeX Info: Redefining \. on input line 64.
+LaTeX Info: Redefining \% on input line 64.
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2447,8 +2449,8 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
 [56]
-LaTeX Info: Redefining \. on input line 117.
-LaTeX Info: Redefining \% on input line 117.
+LaTeX Info: Redefining \. on input line 98.
+LaTeX Info: Redefining \% on input line 98.
 
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
@@ -2458,8 +2460,8 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
 [57]
-LaTeX Info: Redefining \. on input line 158.
-LaTeX Info: Redefining \% on input line 158.
+LaTeX Info: Redefining \. on input line 132.
+LaTeX Info: Redefining \% on input line 132.
 
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
@@ -2469,17 +2471,9 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
 [58]
-Overfull \hbox (58.27176pt too wide) detected at line 172
-[]
- []
+LaTeX Info: Redefining \. on input line 153.
+LaTeX Info: Redefining \% on input line 153.
 
-
-Overfull \hbox (75.64125pt too wide) detected at line 185
-[]
- []
-
-LaTeX Info: Redefining \. on input line 185.
-LaTeX Info: Redefining \% on input line 185.
 
 Package fancyhdr Warning: \headheight is too small (6.50403pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2488,92 +2482,6 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
 [59]
-Overfull \hbox (63.90688pt too wide) detected at line 198
-[]
- []
-
-
-Overfull \hbox (50.17242pt too wide) detected at line 207
-[]
- []
-
-
-Overfull \hbox (80.57353pt too wide) detected at line 212
-[]
- []
-
-LaTeX Info: Redefining \. on input line 212.
-LaTeX Info: Redefining \% on input line 212.
-
-Package fancyhdr Warning: \headheight is too small (6.50403pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
-
-[60]
-Overfull \hbox (15.9782pt too wide) detected at line 232
-[]
- []
-
-
-Overfull \hbox (20.89317pt too wide) detected at line 250
-[]
- []
-
-
-Overfull \hbox (63.94562pt too wide) detected at line 257
-[]
- []
-
-LaTeX Info: Redefining \. on input line 257.
-LaTeX Info: Redefining \% on input line 257.
-
-Package fancyhdr Warning: \headheight is too small (6.50403pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
-
-[61]
-Overfull \hbox (37.55983pt too wide) detected at line 263
-[]
- []
-
-
-Overfull \hbox (75.7508pt too wide) detected at line 268
-[]
- []
-
-
-Overfull \hbox (75.7508pt too wide) detected at line 282
-[]
- []
-
-LaTeX Info: Redefining \. on input line 292.
-LaTeX Info: Redefining \% on input line 292.
-
-Package fancyhdr Warning: \headheight is too small (6.50403pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
-
-[62]
-Overfull \hbox (12.61061pt too wide) detected at line 312
-[]
- []
-
-LaTeX Info: Redefining \. on input line 312.
-LaTeX Info: Redefining \% on input line 312.
-
-Package fancyhdr Warning: \headheight is too small (6.50403pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
-
-[63])
 LaTeX Info: Redefining \. on input line 194.
 LaTeX Info: Redefining \% on input line 194.
 
@@ -2584,7 +2492,123 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
+[60]
+Overfull \hbox (58.27176pt too wide) detected at line 208
+[]
+ []
+
+
+Overfull \hbox (75.64125pt too wide) detected at line 221
+[]
+ []
+
+LaTeX Info: Redefining \. on input line 221.
+LaTeX Info: Redefining \% on input line 221.
+
+Package fancyhdr Warning: \headheight is too small (6.50403pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
+
+[61]
+Overfull \hbox (63.90688pt too wide) detected at line 234
+[]
+ []
+
+
+Overfull \hbox (50.17242pt too wide) detected at line 243
+[]
+ []
+
+
+Overfull \hbox (80.57353pt too wide) detected at line 248
+[]
+ []
+
+LaTeX Info: Redefining \. on input line 248.
+LaTeX Info: Redefining \% on input line 248.
+
+Package fancyhdr Warning: \headheight is too small (6.50403pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
+
+[62]
+Overfull \hbox (15.9782pt too wide) detected at line 268
+[]
+ []
+
+
+Overfull \hbox (20.89317pt too wide) detected at line 286
+[]
+ []
+
+
+Overfull \hbox (63.94562pt too wide) detected at line 293
+[]
+ []
+
+LaTeX Info: Redefining \. on input line 293.
+LaTeX Info: Redefining \% on input line 293.
+
+Package fancyhdr Warning: \headheight is too small (6.50403pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
+
+[63]
+Overfull \hbox (37.55983pt too wide) detected at line 299
+[]
+ []
+
+
+Overfull \hbox (75.7508pt too wide) detected at line 304
+[]
+ []
+
+
+Overfull \hbox (75.7508pt too wide) detected at line 318
+[]
+ []
+
+LaTeX Info: Redefining \. on input line 328.
+LaTeX Info: Redefining \% on input line 328.
+
+Package fancyhdr Warning: \headheight is too small (6.50403pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
+
 [64]
+Overfull \hbox (12.61061pt too wide) detected at line 348
+[]
+ []
+
+LaTeX Info: Redefining \. on input line 348.
+LaTeX Info: Redefining \% on input line 348.
+
+Package fancyhdr Warning: \headheight is too small (6.50403pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
+
+[65])
+LaTeX Info: Redefining \. on input line 194.
+LaTeX Info: Redefining \% on input line 194.
+
+
+Package fancyhdr Warning: \headheight is too small (6.50403pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
+
+[66]
 :<-
 :<+ bibliografia.tex
 \openout2 = `bibliografia.aux'.
@@ -2602,7 +2626,7 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-7.99596pt}.
 
-[65
+[67
 
 
 
@@ -2623,28 +2647,28 @@ Package fancyhdr Warning: \headheight is too small (6.50403pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-22.61455pt}.
 
-[66]
+[68]
 :<-
 (./main.aux (./portada.aux)
 LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
  (./agradecimientos.aux) (./contents.aux) (./introduccion_1.aux) (./capitulo_2.aux) (./capitulo_3.aux) (./capitulo_4.aux) (./capitulo_5.aux) (./bibliografia.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 053C022EB9CC96271C22AAAA6995E42D;4295.
+(rerunfilecheck)             Checksum: 6087B15051BD6964EADCA053E1B2CC59;4696.
  ) 
 Here is how much of TeX's memory you used:
- 32236 strings out of 478276
- 647391 string characters out of 5850489
- 957541 words of memory out of 5000000
- 49440 multiletter control sequences out of 15000+600000
+ 32258 strings out of 478276
+ 647696 string characters out of 5850489
+ 957855 words of memory out of 5000000
+ 49447 multiletter control sequences out of 15000+600000
  497787 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  85i,15n,82p,1389b,915s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/yhmath/yhcmex.pfb>
-Output written on main.pdf (66 pages, 576283 bytes).
+Output written on main.pdf (68 pages, 585222 bytes).
 PDF statistics:
- 947 PDF objects out of 1000 (max. 8388607)
- 792 compressed objects within 8 object streams
- 325 named destinations out of 1000 (max. 500000)
- 287 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 984 PDF objects out of 1000 (max. 8388607)
+ 826 compressed objects within 9 object streams
+ 340 named destinations out of 1000 (max. 500000)
+ 295 words of extra memory for PDF output out of 10000 (max. 10000000)
 

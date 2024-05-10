@@ -1,21 +1,57 @@
-\chapter{Parametric Down convesion}
+\chapter{Evolución temporal de un amplificador paramétrico}
 
-\section{Amplificador paramétrico}
+Objetivos de este capítulo
 
-\section{Parametric down conversion}
+\section{Óptica no lineal}
+
+
+\section{Parametric Down Conversion}
+El operador de compresión (\ref{eq:squeeze-op}) de un solo modo puede reescribirse en una forma análoga al operador de evolución temporal, definiendo el Hamiltoniano de una compresión
+\begin{equation}\label{eq:squeeze-op-time-ev}
+  \hat{S}(z) = \exp(-\frac{i}{\hbar}Ht),
+\end{equation}
+donde
+\begin{equation} \label{eq:hamiltionian-squeeze}
+  \hat{H} = i\hbar g (e^{i\beta}\hat{a}^{\dagger\,2} - e^{i\beta}\hat{a}^2),
+\end{equation}
+con $g=r/t$ \cite{Agarwal_2012}.
+Este hamiltoniano se puede relacionar con el fenómeno físico de conversión paramétrica en descenso (PDC, por sus siglas en inglés), el cual describe la separación de un fotón de frecuencia de bombeo $\omega_p=2\omega$ en dos fotones iguales de frecuencia $\omega$ y ocurre en medios con una susceptibilidad óptica de segundo orden no lineal $\chi^{(2)}$, tal como cristales de borato de $\beta$-bario o titanilfosfato de potasio \cite{Leonhardt}. A este caso se le denomina caso degenerado de PDC, y está descrito por
+\begin{equation}
+  \hat{H} = \hbar (G \hat{c} \hat{a}^{\dagger\,2} + G^* \hat{c}^{\dagger}\hat{a}^2),
+\end{equation}
+donde el operador  en el modo de la frecuencia de bombeo está dado por $\hat{c}$y $G$ es una constante compleja que está relacionada con la susceptibilidad no lineal  del cristal. El proceso también puede separar el fotón incidente en dos fotones de distintas frecuencias $\omega_a$ y $omega_b$. Por convención a estas frecuencias se les denomina \textit{idle} y \textit{signal}, de acuerdo a la frecuencia de menor y mayor magnitud, respectivamente \cite{Loudon}. Para este caso se tiene tres operadores de distintos modos (el de bombeo, idler y signal) y se describe por
+\begin{equation}
+  \hat{H} = \hbar(G \hat{c} \hat{a}^{\dagger} \hat{b}^{\dagger} + G^* \hat{c}^{\dagger} \hat{a} \hat{b}),
+\end{equation}
+y se relacionaría de manera análoga al operador de compresión de dos modos. Este último es el caso más general o no degenerado del PDC. El proceso es de utilidad para generar estados vacíos comprimidos de uno y dos modos de manera experimental \cite{Walls}.
+
+Para un amplificador paramétrico, el Hamiltoniano $H_{\text{PA}}$ está dado de la forma
+\begin{equation}
+  H_{\text{PA}} = \hbar\omega \hat{a}^{\dagger} \hat{a} - i\hbar \frac{\chi}{2}(\hat{a}^2 \exp(2i\omega t) - \hat{a}^{\dagger\,2}\exp(-2i\omega t))
+\end{equation}
+Las ecuaciones de movimiento de Heisenberg son
+\begin{align}
+  \frac{\text{d}\hat{a}}{\text{d}t} =           & \frac{1}{i\hbar}[\hat{a}, \hat{H_{\text{PA}}}] = \chi \hat{a}^\dagger   \\
+  \frac{\text{d}\hat{a}^{\dagger}}{\text{d}t} = & \frac{1}{i\hbar}[\hat{a}^{\dagger}, \hat{H_{\text{PA}}}] = \chi \hat{a}
+\end{align}
+y la solución de estas ecuaciones es
+\begin{equation}
+  \hat{a}(t) = \hat{a}(0) \cosh(\chi t) + \hat{a}^\dagger(0) \senh(\chi t)
+\end{equation}
+Se espera entonces que la luz generada por amplificación paramétrica esté comprimida, ya que los operadores de modo son de la forma del generador de la transformación de compresión.
+
+\section{Diagonalización de un amplificador paramétrico}
 Consideremos el hamiltoniano que describe el proceso de parametric down conversion
 \begin{equation*}
   \hat{H} = \omega \hat{a}^{\dagger}\hat{a}  + g \hat{a}^{2} + g^{*} \hat{a}^{\dagger\,2}
 \end{equation*}
-usando $\hat{a} = \hat{b} \cosh{r} + \hat{b}^{\dagger} e^{i\theta} \sinh{r}$ para que $\hat{H} = \Omega \hat{b}^{\dagger}\hat{b} + \eta$. Muestre que $\Omega, r,\theta, \eta$ están dados por
+usando $\hat{a} = \hat{b} \cosh{r} + \hat{b}^{\dagger} e^{i\theta} \sinh{r}$ para que $\hat{H} = \Omega \hat{b}^{\dagger}\hat{b} + \eta$ y donde se toma $\hbar = 1$. Se muestra que $\Omega, r,\theta, \eta$ están dados por
 \begin{equation*}
   \Omega = \sqrt{\omega^2 - 4|g|^2}, \quad r=\frac{1}{4}\ln{\frac{\omega - 2\sqrt{|g|^2}}{\omega + 2\sqrt{|g|^2}}}, \quad \theta = i\ln{\sqrt{\frac{g}{g^{*}}}}, \quad \eta = \frac{\Omega - \omega}{2}
 \end{equation*}
-Note que $\hat{a}$ y $\hat{b}$ son operadores de bosones.
+Notando que $\hat{a}$ y $\hat{b}$ son operadores de bosones.
 
-\title{Solución}
-
-El hacer el cambio de operador $\hat{a} = \hat{b} \cosh{r} + \hat{b}^{\dagger} e^{i\theta} \sinh{r}$ es equivalente a hacer la diagonalización del Hamiltoniano con el uso del operador unitario de compresión $\hat{S}(\xi)$, con $\xi = r e^{i\theta}$. De la transformación de Bogoliubov
+Procedemos observando que hacer el cambio de operador $\hat{a} = \hat{b} \cosh{r} + \hat{b}^{\dagger} e^{i\theta} \sinh{r}$ es equivalente a hacer la diagonalización del Hamiltoniano con el uso del operador unitario de compresión $\hat{S}(\xi)$, con $\xi = r e^{i\theta}$. De la transformación de Bogoliubov
 \begin{align*}
   \hat{S}^{\dagger}(\xi) \hat{H} \hat{S}(\xi)
    & =  \hat{S}^{\dagger}(\xi) \left( \omega \hat{a}^{\dagger}\hat{a} + g \hat{a}^{2} + g^{*} \hat{a}^{\dagger\,2} \right) \hat{S}(\xi)                                                                                                                                                                                           \\

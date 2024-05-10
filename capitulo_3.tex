@@ -954,29 +954,42 @@ del estado vacío se obtiene entonces
   \ket{\varphi} = \hat{S}(z)\ket{0}.
 \end{equation}
 Esta definición del operador compresión permite comprimir al estado vacío solo a lo largo y ancho de los ejes del espacio fase, sin embargo, como se discutió al inicio del capítulo, un estado comprimido puede rotar un ángulo $\beta$ en el espacio fase, y la elipse que representa al estados no necesariamente tiene su semieje mayor o menor en paralelo con los ejes del espacio fase. La forma más general del operador de compresión como operador unitario considera al argumento del parámetro de compresión $z$ como complejo, lo que permite que la compresión se de respecto a otro eje no necesariamente paralelo al de la cuadratura de momento o posición \cite{Loudon}
-\begin{equation}
+\begin{equation}\label{eq:squeeze-op}
   \hat{S}(z) = \exp{\left( \frac{1}{2} (z{\hat{a}^{\dagger}}^2 - z^* {\hat{a}}^2) \right)}, \quad z = re^{i\beta}.
+\end{equation}
+El operador unitario se puede escribir como
+\begin{equation}
+  \hat{S}(z) = \exp(rh), \quad h = \frac{1}{2}\left( e^{i\beta}\hat{a}^{\dagger\,2} - e^{-i\beta}\hat{a}^{2} \right).
 \end{equation}
 Del teorema de expansión de operadores, se puede encontrar la transformación unitaria del operador aniquilación $\hat{a}$ por el de compresión $\hat{S}(z)$,
 \begin{align}
-  \hat{A}(z) & = \hat{S}(z)\hat{a} \hat{S}(z)                                                                       \nonumber \\
+  \hat{a}(z) & = \hat{S}(z)\hat{a} \hat{S}(z)                                                                       \nonumber \\
              & = \hat{a}  + z\hat{a}^{\dagger} + \frac{|z|^2\hat{a}}{2!} + \frac{z|z|^2\hat{a}^{\dagger}}{3!}+\dots \nonumber \\
              & = \hat{a} \cosh{r} + \hat{a}^{\dagger} e^{i\beta}\senh{r}                                            \nonumber \\
-             & = \mu\hat{a} + \nu\hat{a}^{\dagger}
+             & = \mu\hat{a} + \nu\hat{a}^{\dagger} \label{eq:squeezed_a}
 \end{align}
 donde se ha definido $\mu = \cosh{r}$ y $\nu = e^{i\beta}\senh{r}$. De manera análoga se obtiene la transformación unitaria del operador creación
 \begin{align}
-  \hat{A}^{\dagger}(z) & = \hat{S}(z)\hat{a}^{\dagger} \hat{S}(z) \nonumber \\
-                       & = \mu\hat{a} + \nu^* \hat{a}.
+  \hat{a}^{\dagger}(z) & = \hat{S}(z)\hat{a}^{\dagger} \hat{S}(z) \nonumber         \\
+                       & = \mu\hat{a} + \nu^* \hat{a}. \label{eq:squeezed_a_dagger}
 \end{align}
-Los operadores $\hat{A}(z)$ y $\hat{A}^\dagger(z)$ siguen la misma relación de conmutación que los operadores escalera
+Los operadores $\hat{a}(z)$ y $\hat{a}^{\dagger}(z)$ siguen la misma relación de conmutación que los operadores escalera
 \begin{equation}
-  [\hat{A}, \hat{A}^{\dagger}] = 1,
+  [\hat{a}(z), \hat{a}^{\dagger}(z)] = 1,
 \end{equation}
-donde se deja implícita la dependencia de estos operadores en el parámetro de compresión $z$. La relación entre estos operadores y los de escalera está dada por
+donde se deja implícita la dependencia de estos operadores en el parámetro de compresión $z$. Calculando las derivadas respecto a $r$
 \begin{align}
-  \hat{a}           & = \mu \hat{A} - \nu \hat{A}^\dagger,   \\
-  \hat{a}^{\dagger} & = \mu \hat{A}^\dagger - \nu^* \hat{A}.
+  \frac{\text{d}\hat{a}}{\text{d}r} =           & \exp(i\beta) \hat{a}^{\dagger}, \\
+  \frac{\text{d}\hat{a}^{\dagger}}{\text{d}r} = & \exp(-i\beta) \hat{a},
+\end{align}
+es fácil encontrar la solución para (\ref{eq:squeezed_a}) y (\ref{eq:squeezed_a_dagger})
+\begin{equation}\label{eq:Bogoliubov}
+  \hat{a}(z) = \hat{a}\cosh(r) + \hat{a}\dagger e^{i\beta}\hat{a}^{\dagger}.
+\end{equation}
+A la transformación (\ref{eq:Bogoliubov}) se le llama de Bogoliubov. La relación entre estos operadores y los de escalera está dada por
+\begin{align}
+  \hat{a}           & = \mu \hat{a}(z) - \nu \hat{a}^{\dagger}(z),   \\
+  \hat{a}^{\dagger} & = \mu \hat{a}^{\dagger}(z) - \nu^* \hat{a}(z).
 \end{align}
 El estado que se obtiene al aplicar el operador de compresión en un estado coherente $\ket{\alpha}$ se denomina estado coherente de dos fotones \cite{Mandel}, denotado por
 \begin{equation}
@@ -988,12 +1001,12 @@ Dado que los operadores compresión y desplazamiento no conmutan, se puede defin
 \end{equation}
 Los valores esperados de para los estados coherentes comprimidos están dados por
 \begin{align}
-  \hat{S}^\dagger(z) \hat{D}^\dagger (\alpha) \hat{a} \hat{S}(z) \hat{D}(\alpha)           & = \hat{a} \cosh{r} - \hat{a}^{\dagger} e^{i\theta}\senh{r} + \alpha,    \\
-  \hat{S}^\dagger(z) \hat{D}^\dagger (\alpha) \hat{a}^{\dagger} \hat{S}(z) \hat{D}(\alpha) & = \hat{a}^{\dagger} \cosh{r} - \hat{a} e^{-i\theta}\senh{r} + \alpha^*.
+  \hat{S}^\dagger(z) \hat{D}^\dagger (\alpha) \hat{a} \hat{S}(z) \hat{D}(\alpha)           & = \hat{a} \cosh{r} - \hat{a}^{\dagger} e^{i\beta}\senh{r} + \alpha,    \\
+  \hat{S}^\dagger(z) \hat{D}^\dagger (\alpha) \hat{a}^{\dagger} \hat{S}(z) \hat{D}(\alpha) & = \hat{a}^{\dagger} \cosh{r} - \hat{a} e^{-i\beta}\senh{r} + \alpha^*.
 \end{align}
 De estas transformaciones, se puede obtener una relación de eigenvalores para los estados coherentes comprimidos
 \begin{equation}
-  \left( \hat{a} \cosh{r} + \hat{a}^{\dagger} e^{i\theta} \senh{r} \right) \ket{\alpha, z} = \left( \alpha \cosh{r} + \alpha^* e^{i\theta} \senh{r} \right) \ket{\alpha, z}.
+  \left( \hat{a} \cosh{r} + \hat{a}^{\dagger} e^{i\beta} \senh{r} \right) \ket{\alpha, z} = \left( \alpha \cosh{r} + \alpha^* e^{i\beta} \senh{r} \right) \ket{\alpha, z}.
 \end{equation}
 El principal interés del estudio de los estados coherentes comprimidos radica en las propiedades de los operadores cuadraturas relacionados a estos, se tiene que
 \begin{align}
@@ -1002,15 +1015,14 @@ El principal interés del estudio de los estados coherentes comprimidos radica e
 \end{align}
 donde $\alpha = |\alpha|e^{i\phi}$. Las varianzas en las cuadraturas son
 \begin{align}
-  (\Delta X)^2 & = \frac{1}{4}\left( e^{2r}\sen^2{\left( \frac{\theta}{2} \right)} +e^{-2r}\cos^2{\left( \frac{\theta}{2} \right)} \right), \\
-  (\Delta Y)^2 & = \frac{1}{4}\left( e^{2r}\cos^2{\left( \frac{\theta}{2} \right)} +e^{-2r}\sen^2{\left( \frac{\theta}{2} \right)} \right),
+  (\Delta X)^2 & = \frac{1}{4}\left( e^{2r}\sen^2{\left( \frac{\beta}{2} \right)} +e^{-2r}\cos^2{\left( \frac{\beta}{2} \right)} \right), \\
+  (\Delta Y)^2 & = \frac{1}{4}\left( e^{2r}\cos^2{\left( \frac{\beta}{2} \right)} +e^{-2r}\sen^2{\left( \frac{\beta}{2} \right)} \right),
 \end{align}
 El operador de tiene la siguiente propiedad
 \begin{equation}
   \hat{S}^{\dagger}(z) = \hat{S}^{-1}(z) = \hat{S}(-z).
 \end{equation}
-Escribiendo el operador de aniquilación como la combinación de dos operadores hermitianos $\hat{X}$ y $\hat{Y}$ como se realizó en la sección del oscilador armónico, se encontró que su relación de incertidumbre es $\Delta X \Delta Y \leq 1/4$ y los estados coherentes tienen la particularidad de tener los estados de menor incertidumbre, es decir, cumplen el caso de la igualdad y $\Delta X = \Delta Y = \frac{1}{2}$. Dependiendo de cómo se definan estos operadores Hermitianos en los que se descomponen los operadores de aniquilación y creación, se escalan estos en el espacio de fasores. (Agregar cómo lo define Wals, Agarwal y otros para denotar las diferencias y especificar que se usa la definición de Loudon)
-(Walls, Milburn)
+Escribiendo el operador de aniquilación como la combinación de dos operadores hermitianos $\hat{X}$ y $\hat{Y}$ como se realizó en la sección del oscilador armónico, se encontró que su relación de incertidumbre es $\Delta X \Delta Y \leq 1/4$ y los estados coherentes tienen la particularidad de tener los estados de menor incertidumbre, es decir, cumplen el caso de la igualdad y $\Delta X = \Delta Y = \frac{1}{2}$. Dependiendo de cómo se definan estos operadores Hermitianos en los que se descomponen los operadores de aniquilación y creación, se escalan estos en el espacio de fasores.
 
 \begin{figure}[!h]
   \centering
